@@ -1,0 +1,10 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="c69f8f59-3ce7-4572-b2ac-13bf80a0b4ac" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image/com_icon/img_fangka.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_icon/img_jinbi.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

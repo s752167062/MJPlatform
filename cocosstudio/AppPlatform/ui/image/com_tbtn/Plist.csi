@@ -1,0 +1,34 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="064bbbfc-ce1a-4cb0-9e8b-6b9f39ebb2ed" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_bianji.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_chuangjian.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_fuzhiID.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_jiaru.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_jinrujulebu.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_queding.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_quxiao.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_quxiaobianji.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_sousuo.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_tijiao.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_tuichuyouxi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_weixindenglu.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_zhuxiaotuichu.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_createClub.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_fankui.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_gengduo.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_joinClub.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_kuaisujiaru.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_majiang.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_paohuzi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_puke.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_shop.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_wanfa.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_xinxi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_zhanji.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_tbtn/btn_youkedenglu.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

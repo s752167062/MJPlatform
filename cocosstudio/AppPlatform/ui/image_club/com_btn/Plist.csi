@@ -1,0 +1,14 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="7163a964-2672-4ccd-986f-31af7c726696" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image_club/com_btn/btn_close.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_btn/btn_jia.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_btn/btn_shuaxin.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_btn/btn_talk.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_btn/btn_xiala1.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_btn/btn_xiala2.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

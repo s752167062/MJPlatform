@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>AppPlatform/ui/image/com_txt/beijing.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{942,271},{102,32}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{102,32}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/chuangjiangchenggong.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{596,94},{142,37}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{142,37}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/chuangjiangjulebu.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{596,2},{197,42}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{197,42}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/chuangjiangshibian.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{742,94},{142,37}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{142,37}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/fankuixinxi.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{596,48},{159,42}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{159,42}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/fenxiang.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{854,135},{108,41}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{108,41}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/gerenxinxi.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{759,48},{158,42}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{158,42}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/gonggao.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{921,48},{159,41}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{159,41}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/jiarufangjian.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{596,211},{157,41}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{157,41}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/jiarujuleby.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{797,2},{188,42}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{188,42}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/qingshuruyijian.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,2},{548,38}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{548,38}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/shezhi.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{899,211},{108,39}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{108,39}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/shimingrenzheng.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{966,109},{158,41}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{158,41}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/tianxiezhenshixinxi.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{554,2},{548,38}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{548,38}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/wenxintishi.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{596,135},{142,37}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{142,37}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/xinxi.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{742,135},{108,42}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{108,42}</string>
+			</dict>
+			<key>AppPlatform/ui/image/com_txt/yinxiao.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{989,2},{103,32}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{103,32}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>Plist.png</string>
+			<key>realTextureFileName</key>
+			<string>Plist.png</string>
+			<key>size</key>
+			<string>{1024,1024}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1024</integer>
+			<key>height</key>
+			<integer>1024</integer>
+		</dict>
+	</dict>
+</plist>

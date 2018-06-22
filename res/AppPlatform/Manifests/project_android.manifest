@@ -1,0 +1,13 @@
+{
+	"packageUrl" : "http://download.hongzhongmajiang.com/android/",
+	"remoteManifestUrl" : "http://download.hongzhongmajiang.com/android/project_dev.manifest",
+	"remoteVersionUrl" : "http://download.hongzhongmajiang.com/android/version_dev.manifest",
+	"version" : "1.0.0",
+	"engineVersion" : "3.x dev",
+	
+	"assets" : {
+	},
+    
+    "searchPaths" : [
+    ]
+}

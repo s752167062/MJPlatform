@@ -1,0 +1,435 @@
+<Solution>
+  <PropertyGroup Name="GameChess" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="AppPlatform">
+          <Folder Name="ui">
+            <Folder Name="effect">
+              <Project Name="WaitingLayer.csd" Type="Layer" />
+            </Folder>
+            <Folder Name="effect_image">
+              <Image Name="Loading_Circle.png" />
+            </Folder>
+            <Folder Name="font">
+              <Fnt Name="bbt_jifen.fnt" />
+              <Fnt Name="clockNum.fnt" />
+              <Fnt Name="dashainum.fnt" />
+              <Fnt Name="ddz_jiesuan_tongji.fnt" />
+              <TTF Name="DFPGB_H9_0.TTF" />
+              <Fnt Name="dtz_result_lost.fnt" />
+              <Fnt Name="dtz_result_sm_score.fnt" />
+              <Fnt Name="dtz_result_win.fnt" />
+              <Fnt Name="enter_num.fnt" />
+              <TTF Name="FZY3JW.TTF" />
+              <TTF Name="FZY4JW.TTF" />
+              <TTF Name="huakangyuanti.TTF" />
+              <Fnt Name="huifang_num.fnt" />
+              <TTF Name="LexusJianHei.TTF" />
+              <TTF Name="minijiantiheti.TTF" />
+              <Fnt Name="nnhuifang_num.fnt" />
+              <Fnt Name="openscore_lost.fnt" />
+              <Fnt Name="openscore_num.fnt" />
+              <Fnt Name="openscore_win.fnt" />
+              <Fnt Name="rankNum.fnt" />
+              <Fnt Name="recoder_number.fnt" />
+              <Fnt Name="resultlost_number.fnt" />
+              <Fnt Name="resultwin_number.fnt" />
+              <Image Name="room_number.png" />
+              <Fnt Name="room_number_clock.fnt" />
+              <Fnt Name="score_lost_num.fnt" />
+              <Fnt Name="score_win_num.fnt" />
+              <Fnt Name="summary_fail.fnt" />
+              <Fnt Name="summary_succ.fnt" />
+              <Fnt Name="summary2_fail.fnt" />
+              <Fnt Name="summary2_succ.fnt" />
+              <Fnt Name="tuizhu_num.fnt" />
+            </Folder>
+            <Folder Name="image">
+              <Folder Name="big_img">
+                <Image Name="banhao.png" />
+                <Image Name="bg.jpg" />
+                <Image Name="bg_club.png" />
+                <Image Name="bg_myGame.png" />
+                <Image Name="bg1.png" />
+                <Image Name="bg2.jpg" />
+                <Image Name="bg3.png" />
+                <Image Name="bottom_bg.png" />
+                <Image Name="club_bg.jpg" />
+                <Image Name="majiang_bg.jpg" />
+                <Image Name="puke_bg.jpg" />
+                <Image Name="shop_bg.png" />
+                <Image Name="top.png" />
+                <Image Name="top_bg.png" />
+                <Image Name="zhipai_bg.jpg" />
+              </Folder>
+              <Folder Name="com_bg">
+                <Image Name="bg_1.png" />
+                <Image Name="bg1.png" />
+                <Image Name="bg2.png" />
+                <Image Name="bg3.png" />
+                <Image Name="bg4.png" />
+                <Image Name="bg5.png" />
+                <Image Name="bg6.png" />
+                <Image Name="bg7.png" />
+                <Image Name="bg8.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+                <Image Name="title_bg.png" />
+                <Image Name="title_bg2.png" />
+              </Folder>
+              <Folder Name="com_btn">
+                <Image Name="brn_dd.png" />
+                <Image Name="btn_0.png" />
+                <Image Name="btn_1.png" />
+                <Image Name="btn_2.png" />
+                <Image Name="btn_3.png" />
+                <Image Name="btn_4.png" />
+                <Image Name="btn_5.png" />
+                <Image Name="btn_6.png" />
+                <Image Name="btn_7.png" />
+                <Image Name="btn_8.png" />
+                <Image Name="btn_9.png" />
+                <Image Name="btn_back.png" />
+                <Image Name="btn_changeDown.png" />
+                <Image Name="btn_chongzhi.png" />
+                <Image Name="btn_close.png" />
+                <Image Name="btn_delete.png" />
+                <Image Name="btn_fenxiang.png" />
+                <Image Name="btn_gonggao.png" />
+                <Image Name="btn_gonggao1.png" />
+                <Image Name="btn_gonggao2.png" />
+                <Image Name="btn_help.png" />
+                <Image Name="btn_huadong.png" />
+                <Image Name="btn_jia.png" />
+                <Image Name="btn_jiage.png" />
+                <Image Name="btn_left1.png" />
+                <Image Name="btn_left2.png" />
+                <Image Name="btn_reset.png" />
+                <Image Name="btn_right1.png" />
+                <Image Name="btn_right2.png" />
+                <Image Name="btn_setting.png" />
+                <Image Name="btn_shiming.png" />
+                <Image Name="btn_wxfriend.png" />
+                <Image Name="btn_wxtime.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+              </Folder>
+              <Folder Name="com_icon">
+                <Image Name="img_fangka.png" />
+                <Image Name="img_jinbi.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+              </Folder>
+              <Folder Name="com_other">
+                <Image Name="bar_1.png" />
+                <Image Name="bar1_bg.png" />
+                <Image Name="bg_gonggao.png" />
+                <Image Name="fenge.png" />
+                <Image Name="head.png" />
+                <Image Name="img_clubEmpty.png" />
+                <Image Name="img_headFrame.png" />
+                <Image Name="line.png" />
+                <Image Name="loading_bar.png" />
+                <Image Name="loading_bar_bg.png" />
+                <Image Name="loadingbar2.png" />
+                <Image Name="loadingbar2_bg.png" />
+                <Image Name="loadingbar2_light.png" />
+                <Image Name="loginUI_declaration.png" />
+                <Image Name="logo.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+                <Image Name="shopUI_card1.png" />
+                <Image Name="shopUI_card2.png" />
+                <Image Name="shopUI_gold1.png" />
+                <Image Name="tips_xinxi.png" />
+                <Image Name="title_majiang.png" />
+                <Image Name="title_puke.png" />
+                <Image Name="title_zipai.png" />
+              </Folder>
+              <Folder Name="com_tbtn">
+                <Image Name="btn_bianji.png" />
+                <Image Name="btn_chuangjian.png" />
+                <Image Name="btn_createClub.png" />
+                <Image Name="btn_fankui.png" />
+                <Image Name="btn_fuzhiID.png" />
+                <Image Name="btn_gengduo.png" />
+                <Image Name="btn_jiaru.png" />
+                <Image Name="btn_jinrujulebu.png" />
+                <Image Name="btn_joinClub.png" />
+                <Image Name="btn_kuaisujiaru.png" />
+                <Image Name="btn_majiang.png" />
+                <Image Name="btn_paohuzi.png" />
+                <Image Name="btn_puke.png" />
+                <Image Name="btn_queding.png" />
+                <Image Name="btn_quxiao.png" />
+                <Image Name="btn_quxiaobianji.png" />
+                <Image Name="btn_shop.png" />
+                <Image Name="btn_sousuo.png" />
+                <Image Name="btn_tijiao.png" />
+                <Image Name="btn_tuichuyouxi.png" />
+                <Image Name="btn_wanfa.png" />
+                <Image Name="btn_weixindenglu.png" />
+                <Image Name="btn_xinxi.png" />
+                <Image Name="btn_youkedenglu.png" />
+                <Image Name="btn_zhanji.png" />
+                <Image Name="btn_zhuxiaotuichu.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+              </Folder>
+              <Folder Name="com_txt">
+                <Image Name="beijing.png" />
+                <Image Name="chuangjiangchenggong.png" />
+                <Image Name="chuangjiangjulebu.png" />
+                <Image Name="chuangjiangshibian.png" />
+                <Image Name="fankuixinxi.png" />
+                <Image Name="fenxiang.png" />
+                <Image Name="gerenxinxi.png" />
+                <Image Name="gonggao.png" />
+                <Image Name="jiarufangjian.png" />
+                <Image Name="jiarujuleby.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+                <Image Name="qingshuruyijian.png" />
+                <Image Name="shezhi.png" />
+                <Image Name="shimingrenzheng.png" />
+                <Image Name="tianxiezhenshixinxi.png" />
+                <Image Name="wenxintishi.png" />
+                <Image Name="xinxi.png" />
+                <Image Name="yinxiao.png" />
+              </Folder>
+              <Folder Name="GameList">
+                <Image Name="bg_icon.png" />
+                <Image Name="bg1.png" />
+                <Image Name="btn_back.png" />
+                <Image Name="btn_del.png" />
+                <Image Name="btn_xiazai.png" />
+                <Image Name="img_del.png" />
+                <Image Name="img_hot.png" />
+                <Image Name="img_tuijian.png" />
+                <Image Name="img_update.png" />
+                <Image Name="img_xiazai.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+              </Folder>
+              <Folder Name="GeneralHall">
+                <Image Name="bg.jpg" />
+                <Image Name="bg_1.png" />
+                <Image Name="bg_club.png" />
+                <Image Name="bg_myGame.png" />
+                <Image Name="bottom_bg.png" />
+                <Image Name="btn_createClub.png" />
+                <Image Name="btn_fankui.png" />
+                <Image Name="btn_fenxiang.png" />
+                <Image Name="btn_gengduo.png" />
+                <Image Name="btn_jia.png" />
+                <Image Name="btn_joinClub.png" />
+                <Image Name="btn_kuaisujiaru.png" />
+                <Image Name="btn_majiang.png" />
+                <Image Name="btn_paohuzi.png" />
+                <Image Name="btn_puke.png" />
+                <Image Name="btn_setting.png" />
+                <Image Name="btn_shiming.png" />
+                <Image Name="btn_shop.png" />
+                <Image Name="btn_wanfa.png" />
+                <Image Name="btn_xinxi.png" />
+                <Image Name="btn_zhanji.png" />
+                <Image Name="head.png" />
+                <Image Name="img_clubEmpty.png" />
+                <Image Name="img_fangka.png" />
+                <Image Name="img_headFrame.png" />
+                <Image Name="img_jinbi.png" />
+                <Image Name="loading_bar.png" />
+                <Image Name="loading_bar_bg.png" />
+                <Image Name="top_bg.png" />
+              </Folder>
+              <Folder Name="login">
+                <Image Name="btn_changeDown.png" />
+                <Image Name="btn_youkedenglu.png" />
+                <Image Name="loginUI_declaration.png" />
+              </Folder>
+              <Folder Name="logo">
+                <Image Name="LOGO_00.png" />
+                <Image Name="LOGO_01.png" />
+                <Image Name="LOGO_02.png" />
+                <Image Name="LOGO_03.png" />
+                <Image Name="LOGO_04.png" />
+                <Image Name="LOGO_05.png" />
+                <Image Name="LOGO_06.png" />
+                <Image Name="LOGO_07.png" />
+                <Image Name="LOGO_08.png" />
+                <Image Name="LOGO_09.png" />
+                <Image Name="LOGO_10.png" />
+                <Image Name="LOGO_11.png" />
+                <Image Name="LOGO_12.png" />
+                <Image Name="LOGO_13.png" />
+                <Image Name="LOGO_14.png" />
+                <Image Name="LOGO_15.png" />
+                <Image Name="LOGO_16.png" />
+                <Image Name="LOGO_17.png" />
+                <Image Name="LOGO_18.png" />
+                <Image Name="LOGO_19.png" />
+                <Image Name="LOGO_20.png" />
+                <Image Name="LOGO_21.png" />
+                <Image Name="LOGO_22.png" />
+                <Image Name="LOGO_23.png" />
+                <Image Name="LOGO_24.png" />
+                <Image Name="LOGO_25.png" />
+                <Image Name="LOGO_26.png" />
+                <Image Name="LOGO_27.png" />
+                <Image Name="LOGO_28.png" />
+                <Image Name="LOGO_29.png" />
+                <Image Name="LOGO_30.png" />
+                <Image Name="LOGO_31.png" />
+                <Image Name="LOGO_32.png" />
+                <Image Name="LOGO_33.png" />
+                <Image Name="LOGO_34.png" />
+              </Folder>
+              <Image Name="bg2.jpg" />
+              <Image Name="login_logo.png" />
+              <Image Name="logo.jpg" />
+            </Folder>
+            <Folder Name="image_club">
+              <Folder Name="big_img">
+                <Image Name="bg.jpg" />
+                <Image Name="bg2.png" />
+              </Folder>
+              <Folder Name="com_bg">
+                <Image Name="bg1.png" />
+                <Image Name="bg2.png" />
+                <Image Name="bg3.png" />
+                <Image Name="bg4.png" />
+                <Image Name="bg5.png" />
+                <Image Name="bg5_2.png" />
+                <Image Name="bg6.png" />
+                <Image Name="bg7.png" />
+                <Image Name="bg8.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+              </Folder>
+              <Folder Name="com_btn">
+                <Image Name="btn_close.png" />
+                <Image Name="btn_jia.png" />
+                <Image Name="btn_shuaxin.png" />
+                <Image Name="btn_talk.png" />
+                <Image Name="btn_xiala1.png" />
+                <Image Name="btn_xiala2.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+              </Folder>
+              <Folder Name="com_effect">
+                <Folder Name="hand">
+                  <Image Name="hand.png" />
+                  <Image Name="light1.png" />
+                  <Image Name="light2.png" />
+                  <Image Name="light3.png" />
+                  <PlistInfo Name="Plist.csi" Type="Plist" />
+                  <Image Name="tips.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="com_icon">
+                <PlistInfo Name="icon.csi" Type="Plist" />
+                <Image Name="icon1.png" />
+                <Image Name="icon10.png" />
+                <Image Name="icon2.png" />
+                <Image Name="icon3.png" />
+                <Image Name="icon4.png" />
+                <Image Name="icon5.png" />
+                <Image Name="icon6.png" />
+                <Image Name="icon7.png" />
+                <Image Name="icon8.png" />
+                <Image Name="icon9.png" />
+                <Image Name="select.png" />
+              </Folder>
+              <Folder Name="com_img">
+                <Image Name="img_desk.png" />
+                <Image Name="img_num.png" />
+                <Image Name="img_ren.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+              </Folder>
+              <Folder Name="com_other">
+                <Image Name="img_head.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+              </Folder>
+              <Folder Name="com_tbtn">
+                <Image Name="btn_back.png" />
+                <Image Name="btn_chengyuanliebiao.png" />
+                <Image Name="btn_fangkatongji.png" />
+                <Image Name="btn_jieshufangjian.png" />
+                <Image Name="btn_julebushezhi.png" />
+                <Image Name="btn_kuaisukaishi.png" />
+                <Image Name="btn_lastPage.png" />
+                <Image Name="btn_majiang1.png" />
+                <Image Name="btn_majiang2.png" />
+                <Image Name="btn_nextPage.png" />
+                <Image Name="btn_puke1.png" />
+                <Image Name="btn_puke2.png" />
+                <Image Name="btn_queding.png" />
+                <Image Name="btn_shanchu2.png" />
+                <Image Name="btn_shangye1.png" />
+                <Image Name="btn_shangye2.png" />
+                <Image Name="btn_shenqing.png" />
+                <Image Name="btn_shezhiwanfa.png" />
+                <Image Name="btn_xiaye1.png" />
+                <Image Name="btn_xiaye2.png" />
+                <Image Name="btn_xuanzewanfa1.png" />
+                <Image Name="btn_xuanzewanfa2.png" />
+                <Image Name="btn_yaoqing.png" />
+                <Image Name="btn_youxiguanli.png" />
+                <Image Name="btn_zhanji.png" />
+                <Image Name="btn_zipai1.png" />
+                <Image Name="btn_zipai2.png" />
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+              </Folder>
+              <Folder Name="com_txt">
+                <PlistInfo Name="Plist.csi" Type="Plist" />
+                <Image Name="t_chuangjiangwanfa.png" />
+                <Image Name="t_hongzhongmajiang.png" />
+                <Image Name="t_paodekuai.png" />
+                <Image Name="t_paohuzi.png" />
+                <Image Name="t_shezhehuoxiugai.png" />
+                <Image Name="t_xuanzewanfa.png" />
+              </Folder>
+            </Folder>
+            <Folder Name="layout">
+              <Folder Name="ClubView">
+                <Project Name="ClubGameView.csd" Type="Layer" />
+                <Project Name="ClubSelectGameView.csd" Type="Layer" />
+                <Project Name="Effect_hand.csd" Type="Node" />
+                <Project Name="Item_selectIcon.csd" Type="Node" />
+                <Project Name="SettingItem.csd" Type="Node" />
+                <Project Name="UI_CreateClub.csd" Type="Layer" />
+                <Project Name="UI_JoinClub.csd" Type="Layer" />
+                <Project Name="UI_SelectClubIcon.csd" Type="Layer" />
+              </Folder>
+              <Folder Name="GameListView">
+                <Project Name="GameItem.csd" Type="Node" />
+                <Project Name="GameListViewA.csd" Type="Layer" />
+              </Folder>
+              <Folder Name="OtherView">
+                <Project Name="ActivityNoticeView.csd" Type="Layer" />
+                <Project Name="ActivityNoticeViewItem.csd" Type="Node" />
+                <Project Name="FeedbackUI.csd" Type="Layer" />
+                <Project Name="PlayerInfoUI.csd" Type="Layer" />
+                <Project Name="RoomNumberUI.csd" Type="Layer" />
+                <Project Name="SetUI.csd" Type="Layer" />
+                <Project Name="shareUI.csd" Type="Layer" />
+                <Project Name="shiMingView.csd" Type="Layer" />
+                <Project Name="XinxiUI.csd" Type="Layer" />
+              </Folder>
+              <Folder Name="ShopView">
+                <Project Name="ShopView.csd" Type="Layer" />
+                <Project Name="ShopViewItem.csd" Type="Node" />
+              </Folder>
+              <Project Name="ChangeLoadingView.csd" Type="Layer" />
+              <Project Name="ClubItem.csd" Type="Node" />
+              <Project Name="CUIToastMsg.csd" Type="Layer" />
+              <Project Name="GeneralHallScene.csd" Type="Scene" />
+              <Project Name="LauncherScene.csd" Type="Scene" />
+              <Project Name="LoginScene.csd" Type="Scene" />
+              <Project Name="logoAni.csd" Type="Node" />
+              <Project Name="LogoScene.csd" Type="Scene" />
+              <Project Name="MarqueeUI.csd" Type="Layer" />
+              <Project Name="Message.csd" Type="Layer" />
+              <Project Name="MessageChoose.csd" Type="Layer" />
+              <Project Name="MessageConfirm.csd" Type="Layer" />
+              <Project Name="NetMessage.csd" Type="Layer" />
+              <Project Name="PlayerIcon.csd" Type="Node" />
+            </Folder>
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

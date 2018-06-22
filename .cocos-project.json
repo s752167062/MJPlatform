@@ -1,0 +1,6 @@
+{
+	"custom_step_script": "frameworks/runtime-src/proj.android/custom_script.py",
+    "engine_version": "cocos2d-x-3.10", 
+    "has_native": true, 
+    "project_type": "lua"
+}

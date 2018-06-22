@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>HallScene_Default/ui_hall__bottom.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,931},{512,19}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{512,19}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall__buyBtn.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{801,916},{107,65}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{107,65}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall__headFrame.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{934,916},{73,73}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{73,73}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall_create.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{512,0},{512,394}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{512,394}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall_fk.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{512,931},{68,68}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{68,68}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall_headMask.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,400},{148,148}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{148,148}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall_jl.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{580,931},{68,68}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{68,68}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall_match.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{512,400}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{512,400}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall_match_gray.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{512,394},{512,394}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{512,394}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall_top.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,788},{1024,128}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{1024,128}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall_video.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{866,916},{68,94}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{68,94}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall_wf.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{648,931},{68,68}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{68,68}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall_zj.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{716,931},{68,68}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{68,68}</string>
+			</dict>
+			<key>HallScene_Default/ui_hall__waring.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,916},{801,15}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{801,15}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>HallScene_Default.png</string>
+			<key>realTextureFileName</key>
+			<string>HallScene_Default.png</string>
+			<key>size</key>
+			<string>{1024,1024}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1024</integer>
+			<key>height</key>
+			<integer>1024</integer>
+		</dict>
+	</dict>
+</plist>

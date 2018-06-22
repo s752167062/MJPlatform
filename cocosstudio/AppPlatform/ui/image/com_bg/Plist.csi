@@ -1,0 +1,19 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="8888a120-cf60-41b8-a20a-c1d37407bb8f" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image/com_bg/bg1.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_bg/bg2.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_bg/bg3.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_bg/bg4.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_bg/bg5.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_bg/bg6.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_bg/bg7.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_bg/bg8.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_bg/title_bg.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_bg/title_bg2.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_bg/bg_1.png" />
+    </ImageFiles>
+    <MaxSize Width="2048" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

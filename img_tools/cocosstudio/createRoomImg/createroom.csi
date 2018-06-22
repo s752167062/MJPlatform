@@ -1,0 +1,63 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="createroom" Type="Plist" ID="f10bc262-a0a7-4140-9f8b-bed0ccc423a7" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="createRoomImg/poker/tab_fuchuan_1.png" />
+      <FilePathData Path="createRoomImg/poker/tab_fuchuan_2.png" />
+      <FilePathData Path="createRoomImg/poker/tab_hezhou_1.png" />
+      <FilePathData Path="createRoomImg/poker/tab_hezhou_2.png" />
+      <FilePathData Path="createRoomImg/poker/tab_zhongshan_1.png" />
+      <FilePathData Path="createRoomImg/poker/tab_zhongshan_2.png" />
+      <FilePathData Path="createRoomImg/mahjong/tab_wuzhou_1.png" />
+      <FilePathData Path="createRoomImg/mahjong/tab_wuzhou_2.png" />
+      <FilePathData Path="createRoomImg/agent_btn_defule.png" />
+      <FilePathData Path="createRoomImg/agent_check.png" />
+      <FilePathData Path="createRoomImg/agent_enter.png" />
+      <FilePathData Path="createRoomImg/agent_share.png" />
+      <FilePathData Path="createRoomImg/agent_tab_gaming.png" />
+      <FilePathData Path="createRoomImg/agent_tab_gaming1.png" />
+      <FilePathData Path="createRoomImg/agent_tab_over.png" />
+      <FilePathData Path="createRoomImg/agent_tab_over1.png" />
+      <FilePathData Path="createRoomImg/agent_title.png" />
+      <FilePathData Path="createRoomImg/agent_witness.png" />
+      <FilePathData Path="createRoomImg/btn_area_guilin_1.png" />
+      <FilePathData Path="createRoomImg/btn_area_guilin_2.png" />
+      <FilePathData Path="createRoomImg/btn_area_hezhou_1.png" />
+      <FilePathData Path="createRoomImg/btn_area_hezhou_2.png" />
+      <FilePathData Path="createRoomImg/btn_area_liuzhou_1.png" />
+      <FilePathData Path="createRoomImg/btn_area_liuzhou_2.png" />
+      <FilePathData Path="createRoomImg/btn_area_nanning_1.png" />
+      <FilePathData Path="createRoomImg/btn_area_nanning_2.png" />
+      <FilePathData Path="createRoomImg/btn_area_wuzhou_1.png" />
+      <FilePathData Path="createRoomImg/btn_area_wuzhou_2.png" />
+      <FilePathData Path="createRoomImg/btn_cjfj.png" />
+      <FilePathData Path="createRoomImg/btn_continue_create.png" />
+      <FilePathData Path="createRoomImg/btn_delete.png" />
+      <FilePathData Path="createRoomImg/btn_dkfj.png" />
+      <FilePathData Path="createRoomImg/btn_enterroom.png" />
+      <FilePathData Path="createRoomImg/btn_zipai_guilin_1.png" />
+      <FilePathData Path="createRoomImg/btn_zipai_guilin_2.png" />
+      <FilePathData Path="createRoomImg/btnClose.png" />
+      <FilePathData Path="createRoomImg/chuangjianfangjian.png" />
+      <FilePathData Path="createRoomImg/daikaifangjian_txt.png" />
+      <FilePathData Path="createRoomImg/dx_1.png" />
+      <FilePathData Path="createRoomImg/dx_2.png" />
+      <FilePathData Path="createRoomImg/fx_1.png" />
+      <FilePathData Path="createRoomImg/fx_2.png" />
+      <FilePathData Path="createRoomImg/line.png" />
+      <FilePathData Path="createRoomImg/s9_bg.png" />
+      <FilePathData Path="createRoomImg/text_create.png" />
+      <FilePathData Path="createRoomImg/text_fan_xing_she_zhi.png" />
+      <FilePathData Path="createRoomImg/text_fanxin.png" />
+      <FilePathData Path="createRoomImg/text_gui_pai_gui_zhe.png" />
+      <FilePathData Path="createRoomImg/text_jushu.png" />
+      <FilePathData Path="createRoomImg/text_paozi.png" />
+      <FilePathData Path="createRoomImg/text_wanfa.png" />
+      <FilePathData Path="createRoomImg/text_zhama.png" />
+      <FilePathData Path="createRoomImg/text_zhuama.png" />
+      <FilePathData Path="createRoomImg/text_zi_mo_suan_fa.png" />
+      <FilePathData Path="createRoomImg/text_zi_su_suan_fa.png" />
+    </ImageFiles>
+    <MaxSize Width="2048" Height="2048" />
+  </Content>
+</PlistInfoProjectFile>

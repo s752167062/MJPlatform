@@ -1,0 +1,22 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="HallScene_Default" Type="Plist" ID="140fd14a-49e5-4dad-bbcc-f420e8aa5661" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="False" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="HallScene_Default/ui_hall__bottom.png" />
+      <FilePathData Path="HallScene_Default/ui_hall__buyBtn.png" />
+      <FilePathData Path="HallScene_Default/ui_hall__headFrame.png" />
+      <FilePathData Path="HallScene_Default/ui_hall_create.png" />
+      <FilePathData Path="HallScene_Default/ui_hall_fk.png" />
+      <FilePathData Path="HallScene_Default/ui_hall_headMask.png" />
+      <FilePathData Path="HallScene_Default/ui_hall_jl.png" />
+      <FilePathData Path="HallScene_Default/ui_hall_match.png" />
+      <FilePathData Path="HallScene_Default/ui_hall_match_gray.png" />
+      <FilePathData Path="HallScene_Default/ui_hall_top.png" />
+      <FilePathData Path="HallScene_Default/ui_hall_video.png" />
+      <FilePathData Path="HallScene_Default/ui_hall_wf.png" />
+      <FilePathData Path="HallScene_Default/ui_hall_zj.png" />
+      <FilePathData Path="HallScene_Default/ui_hall__waring.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

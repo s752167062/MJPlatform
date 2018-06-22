@@ -1,0 +1,30 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="274930e4-6240-45c0-82b0-b403ae690eab" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image/com_other/bar_1.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/bar1_bg.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/fenge.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/head.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/img_headFrame.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/line.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/loading_bar.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/loading_bar_bg.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/loadingbar2.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/loadingbar2_bg.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/loadingbar2_light.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/logo.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/shopUI_card1.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/shopUI_card2.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/shopUI_gold1.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/tips_xinxi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/title_majiang.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/title_puke.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/title_zipai.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/bg_gonggao.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/img_clubEmpty.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_other/loginUI_declaration.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

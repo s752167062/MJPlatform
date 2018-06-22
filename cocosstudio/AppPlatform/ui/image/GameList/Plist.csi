@@ -1,0 +1,18 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="64f5bb7b-a3a1-4eeb-a6c3-d14cf59974b5" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image/GameList/bg_icon.png" />
+      <FilePathData Path="AppPlatform/ui/image/GameList/bg1.png" />
+      <FilePathData Path="AppPlatform/ui/image/GameList/btn_back.png" />
+      <FilePathData Path="AppPlatform/ui/image/GameList/btn_del.png" />
+      <FilePathData Path="AppPlatform/ui/image/GameList/btn_xiazai.png" />
+      <FilePathData Path="AppPlatform/ui/image/GameList/img_del.png" />
+      <FilePathData Path="AppPlatform/ui/image/GameList/img_hot.png" />
+      <FilePathData Path="AppPlatform/ui/image/GameList/img_tuijian.png" />
+      <FilePathData Path="AppPlatform/ui/image/GameList/img_update.png" />
+      <FilePathData Path="AppPlatform/ui/image/GameList/img_xiazai.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

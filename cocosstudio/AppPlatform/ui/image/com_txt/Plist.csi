@@ -1,0 +1,25 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="42ca7297-9a2f-473d-94ae-26e037a94f0e" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image/com_txt/beijing.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/chuangjiangchenggong.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/chuangjiangjulebu.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/chuangjiangshibian.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/fankuixinxi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/fenxiang.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/gerenxinxi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/gonggao.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/jiarufangjian.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/jiarujuleby.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/qingshuruyijian.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/shezhi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/shimingrenzheng.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/tianxiezhenshixinxi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/wenxintishi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/xinxi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_txt/yinxiao.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

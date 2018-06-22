@@ -1,0 +1,33 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="public" Type="Plist" ID="faa24cb2-eb3e-4b7e-8eb8-340e9e6411b5" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="commImg/public/public_close.png" />
+      <FilePathData Path="commImg/public/public_headnull.png" />
+      <FilePathData Path="commImg/public/public_box3.png" />
+      <FilePathData Path="commImg/public/bg_bottom1.png" />
+      <FilePathData Path="commImg/public/bg_bottom2.png" />
+      <FilePathData Path="commImg/public/black_bg.png" />
+      <FilePathData Path="commImg/public/btn_1.png" />
+      <FilePathData Path="commImg/public/btn_2.png" />
+      <FilePathData Path="commImg/public/btn_3.png" />
+      <FilePathData Path="commImg/public/btn_4.png" />
+      <FilePathData Path="commImg/public/btn_close.png" />
+      <FilePathData Path="commImg/public/btnReturn.png" />
+      <FilePathData Path="commImg/public/panel_1.png" />
+      <FilePathData Path="commImg/public/panel_2.png" />
+      <FilePathData Path="commImg/public/panel_3.png" />
+      <FilePathData Path="commImg/public/panel_4.png" />
+      <FilePathData Path="commImg/public/panel_5.png" />
+      <FilePathData Path="commImg/public/tile_pointer.png" />
+      <FilePathData Path="commImg/public/info_top.png" />
+      <FilePathData Path="commImg/public/Loading_0.png" />
+      <FilePathData Path="commImg/public/Loading_2.png" />
+      <FilePathData Path="commImg/public/loading_3.png" />
+      <FilePathData Path="commImg/public/btnCancel.png" />
+      <FilePathData Path="commImg/public/btnSure.png" />
+      <FilePathData Path="commImg/public/messagebg.png" />
+    </ImageFiles>
+    <MaxSize Width="2048" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

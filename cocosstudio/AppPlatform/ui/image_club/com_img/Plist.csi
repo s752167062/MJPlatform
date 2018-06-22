@@ -1,0 +1,11 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="81a08dc7-51c0-4177-8c85-0abd613913ec" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image_club/com_img/img_desk.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_img/img_num.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_img/img_ren.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

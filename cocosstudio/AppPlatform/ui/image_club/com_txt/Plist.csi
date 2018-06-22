@@ -1,0 +1,14 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="ceb8d519-3ecf-48b0-9bb6-4a06c1f807c9" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image_club/com_txt/t_chuangjiangwanfa.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_txt/t_hongzhongmajiang.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_txt/t_paodekuai.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_txt/t_paohuzi.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_txt/t_shezhehuoxiugai.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_txt/t_xuanzewanfa.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

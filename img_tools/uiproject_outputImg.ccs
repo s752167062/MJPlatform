@@ -1,0 +1,127 @@
+<Solution>
+  <PropertyGroup Name="uiproject_outputImg" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="commImg">
+          <Folder Name="ProvisionView">
+            <Image Name="ProvisionBg.png" />
+            <PlistInfo Name="ProvisionView.csi" Type="Plist" />
+          </Folder>
+          <Folder Name="public">
+            <Image Name="bg_bottom1.png" />
+            <Image Name="bg_bottom2.png" />
+            <Image Name="black_bg.png" />
+            <Image Name="btn_1.png" />
+            <Image Name="btn_2.png" />
+            <Image Name="btn_3.png" />
+            <Image Name="btn_4.png" />
+            <Image Name="btn_close.png" />
+            <Image Name="btnCancel.png" />
+            <Image Name="btnReturn.png" />
+            <Image Name="btnSure.png" />
+            <Image Name="info_top.png" />
+            <Image Name="Loading_0.png" />
+            <Image Name="Loading_2.png" />
+            <Image Name="loading_3.png" />
+            <Image Name="messagebg.png" />
+            <Image Name="panel_1.png" />
+            <Image Name="panel_2.png" />
+            <Image Name="panel_3.png" />
+            <Image Name="panel_4.png" />
+            <Image Name="panel_5.png" />
+            <PlistInfo Name="public.csi" Type="Plist" />
+            <Image Name="public_box3.png" />
+            <Image Name="public_close.png" />
+            <Image Name="public_headnull.png" />
+            <Image Name="tile_pointer.png" />
+          </Folder>
+        </Folder>
+        <Folder Name="createRoomImg">
+          <Folder Name="mahjong">
+            <Image Name="tab_wuzhou_1.png" />
+            <Image Name="tab_wuzhou_2.png" />
+          </Folder>
+          <Folder Name="poker">
+            <Image Name="tab_fuchuan_1.png" />
+            <Image Name="tab_fuchuan_2.png" />
+            <Image Name="tab_hezhou_1.png" />
+            <Image Name="tab_hezhou_2.png" />
+            <Image Name="tab_zhongshan_1.png" />
+            <Image Name="tab_zhongshan_2.png" />
+          </Folder>
+          <Image Name="agent_btn_defule.png" />
+          <Image Name="agent_check.png" />
+          <Image Name="agent_enter.png" />
+          <Image Name="agent_share.png" />
+          <Image Name="agent_tab_gaming.png" />
+          <Image Name="agent_tab_gaming1.png" />
+          <Image Name="agent_tab_over.png" />
+          <Image Name="agent_tab_over1.png" />
+          <Image Name="agent_title.png" />
+          <Image Name="agent_witness.png" />
+          <Image Name="btn_area_guilin_1.png" />
+          <Image Name="btn_area_guilin_2.png" />
+          <Image Name="btn_area_hezhou_1.png" />
+          <Image Name="btn_area_hezhou_2.png" />
+          <Image Name="btn_area_liuzhou_1.png" />
+          <Image Name="btn_area_liuzhou_2.png" />
+          <Image Name="btn_area_nanning_1.png" />
+          <Image Name="btn_area_nanning_2.png" />
+          <Image Name="btn_area_wuzhou_1.png" />
+          <Image Name="btn_area_wuzhou_2.png" />
+          <Image Name="btn_cjfj.png" />
+          <Image Name="btn_continue_create.png" />
+          <Image Name="btn_delete.png" />
+          <Image Name="btn_dkfj.png" />
+          <Image Name="btn_enterroom.png" />
+          <Image Name="btn_zipai_guilin_1.png" />
+          <Image Name="btn_zipai_guilin_2.png" />
+          <Image Name="btnClose.png" />
+          <Image Name="chuangjianfangjian.png" />
+          <PlistInfo Name="createroom.csi" Type="Plist" />
+          <Image Name="daikaifangjian_txt.png" />
+          <Image Name="dx_1.png" />
+          <Image Name="dx_2.png" />
+          <Image Name="fx_1.png" />
+          <Image Name="fx_2.png" />
+          <Image Name="line.png" />
+          <Image Name="s9_bg.png" />
+          <Image Name="text_create.png" />
+          <Image Name="text_fan_xing_she_zhi.png" />
+          <Image Name="text_fanxin.png" />
+          <Image Name="text_gui_pai_gui_zhe.png" />
+          <Image Name="text_jushu.png" />
+          <Image Name="text_paozi.png" />
+          <Image Name="text_wanfa.png" />
+          <Image Name="text_zhama.png" />
+          <Image Name="text_zhuama.png" />
+          <Image Name="text_zi_mo_suan_fa.png" />
+          <Image Name="text_zi_su_suan_fa.png" />
+        </Folder>
+        <Folder Name="doudizhuImage">
+          <Folder Name="gameImg">
+            <Image Name="game_bg.jpg" />
+          </Folder>
+        </Folder>
+        <Folder Name="HallScene_Default">
+          <PlistInfo Name="HallScene_Default.csi" Type="Plist" />
+          <Image Name="ui_hall__bottom.png" />
+          <Image Name="ui_hall__buyBtn.png" />
+          <Image Name="ui_hall__headFrame.png" />
+          <Image Name="ui_hall__waring.png" />
+          <Image Name="ui_hall_create.png" />
+          <Image Name="ui_hall_fk.png" />
+          <Image Name="ui_hall_headMask.png" />
+          <Image Name="ui_hall_jl.png" />
+          <Image Name="ui_hall_match.png" />
+          <Image Name="ui_hall_match_gray.png" />
+          <Image Name="ui_hall_top.png" />
+          <Image Name="ui_hall_video.png" />
+          <Image Name="ui_hall_wf.png" />
+          <Image Name="ui_hall_zj.png" />
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

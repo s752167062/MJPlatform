@@ -1,0 +1,43 @@
+<UserData Version="3.10.0.0">
+  <Properties>
+    <Item Key="CocosRecentOperation">
+      <Value ctype="CocosRecentOperation">
+        <LastPublishType Value="Resource" />
+        <IsLastPublish Value="True" />
+        <LastRunType Value="Mac" />
+      </Value>
+    </Item>
+    <Item Key="PackageParamsKey">
+      <Value ctype="PackageParams">
+        <LuaIsEncrypt Value="False" />
+        <LuaEncryptKey Value="" />
+        <LuaEncryptSign Value="" />
+        <Android_PackageName Value="org.cocos.GameChess" />
+        <AndroidkeyStore Value="" />
+        <AndroidVersion Value="android-22" />
+        <iOS_Target Value="GameChess iOS" />
+        <iOS_BundleID Value="iPhone Distribution: hong chen (G8TMVW73QG)" />
+        <Platform Value="None" />
+        <RunPlatform Value="None" />
+        <FrameworkVersion Value="无" />
+        <IsDebugKeystore Value="True" />
+        <KeystorePassword Value="" />
+        <KeystoreAliasName Value="" />
+        <KeystoreAliasPassword Value="" />
+        <EnableSourceMap Value="False" />
+        <EnableHTML5Advanced Value="False" />
+      </Value>
+    </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="AppPlatform/ui/layout/OtherView/SetUI.csd" />
+          <FilePathData Path="AppPlatform/ui/layout/OtherView/shareUI.csd" />
+          <FilePathData Path="AppPlatform/ui/image/com_other/Plist.csi" />
+          <FilePathData Path="AppPlatform/ui/image/com_btn/Plist.csi" />
+        </OpenedDocuments>
+        <ActiveDocument Path="AppPlatform/ui/layout/OtherView/shareUI.csd" />
+      </Value>
+    </Item>
+  </Properties>
+</UserData>

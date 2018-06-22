@@ -1,0 +1,13 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="b4a11067-8e14-4538-bcec-4c6630c91895" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image_club/com_effect/hand/hand.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_effect/hand/light1.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_effect/hand/light2.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_effect/hand/light3.png" />
+      <FilePathData Path="AppPlatform/ui/image_club/com_effect/hand/tips.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

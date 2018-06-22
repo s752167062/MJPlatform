@@ -1,0 +1,41 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="2f7dd51d-80f5-4b96-a3cd-2808c27536cd" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="AppPlatform/ui/image/com_btn/brn_dd.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_0.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_1.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_2.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_3.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_4.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_5.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_6.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_7.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_8.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_9.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_back.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_chongzhi.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_close.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_delete.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_gonggao.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_gonggao1.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_gonggao2.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_help.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_huadong.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_jia.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_jiage.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_left1.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_left2.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_reset.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_right1.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_right2.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_wxfriend.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_wxtime.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_fenxiang.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_setting.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_shiming.png" />
+      <FilePathData Path="AppPlatform/ui/image/com_btn/btn_changeDown.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>
