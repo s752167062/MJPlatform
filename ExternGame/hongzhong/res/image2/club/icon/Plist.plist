@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>image2/club/icon/icon1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,2},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{89,89}</string>
+			</dict>
+			<key>image2/club/icon/icon10.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,95},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{89,89}</string>
+			</dict>
+			<key>image2/club/icon/icon2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{95,2},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{89,89}</string>
+			</dict>
+			<key>image2/club/icon/icon3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{95,95},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{89,89}</string>
+			</dict>
+			<key>image2/club/icon/icon4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{188,2},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{89,89}</string>
+			</dict>
+			<key>image2/club/icon/icon5.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{188,95},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{89,89}</string>
+			</dict>
+			<key>image2/club/icon/icon6.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{281,2},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{89,89}</string>
+			</dict>
+			<key>image2/club/icon/icon7.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{374,2},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{89,89}</string>
+			</dict>
+			<key>image2/club/icon/icon8.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{281,95},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{89,89}</string>
+			</dict>
+			<key>image2/club/icon/icon9.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{374,95},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{89,89}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>Plist.png</string>
+			<key>realTextureFileName</key>
+			<string>Plist.png</string>
+			<key>size</key>
+			<string>{465,186}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>465</integer>
+			<key>height</key>
+			<integer>186</integer>
+		</dict>
+	</dict>
+</plist>

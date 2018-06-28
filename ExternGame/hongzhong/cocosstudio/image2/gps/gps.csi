@@ -1,0 +1,13 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="gps" Type="Plist" ID="35910609-abbf-431a-978d-d156c9255df6" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/gps/btn_close.png" />
+      <FilePathData Path="image2/gps/point_1.png" />
+      <FilePathData Path="image2/gps/point_2.png" />
+      <FilePathData Path="image2/gps/btn_zhinanzhen.png" />
+      <FilePathData Path="image2/gps/line.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="128" />
+  </Content>
+</PlistInfoProjectFile>

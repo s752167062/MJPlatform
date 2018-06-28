@@ -1,0 +1,51 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="createroom_2" Type="Plist" ID="5325d859-f962-46bd-9c2d-cd836f0ac359" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/hall/createroom/16ju.png" />
+      <FilePathData Path="image2/hall/createroom/2ge.png" />
+      <FilePathData Path="image2/hall/createroom/3ge.png" />
+      <FilePathData Path="image2/hall/createroom/3ren.png" />
+      <FilePathData Path="image2/hall/createroom/4ge.png" />
+      <FilePathData Path="image2/hall/createroom/4ren.png" />
+      <FilePathData Path="image2/hall/createroom/6ge.png" />
+      <FilePathData Path="image2/hall/createroom/8ju.png" />
+      <FilePathData Path="image2/hall/createroom/bottom.png" />
+      <FilePathData Path="image2/hall/createroom/btn_cancel.png" />
+      <FilePathData Path="image2/hall/createroom/btn_continuecreate.png" />
+      <FilePathData Path="image2/hall/createroom/btn_copy.png" />
+      <FilePathData Path="image2/hall/createroom/btn_createroom.png" />
+      <FilePathData Path="image2/hall/createroom/btn_delete.png" />
+      <FilePathData Path="image2/hall/createroom/btn_dissroom.png" />
+      <FilePathData Path="image2/hall/createroom/btn_enterroom.png" />
+      <FilePathData Path="image2/hall/createroom/btn_invate.png" />
+      <FilePathData Path="image2/hall/createroom/btn_next.png" />
+      <FilePathData Path="image2/hall/createroom/btn_open.png" />
+      <FilePathData Path="image2/hall/createroom/btn_selectclose.png" />
+      <FilePathData Path="image2/hall/createroom/btn_up.png" />
+      <FilePathData Path="image2/hall/createroom/huqidui.png" />
+      <FilePathData Path="image2/hall/createroom/itemroom_bg.png" />
+      <FilePathData Path="image2/hall/createroom/jushu.png" />
+      <FilePathData Path="image2/hall/createroom/kepanguan.png" />
+      <FilePathData Path="image2/hall/createroom/mieluo.png" />
+      <FilePathData Path="image2/hall/createroom/pointselect_1.png" />
+      <FilePathData Path="image2/hall/createroom/pointselect_2.png" />
+      <FilePathData Path="image2/hall/createroom/qita.png" />
+      <FilePathData Path="image2/hall/createroom/renshu.png" />
+      <FilePathData Path="image2/hall/createroom/select_1.png" />
+      <FilePathData Path="image2/hall/createroom/select_2.png" />
+      <FilePathData Path="image2/hall/createroom/title_chenggong.png" />
+      <FilePathData Path="image2/hall/createroom/title_chuangjian.png" />
+      <FilePathData Path="image2/hall/createroom/title_jiesan.png" />
+      <FilePathData Path="image2/hall/createroom/title_wodefangj.png" />
+      <FilePathData Path="image2/hall/createroom/top.png" />
+      <FilePathData Path="image2/hall/createroom/wangfa.png" />
+      <FilePathData Path="image2/hall/createroom/xianshigps.png" />
+      <FilePathData Path="image2/hall/createroom/xianshiip.png" />
+      <FilePathData Path="image2/hall/createroom/yimaquangzhong.png" />
+      <FilePathData Path="image2/hall/createroom/zhamashu.png" />
+      <FilePathData Path="image2/hall/createroom/btn_help.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

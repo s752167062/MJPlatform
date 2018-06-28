@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>ui_activity/activity_eff1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,331},{100,99}}</string>
+				<key>offset</key>
+				<string>{0,4}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{101,106}</string>
+			</dict>
+			<key>ui_activity/activity_eff2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,115},{101,99}}</string>
+				<key>offset</key>
+				<string>{0,4}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{101,106}</string>
+			</dict>
+			<key>ui_activity/activity_eff3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,222},{97,103}}</string>
+				<key>offset</key>
+				<string>{0,2}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{101,106}</string>
+			</dict>
+			<key>ui_activity/activity_eff4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,3},{101,106}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{101,106}</string>
+			</dict>
+			<key>ui_activity/activity_eff5.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{106,222},{96,102}}</string>
+				<key>offset</key>
+				<string>{0,2}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{101,106}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>activity_eff.png</string>
+			<key>realTextureFileName</key>
+			<string>activity_eff.png</string>
+			<key>size</key>
+			<string>{256,512}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>256</integer>
+			<key>height</key>
+			<integer>512</integer>
+		</dict>
+	</dict>
+</plist>

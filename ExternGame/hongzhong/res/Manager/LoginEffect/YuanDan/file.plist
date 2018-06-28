@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>Manager/LoginEffect/YuanDan/L_001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{746,3},{198,204}}</string>
+				<key>offset</key>
+				<string>{-43,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{287,205}</string>
+			</dict>
+			<key>Manager/LoginEffect/YuanDan/L_002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,3},{235,195}}</string>
+				<key>offset</key>
+				<string>{-9,5}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{287,205}</string>
+			</dict>
+			<key>Manager/LoginEffect/YuanDan/L_003.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{485,3},{255,172}}</string>
+				<key>offset</key>
+				<string>{15,16}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{287,205}</string>
+			</dict>
+			<key>Manager/LoginEffect/YuanDan/R_001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{695,207},{195,204}}</string>
+				<key>offset</key>
+				<string>{-4,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{204,205}</string>
+			</dict>
+			<key>Manager/LoginEffect/YuanDan/R_002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{213,204},{178,199}}</string>
+				<key>offset</key>
+				<string>{13,3}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{204,205}</string>
+			</dict>
+			<key>Manager/LoginEffect/YuanDan/R_003.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{213,388},{167,199}}</string>
+				<key>offset</key>
+				<string>{18,3}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{204,205}</string>
+			</dict>
+			<key>Manager/LoginEffect/YuanDan/L_004.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{244,3},{235,195}}</string>
+				<key>offset</key>
+				<string>{-9,5}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{287,205}</string>
+			</dict>
+			<key>Manager/LoginEffect/YuanDan/L_005.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{485,181},{198,204}}</string>
+				<key>offset</key>
+				<string>{-43,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{287,205}</string>
+			</dict>
+			<key>Manager/LoginEffect/YuanDan/R_004.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{418,385},{178,199}}</string>
+				<key>offset</key>
+				<string>{13,3}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{204,205}</string>
+			</dict>
+			<key>Manager/LoginEffect/YuanDan/R_005.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,204},{195,204}}</string>
+				<key>offset</key>
+				<string>{-4,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{204,205}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>file.png</string>
+			<key>realTextureFileName</key>
+			<string>file.png</string>
+			<key>size</key>
+			<string>{1024,1024}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1024</integer>
+			<key>height</key>
+			<integer>1024</integer>
+		</dict>
+	</dict>
+</plist>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>image_club/com_icon/icon1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{119,627},{111,120}}</string>
+				<key>offset</key>
+				<string>{0,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/icon10.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,131},{115,120}}</string>
+				<key>offset</key>
+				<string>{2,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/icon2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,627},{113,120}}</string>
+				<key>offset</key>
+				<string>{-1,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/icon3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{119,751},{111,120}}</string>
+				<key>offset</key>
+				<string>{0,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/icon4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,255},{114,120}}</string>
+				<key>offset</key>
+				<string>{-1,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/icon5.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{119,875},{111,120}}</string>
+				<key>offset</key>
+				<string>{0,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/icon6.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,379},{114,120}}</string>
+				<key>offset</key>
+				<string>{-1,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/icon7.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,751},{113,120}}</string>
+				<key>offset</key>
+				<string>{1,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/icon8.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,875},{113,120}}</string>
+				<key>offset</key>
+				<string>{1,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/icon9.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,503},{114,120}}</string>
+				<key>offset</key>
+				<string>{-1,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/select.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,2},{125,125}}</string>
+				<key>offset</key>
+				<string>{0,2}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,128}</string>
+			</dict>
+			<key>image_club/com_icon/icon_bei3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{120,255},{55,49}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{55,49}</string>
+			</dict>
+			<key>image_club/com_icon/icon_bei2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{121,131},{55,49}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{55,49}</string>
+			</dict>
+			<key>image_club/com_icon/icon_bei1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{121,190},{55,49}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{55,49}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>icon.png</string>
+			<key>realTextureFileName</key>
+			<string>icon.png</string>
+			<key>size</key>
+			<string>{256,1024}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>256</integer>
+			<key>height</key>
+			<integer>1024</integer>
+		</dict>
+	</dict>
+</plist>

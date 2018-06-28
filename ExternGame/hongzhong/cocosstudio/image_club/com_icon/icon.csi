@@ -1,0 +1,22 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="icon" Type="Plist" ID="7d6cf3a9-1fae-4281-a76e-6a828d729382" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image_club/com_icon/icon1.png" />
+      <FilePathData Path="image_club/com_icon/icon10.png" />
+      <FilePathData Path="image_club/com_icon/icon2.png" />
+      <FilePathData Path="image_club/com_icon/icon3.png" />
+      <FilePathData Path="image_club/com_icon/icon4.png" />
+      <FilePathData Path="image_club/com_icon/icon5.png" />
+      <FilePathData Path="image_club/com_icon/icon6.png" />
+      <FilePathData Path="image_club/com_icon/icon7.png" />
+      <FilePathData Path="image_club/com_icon/icon8.png" />
+      <FilePathData Path="image_club/com_icon/icon9.png" />
+      <FilePathData Path="image_club/com_icon/select.png" />
+      <FilePathData Path="image_club/com_icon/icon_bei3.png" />
+      <FilePathData Path="image_club/com_icon/icon_bei2.png" />
+      <FilePathData Path="image_club/com_icon/icon_bei1.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

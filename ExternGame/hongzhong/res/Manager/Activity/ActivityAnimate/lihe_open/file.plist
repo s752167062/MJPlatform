@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>Manager/Activity/ActivityAnimate/lihe_open/001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{704,3},{386,442}}</string>
+				<key>offset</key>
+				<string>{-5,270}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{695,987}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/lihe_open/002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{530,774},{386,563}}</string>
+				<key>offset</key>
+				<string>{-5,-212}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{695,987}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/lihe_open/003.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1096,3},{425,397}}</string>
+				<key>offset</key>
+				<string>{-5,-268}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{695,987}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/lihe_open/004.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{704,1343},{409,463}}</string>
+				<key>offset</key>
+				<string>{-4,-239}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{695,987}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/lihe_open/005.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{922,451},{385,441}}</string>
+				<key>offset</key>
+				<string>{-5,-250}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{695,987}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/lihe_open/006.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,1475},{695,519}}</string>
+				<key>offset</key>
+				<string>{0,-212}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{695,987}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/lihe_open/007.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,3},{695,765}}</string>
+				<key>offset</key>
+				<string>{0,-88}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{695,987}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/lihe_open/008.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,774},{695,521}}</string>
+				<key>offset</key>
+				<string>{0,-211}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{695,987}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>file.png</string>
+			<key>realTextureFileName</key>
+			<string>file.png</string>
+			<key>size</key>
+			<string>{2048,2048}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>2048</integer>
+			<key>height</key>
+			<integer>2048</integer>
+		</dict>
+	</dict>
+</plist>

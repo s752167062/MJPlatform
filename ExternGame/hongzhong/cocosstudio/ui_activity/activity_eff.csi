@@ -1,0 +1,13 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="activity_eff" Type="Plist" ID="302310b1-722b-4a9b-8584-83f1cabe6b8a" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="3" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="ui_activity/activity_eff1.png" />
+      <FilePathData Path="ui_activity/activity_eff2.png" />
+      <FilePathData Path="ui_activity/activity_eff3.png" />
+      <FilePathData Path="ui_activity/activity_eff4.png" />
+      <FilePathData Path="ui_activity/activity_eff5.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

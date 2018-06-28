@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>Manager/Activity/ActivityAnimate/pao_normal/001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,3},{101,177}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{101,177}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/pao_normal/002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,186},{89,170}}</string>
+				<key>offset</key>
+				<string>{6,3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{101,177}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>file.png</string>
+			<key>realTextureFileName</key>
+			<string>file.png</string>
+			<key>size</key>
+			<string>{128,512}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>128</integer>
+			<key>height</key>
+			<integer>512</integer>
+		</dict>
+	</dict>
+</plist>

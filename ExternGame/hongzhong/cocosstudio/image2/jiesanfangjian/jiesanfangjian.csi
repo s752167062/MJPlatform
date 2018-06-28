@@ -1,0 +1,11 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="jiesanfangjian" Type="Plist" ID="3d854aa4-eb5d-4524-b183-94b096128dd6" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="3" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/jiesanfangjian/bg.png" />
+      <FilePathData Path="image2/jiesanfangjian/btn_bty.png" />
+      <FilePathData Path="image2/jiesanfangjian/btn_ty.png" />
+    </ImageFiles>
+    <MaxSize Width="512" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

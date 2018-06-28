@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>Manager/effect/2/001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{204,679},{199,177}}</string>
+				<key>offset</key>
+				<string>{0,-2}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{201,241}</string>
+			</dict>
+			<key>Manager/effect/2/002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{208,3},{200,206}}</string>
+				<key>offset</key>
+				<string>{1,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{201,241}</string>
+			</dict>
+			<key>Manager/effect/2/003.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,250},{200,210}}</string>
+				<key>offset</key>
+				<string>{1,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{201,241}</string>
+			</dict>
+			<key>Manager/effect/2/004.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,679},{195,210}}</string>
+				<key>offset</key>
+				<string>{2,-2}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{201,241}</string>
+			</dict>
+			<key>Manager/effect/2/005.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,466},{199,207}}</string>
+				<key>offset</key>
+				<string>{-1,-4}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{201,241}</string>
+			</dict>
+			<key>Manager/effect/2/006.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,3},{199,241}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{201,241}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>Plist.png</string>
+			<key>realTextureFileName</key>
+			<string>Plist.png</string>
+			<key>size</key>
+			<string>{512,1024}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>512</integer>
+			<key>height</key>
+			<integer>1024</integer>
+		</dict>
+	</dict>
+</plist>

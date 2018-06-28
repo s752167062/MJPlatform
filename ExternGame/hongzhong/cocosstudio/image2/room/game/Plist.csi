@@ -1,0 +1,49 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="d6d6dafe-9e00-48b5-b80e-606f44b75d86" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/room/game/btn_fuzhifanghao.png" />
+      <FilePathData Path="image2/room/game/btn_guize.png" />
+      <FilePathData Path="image2/room/game/btn_likaifangjian.png" />
+      <FilePathData Path="image2/room/game/btn_shezhi.png" />
+      <FilePathData Path="image2/room/game/btn_talk.png" />
+      <FilePathData Path="image2/room/game/btn_tuichu.png" />
+      <FilePathData Path="image2/room/game/btn_yaoqinghaoyou.png" />
+      <FilePathData Path="image2/room/game/btn_yuyin.png" />
+      <FilePathData Path="image2/room/game/flag_fangzhu.png" />
+      <FilePathData Path="image2/room/game/flag_ok.png" />
+      <FilePathData Path="image2/room/game/flag_zhuajia.png" />
+      <FilePathData Path="image2/room/game/btn_biaoqing_1.png" />
+      <FilePathData Path="image2/room/game/btn_biaoqing_2.png" />
+      <FilePathData Path="image2/room/game/btn_bugongyi.png" />
+      <FilePathData Path="image2/room/game/btn_fanhuidating.png" />
+      <FilePathData Path="image2/room/game/btn_gz.png" />
+      <FilePathData Path="image2/room/game/btn_gz_sit.png" />
+      <FilePathData Path="image2/room/game/btn_gz_up.png" />
+      <FilePathData Path="image2/room/game/btn_jiesanfangj.png" />
+      <FilePathData Path="image2/room/game/btn_jixuyouxi.png" />
+      <FilePathData Path="image2/room/game/btn_shenqingjiesan.png" />
+      <FilePathData Path="image2/room/game/btn_tongyi.png" />
+      <FilePathData Path="image2/room/game/btn_tuichufangjian.png" />
+      <FilePathData Path="image2/room/game/btn_yuyin_1.png" />
+      <FilePathData Path="image2/room/game/btn_yuyin_2.png" />
+      <FilePathData Path="image2/room/game/btn_zhanjixuanyao.png" />
+      <FilePathData Path="image2/room/game/img_luyin.png" />
+      <FilePathData Path="image2/room/game/img_luyin1.png" />
+      <FilePathData Path="image2/room/game/img_luyin2.png" />
+      <FilePathData Path="image2/room/game/img_luyin3.png" />
+      <FilePathData Path="image2/room/game/img_luyin4.png" />
+      <FilePathData Path="image2/room/game/img_shezi.png" />
+      <FilePathData Path="image2/room/game/slider_2.png" />
+      <FilePathData Path="image2/room/game/slider_2_1.png" />
+      <FilePathData Path="image2/room/game/title_jiesanfangjian.png" />
+      <FilePathData Path="image2/room/game/title_shezhi.png" />
+      <FilePathData Path="image2/room/game/title_zhanji.png" />
+      <FilePathData Path="image2/room/game/txt_yinxiao.png" />
+      <FilePathData Path="image2/room/game/txt_yinyue.png" />
+      <FilePathData Path="image2/room/game/txt_zhongma.png" />
+      <FilePathData Path="image2/room/game/game_top_3player.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

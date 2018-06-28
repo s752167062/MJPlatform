@@ -1,0 +1,11 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="renzheng" Type="Plist" ID="3a48ef97-36f4-4c43-b15f-6947f42a3d4e" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="3" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/renzheng/bg_info.png" />
+      <FilePathData Path="image2/renzheng/bg_tishi.png" />
+      <FilePathData Path="image2/renzheng/btn_shiming.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

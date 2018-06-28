@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>Manager/LobbyImage/jixue.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,3},{1024,11}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{1024,11}</string>
+			</dict>
+			<key>Manager/LobbyImage/sd_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1769,3},{50,209}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{50,209}</string>
+			</dict>
+			<key>Manager/LobbyImage/sd_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1984,3},{54,181}}</string>
+				<key>offset</key>
+				<string>{0,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{54,182}</string>
+			</dict>
+			<key>Manager/LobbyImage/sd_3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1614,3},{149,86}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{149,89}</string>
+			</dict>
+			<key>Manager/LobbyImage/sd_4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1324,109},{148,94}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{148,94}</string>
+			</dict>
+			<key>Manager/LobbyImage/yd_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1476,3},{132,109}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{132,109}</string>
+			</dict>
+			<key>Manager/LobbyImage/yd_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1183,3},{135,113}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{135,113}</string>
+			</dict>
+			<key>Manager/LobbyImage/yd_3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1324,3},{146,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{146,100}</string>
+			</dict>
+			<key>Manager/LobbyImage/yd_4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1033,3},{108,144}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{108,144}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>Plist.png</string>
+			<key>realTextureFileName</key>
+			<string>Plist.png</string>
+			<key>size</key>
+			<string>{2048,512}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>2048</integer>
+			<key>height</key>
+			<integer>512</integer>
+		</dict>
+	</dict>
+</plist>

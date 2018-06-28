@@ -1,0 +1,166 @@
+
+-- ClubData = {}
+-- --玩家ID
+-- ClubData.playerID = 0
+-- --玩家权力值
+-- ClubData.playerPower = 0
+-- --俱乐部id
+-- ClubData.clubID = 0
+-- --俱乐部名字
+-- ClubData.clubName = "未命名"
+-- --俱乐部成员数
+-- ClubData.clubPeopleNum = 0
+-- --俱乐部最大成员数
+-- ClubData.clubPeopleMaxNum = 0
+-- --会长ID
+-- ClubData.clubQunzhuID = 0
+-- --会长名字
+-- ClubData.clubQunzhuName = "暂无"
+-- --管理员ID
+-- ClubData.clubGuanliyuanID = 0
+-- --管理员名字
+-- ClubData.clubGuanliyuanName = "暂无"
+-- --俱乐部描述
+-- ClubData.clubDesc = ""
+-- ClubData.clubDescTemp = ""
+-- --俱乐部公告
+-- ClubData.clubNotice = ""
+-- ClubData.clubNoticeTemp = ""
+-- --俱乐部创建时间
+-- ClubData.clubCreateTime = ""
+-- --俱乐部加入条件 0 需要申请 1 不需要申请即可加入  2 拒绝加入
+-- ClubData.clubCondition = "0"
+-- ClubData.clubConditionTemp = 0
+-- --俱乐部地址
+-- ClubData.clubAdress = ""
+-- --申请列表个数（红点展示）
+-- ClubData.clubJoinReqNum = 0
+-- --俱乐部图标
+-- ClubData.clubIcon = "1"
+-- ClubData.clubIconTemp = ""
+
+-- ClubData.joinConditionTable = {
+--     {v="申请加入", id=0},
+--     {v="允许加入", id=1},
+--     {v="拒绝加入", id=2},
+-- }
+
+-- ClubData.getClubConditionTxt = function ()
+--     -- body
+--     local txt = ClubData.joinConditionTable[1].v
+--     for i=1,#ClubData.joinConditionTable do
+--         local d = ClubData.joinConditionTable[i]
+--         if tostring(d.id) == tostring(ClubData.clubCondition) then
+--             txt = d.v
+--         end
+--     end
+--     return txt
+-- end
+
+-- --俱乐部图标table
+-- --[1]客户端字段， [2]服务器字段
+-- local iconPrefx = "image2/club/icon/"
+-- ClubData.iconTable = {
+--     {v=iconPrefx.."icon1.png", id=1},
+--     {v=iconPrefx.."icon2.png", id=2},
+--     {v=iconPrefx.."icon3.png", id=3},
+--     {v=iconPrefx.."icon4.png", id=4},
+--     {v=iconPrefx.."icon5.png", id=5},
+--     {v=iconPrefx.."icon6.png", id=6},
+--     {v=iconPrefx.."icon7.png", id=7},
+--     {v=iconPrefx.."icon8.png", id=8},
+--     {v=iconPrefx.."icon9.png", id=9},
+--     {v=iconPrefx.."icon10.png", id=10},
+-- }
+
+-- ClubData.getClubIconPathById = function (id)
+--     -- body
+--     local txt = ClubData.iconTable[1].v
+--     for i=1,#ClubData.iconTable do
+--         local d = ClubData.iconTable[i]
+--         if tostring(d.id) == tostring(id) then
+--             txt = d.v
+--         end
+--     end
+--     return txt
+-- end
+
+-- ClubData.getClubIconPath = function ()
+--     -- body
+--     local path = ClubData.getClubIconPathById(ClubData.clubIcon)
+--     cclog("getClubIconPath=",path)
+--     return path
+-- end
+
+-- --俱乐部成员信息
+-- ClubData.memberList = {}
+-- ClubData.updateMemberInfo = function ()
+--     -- body
+-- end
+
+-- ClubData.canKickPeople = function (userID)
+--     -- body
+--     if ClubData.playerID == userID then
+--         return false
+--     elseif ClubData.playerID == ClubData.clubGuanliyuanID then
+--         return true
+--     elseif ClubData.playerID == ClubData.clubQunzhuID then
+--         return true 
+--     else
+--         return false
+--     end
+-- end
+
+-- ClubData.canRemoveBlackList = function (userID)
+--     -- body
+--     if ClubData.playerID == userID then
+--         return false
+--     elseif ClubData.playerID == ClubData.clubGuanliyuanID then
+--         return true
+--     elseif ClubData.playerID == ClubData.clubQunzhuID then
+--         return true 
+--     else
+--         return false
+--     end
+-- end
+
+-- ClubData.isGuanliyuan = function ()
+--     -- body
+--     if ClubData.playerID == ClubData.clubGuanliyuanID then
+--         return true
+--     elseif ClubData.playerID == ClubData.clubQunzhuID then
+--         return true 
+--     else
+--         return false
+--     end
+-- end
+
+-- ClubData.canDismissClub = function ()
+--     -- body
+--     if ClubData.playerID == ClubData.clubGuanliyuanID then
+--         return true
+--     elseif ClubData.playerID == ClubData.clubQunzhuID then
+--         return true 
+--     else
+--         return false
+--     end
+-- end
+
+-- ClubData.printInfo = function ()
+--     -- body
+--     cclog("ClubData.playerID",ClubData.playerID)
+--     cclog("ClubData.clubID",ClubData.clubID)
+--     cclog("ClubData.clubIcon",ClubData.clubIcon)
+--     cclog("ClubData.clubName",ClubData.clubName)
+--     cclog("ClubData.clubPeopleNum",ClubData.clubPeopleNum)
+--     cclog("ClubData.clubPeopleMaxNum",ClubData.clubPeopleMaxNum)
+--     cclog("ClubData.clubQunzhuID",ClubData.clubQunzhuID)
+--     cclog("ClubData.clubQunzhuName",ClubData.clubQunzhuName)
+--     cclog("ClubData.clubGuanliyuanID",ClubData.clubGuanliyuanID)
+--     cclog("ClubData.clubGuanliyuanName",ClubData.clubGuanliyuanName)
+--     cclog("ClubData.clubDesc",ClubData.clubDesc)
+--     cclog("ClubData.clubNotice",ClubData.clubNotice)
+--     cclog("ClubData.clubCreateTime",ClubData.clubCreateTime)
+--     cclog("ClubData.clubCondition",ClubData.clubCondition)
+-- end
+

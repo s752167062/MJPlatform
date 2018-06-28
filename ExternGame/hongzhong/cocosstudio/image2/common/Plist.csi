@@ -1,0 +1,35 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="eec469fc-4a04-4892-acaf-7d05145c26e5" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="3" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/common/huqidui.png" />
+      <FilePathData Path="image2/common/kepangguan.png" />
+      <FilePathData Path="image2/common/qita.png" />
+      <FilePathData Path="image2/common/miluohongzhong.png" />
+      <FilePathData Path="image2/common/wanfa.png" />
+      <FilePathData Path="image2/common/bg.png" />
+      <FilePathData Path="image2/common/LouHuBg.png" />
+      <FilePathData Path="image2/common/bg0.png" />
+      <FilePathData Path="image2/common/bg0_1.png" />
+      <FilePathData Path="image2/common/bg1.png" />
+      <FilePathData Path="image2/common/bg2.png" />
+      <FilePathData Path="image2/common/bg4.png" />
+      <FilePathData Path="image2/common/btn_cancel.png" />
+      <FilePathData Path="image2/common/btn_close.png" />
+      <FilePathData Path="image2/common/btn_jiage.png" />
+      <FilePathData Path="image2/common/btn_sure.png" />
+      <FilePathData Path="image2/common/btn_yaoqing_yixin.png" />
+      <FilePathData Path="image2/common/head.png" />
+      <FilePathData Path="image2/common/title_hongz.png" />
+      <FilePathData Path="image2/common/title_wenxin.png" />
+      <FilePathData Path="image2/common/title_xingxi.png" />
+      <FilePathData Path="image2/common/title1.png" />
+      <FilePathData Path="image2/common/top.png" />
+      <FilePathData Path="image2/common/img_qian.png" />
+      <FilePathData Path="image2/common/img_zengsong.png" />
+      <FilePathData Path="image2/common/sharetypebg.png" />
+      <FilePathData Path="image2/common/ddshare.png" />
+    </ImageFiles>
+    <MaxSize Width="2048" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

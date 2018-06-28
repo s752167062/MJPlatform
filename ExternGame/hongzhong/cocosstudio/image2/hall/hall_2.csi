@@ -1,0 +1,61 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="hall_2" Type="Plist" ID="218ae051-be34-4732-b920-80c1611701f2" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/hall/icon_fangka.png" />
+      <FilePathData Path="image2/hall/icon_jinbi.png" />
+      <FilePathData Path="image2/hall/line.png" />
+      <FilePathData Path="image2/hall/logo.png" />
+      <FilePathData Path="image2/hall/namebg.png" />
+      <FilePathData Path="image2/hall/shopitembg.png" />
+      <FilePathData Path="image2/hall/title_fangkui.png" />
+      <FilePathData Path="image2/hall/title_goumai.png" />
+      <FilePathData Path="image2/hall/title_jiaru.png" />
+      <FilePathData Path="image2/hall/title_shiming.png" />
+      <FilePathData Path="image2/hall/title_wanfa.png" />
+      <FilePathData Path="image2/hall/title_zhanji.png" />
+      <FilePathData Path="image2/hall/top_zhanji.png" />
+      <FilePathData Path="image2/hall/banner.png" />
+      <FilePathData Path="image2/hall/bg_zhanji.png" />
+      <FilePathData Path="image2/hall/bottom.png" />
+      <FilePathData Path="image2/hall/btn_0.png" />
+      <FilePathData Path="image2/hall/btn_1.png" />
+      <FilePathData Path="image2/hall/btn_2.png" />
+      <FilePathData Path="image2/hall/btn_3.png" />
+      <FilePathData Path="image2/hall/btn_4.png" />
+      <FilePathData Path="image2/hall/btn_5.png" />
+      <FilePathData Path="image2/hall/btn_6.png" />
+      <FilePathData Path="image2/hall/btn_7.png" />
+      <FilePathData Path="image2/hall/btn_8.png" />
+      <FilePathData Path="image2/hall/btn_9.png" />
+      <FilePathData Path="image2/hall/btn_chongzhi.png" />
+      <FilePathData Path="image2/hall/btn_createroom.png" />
+      <FilePathData Path="image2/hall/btn_delete.png" />
+      <FilePathData Path="image2/hall/btn_dissroom.png" />
+      <FilePathData Path="image2/hall/btn_exit.png" />
+      <FilePathData Path="image2/hall/btn_fankui.png" />
+      <FilePathData Path="image2/hall/btn_goumai.png" />
+      <FilePathData Path="image2/hall/btn_hongzhong.png" />
+      <FilePathData Path="image2/hall/btn_joinroom.png" />
+      <FilePathData Path="image2/hall/btn_loginout.png" />
+      <FilePathData Path="image2/hall/btn_majiangdasai.png" />
+      <FilePathData Path="image2/hall/btn_reset.png" />
+      <FilePathData Path="image2/hall/btn_return.png" />
+      <FilePathData Path="image2/hall/btn_shengqing.png" />
+      <FilePathData Path="image2/hall/btn_shiming.png" />
+      <FilePathData Path="image2/hall/btn_tuichu.png" />
+      <FilePathData Path="image2/hall/btn_video.png" />
+      <FilePathData Path="image2/hall/btn_wanfa.png" />
+      <FilePathData Path="image2/hall/btn_xiaoxi.png" />
+      <FilePathData Path="image2/hall/btn_zhanji.png" />
+      <FilePathData Path="image2/hall/editboxbg.png" />
+      <FilePathData Path="image2/hall/fk_bg.png" />
+      <FilePathData Path="image2/hall/gold_1.png" />
+      <FilePathData Path="image2/hall/gold_2.png" />
+      <FilePathData Path="image2/hall/gold_3.png" />
+      <FilePathData Path="image2/hall/gonggaobg.png" />
+      <FilePathData Path="image2/hall/roomnum_bg.png" />
+    </ImageFiles>
+    <MaxSize Width="2048" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

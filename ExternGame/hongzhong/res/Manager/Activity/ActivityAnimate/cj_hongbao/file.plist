@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/1_001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,321},{151,142}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/1_002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{299,3},{117,140}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/2_001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{151,3},{151,142}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/2_002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{299,293},{117,137}}</string>
+				<key>offset</key>
+				<string>{0,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/3_001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{151,160},{151,142}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/3_002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{299,149},{117,138}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/4_001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{151,317},{151,142}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/4_002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{422,146},{117,135}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/5_001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,3},{153,142}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/5_002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{422,287},{117,135}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/6_001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,162},{153,142}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+			<key>Manager/Activity/ActivityAnimate/cj_hongbao/6_002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{422,3},{117,137}}</string>
+				<key>offset</key>
+				<string>{0,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{168,168}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>file.png</string>
+			<key>realTextureFileName</key>
+			<string>file.png</string>
+			<key>size</key>
+			<string>{1024,512}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1024</integer>
+			<key>height</key>
+			<integer>512</integer>
+		</dict>
+	</dict>
+</plist>

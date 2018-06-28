@@ -1,0 +1,22 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="watchGif" Type="Plist" ID="0d8168dc-e2fe-4ca0-b111-eccd90d4c5f3" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="3" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/watchGif/bg.png" />
+      <FilePathData Path="image2/watchGif/ani_poshui_001.png" />
+      <FilePathData Path="image2/watchGif/ani_poshui_002.png" />
+      <FilePathData Path="image2/watchGif/ani_poshui_003.png" />
+      <FilePathData Path="image2/watchGif/ani_poshui_004.png" />
+      <FilePathData Path="image2/watchGif/ani_poshui_005.png" />
+      <FilePathData Path="image2/watchGif/ani_poshui_006.png" />
+      <FilePathData Path="image2/watchGif/ani_poshui_007.png" />
+      <FilePathData Path="image2/watchGif/ani_poshui_008.png" />
+      <FilePathData Path="image2/watchGif/ani_poshui_009.png" />
+      <FilePathData Path="image2/watchGif/ani_poshui_010.png" />
+      <FilePathData Path="image2/watchGif/btn_liwu.png" />
+      <FilePathData Path="image2/watchGif/btn_zengsong.png" />
+      <FilePathData Path="image2/watchGif/icon_poshui.png" />
+    </ImageFiles>
+    <MaxSize Width="512" Height="512" />
+  </Content>
+</PlistInfoProjectFile>

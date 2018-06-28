@@ -1,0 +1,18 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="9465a78b-2f7f-486a-ae64-d9321829b88f" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="3" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/effect/qixiaodui/fire1.png" />
+      <FilePathData Path="image2/effect/qixiaodui/fire2.png" />
+      <FilePathData Path="image2/effect/qixiaodui/fire3.png" />
+      <FilePathData Path="image2/effect/qixiaodui/fire4.png" />
+      <FilePathData Path="image2/effect/qixiaodui/fire5.png" />
+      <FilePathData Path="image2/effect/qixiaodui/fire6.png" />
+      <FilePathData Path="image2/effect/qixiaodui/fire7.png" />
+      <FilePathData Path="image2/effect/qixiaodui/fire8.png" />
+      <FilePathData Path="image2/effect/qixiaodui/fire9.png" />
+      <FilePathData Path="image2/effect/qixiaodui/qixiaodui.png" />
+    </ImageFiles>
+    <MaxSize Width="2048" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

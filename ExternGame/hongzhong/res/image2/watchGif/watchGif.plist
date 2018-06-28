@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>image2/watchGif/bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{189,109},{100,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{100,100}</string>
+			</dict>
+			<key>image2/watchGif/ani_poshui_001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{187,215},{78,108}}</string>
+				<key>offset</key>
+				<string>{-26,34}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{130,176}</string>
+			</dict>
+			<key>image2/watchGif/ani_poshui_002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{443,117},{37,52}}</string>
+				<key>offset</key>
+				<string>{-37,43}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{130,176}</string>
+			</dict>
+			<key>image2/watchGif/ani_poshui_003.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{112,193},{77,69}}</string>
+				<key>offset</key>
+				<string>{-14,34}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{130,176}</string>
+			</dict>
+			<key>image2/watchGif/ani_poshui_004.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{196,3},{123,100}}</string>
+				<key>offset</key>
+				<string>{-4,11}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{130,176}</string>
+			</dict>
+			<key>image2/watchGif/ani_poshui_005.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,193},{94,103}}</string>
+				<key>offset</key>
+				<string>{5,4}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{130,176}</string>
+			</dict>
+			<key>image2/watchGif/ani_poshui_006.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{295,208},{91,103}}</string>
+				<key>offset</key>
+				<string>{8,-2}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{130,176}</string>
+			</dict>
+			<key>image2/watchGif/ani_poshui_007.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{325,106},{96,112}}</string>
+				<key>offset</key>
+				<string>{11,-9}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{130,176}</string>
+			</dict>
+			<key>image2/watchGif/ani_poshui_008.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,85},{102,120}}</string>
+				<key>offset</key>
+				<string>{14,-23}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{130,176}</string>
+			</dict>
+			<key>image2/watchGif/ani_poshui_009.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{325,3},{97,117}}</string>
+				<key>offset</key>
+				<string>{11,-29}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{130,176}</string>
+			</dict>
+			<key>image2/watchGif/ani_poshui_010.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{129,85},{72,54}}</string>
+				<key>offset</key>
+				<string>{-1,-7}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{130,176}</string>
+			</dict>
+			<key>image2/watchGif/btn_liwu.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{448,3},{58,61}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{58,61}</string>
+			</dict>
+			<key>image2/watchGif/btn_zengsong.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{3,3},{187,76}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{187,76}</string>
+			</dict>
+			<key>image2/watchGif/icon_poshui.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{448,67},{44,61}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{72,62}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>watchGif.png</string>
+			<key>realTextureFileName</key>
+			<string>watchGif.png</string>
+			<key>size</key>
+			<string>{512,512}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>512</integer>
+			<key>height</key>
+			<integer>512</integer>
+		</dict>
+	</dict>
+</plist>

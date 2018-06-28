@@ -1,0 +1,18 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="eb55eddf-aa64-484b-af18-03eae7f19145" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="False" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/club/icon/icon1.png" />
+      <FilePathData Path="image2/club/icon/icon10.png" />
+      <FilePathData Path="image2/club/icon/icon2.png" />
+      <FilePathData Path="image2/club/icon/icon3.png" />
+      <FilePathData Path="image2/club/icon/icon4.png" />
+      <FilePathData Path="image2/club/icon/icon5.png" />
+      <FilePathData Path="image2/club/icon/icon6.png" />
+      <FilePathData Path="image2/club/icon/icon7.png" />
+      <FilePathData Path="image2/club/icon/icon8.png" />
+      <FilePathData Path="image2/club/icon/icon9.png" />
+    </ImageFiles>
+    <MaxSize Width="512" Height="256" />
+  </Content>
+</PlistInfoProjectFile>

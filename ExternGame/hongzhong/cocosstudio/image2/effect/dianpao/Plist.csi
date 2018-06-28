@@ -1,0 +1,12 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="9b336fc5-9545-4450-81d5-f77043741720" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="False" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="image2/effect/dianpao/dianpao1.png" />
+      <FilePathData Path="image2/effect/dianpao/dianpao2.png" />
+      <FilePathData Path="image2/effect/dianpao/dianpao3.png" />
+      <FilePathData Path="image2/effect/dianpao/dianpao4.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>
