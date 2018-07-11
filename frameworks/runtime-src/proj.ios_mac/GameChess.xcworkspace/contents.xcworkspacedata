@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../cocos2d-x/tools/simulator/libsimulator/proj.ios_mac/libsimulator.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../cocos2d-x/build/cocos2d_libs.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:GameChess.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,45 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++E5FB54E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++E5FB54E" : {
+
+    },
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++F6A848A" : {
+
+    },
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++77C4539" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++E5FB54E" : 9223372036854775807,
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++F6A848A" : 0,
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++77C4539" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B3A3ACEA-4A32-46E2-9909-9B3E0E8003E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++E5FB54E" : "GameChess_backup\/",
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++F6A848A" : "GameChess_appstore\/",
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++77C4539" : "GameChess_appstore\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GameChess",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "frameworks\/runtime-src\/proj.ios_mac\/GameChess.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.208\/svn\/project",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++77C4539"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.208\/svn\/project",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++E5FB54E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.208\/svn\/project",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0d077090-3cc5-0e4d-93b8-0931df28d67e++1818+++F6A848A"
+    }
+  ]
+}

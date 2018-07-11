@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0d077090-3cc5-0e4d-93b8-0931df28d67e",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B3A3ACEA-4A32-46E2-9909-9B3E0E8003E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0d077090-3cc5-0e4d-93b8-0931df28d67e" : "project\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GameChess",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "newProject\/GameChess\/frameworks\/runtime-src\/proj.ios_mac\/GameChess.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.208\/svn\/project",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0d077090-3cc5-0e4d-93b8-0931df28d67e"
+    }
+  ]
+}

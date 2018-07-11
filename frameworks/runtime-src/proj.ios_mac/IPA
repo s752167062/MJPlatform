@@ -1,0 +1,26 @@
+
+filepath=$(cd "$(dirname "$0")"; pwd)
+
+DATE=$(date +%H%M)
+echo ${DATE}
+
+CODE_SIGN_NAME="iPhone Distribution: Guangzhou Yingzheng Information Technology Co.,Ltd"
+#CODE_SIGN_NAME="iPhone Distribution: JYall Technology Co.Ltd."
+
+PROJECT_PATH=$filepath
+
+PRODUCT_PATH=/Users/$LOGNAME/Desktop
+ 
+PRODUCT_PATH=${PROJECT_PATH}"/build/Release-iphoneos"
+
+IPA_NAME=${PRODUCT_PATH}"/GameChess_Release_${DATE}.ipa"
+
+xcodebuild -project ${PROJECT_PATH}/GameChess.xcodeproj -target "GameChess-inhouse" clean
+ 
+xcodebuild -project ${PROJECT_PATH}/GameChess.xcodeproj -sdk iphoneos -scheme "GameChess-inhouse" -configuration SignRelease CONFIGURATION_BUILD_DIR=${PRODUCT_PATH} CODE_SIGN_IDENTITY="${CODE_SIGN_NAME}"
+ 
+xcrun -sdk iphoneos PackageApplication -v ${PRODUCT_PATH}"/GameChess-inhouse.app" -o ${IPA_NAME} CODE_SIGN_IDENTITY "${CODE_SIGN_NAME}" --embed "pacaifubaoent_InHouse.mobileprovision"
+ 
+open ${PRODUCT_PATH}
+
+
