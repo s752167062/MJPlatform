@@ -29,14 +29,25 @@
                 <PreSize X="0.7431" Y="0.5833" />
                 <FileData Type="MarkedSubImage" Path="AppPlatform/ui/image_club/com_tbtn/btn_shezhiwanfa.png" Plist="AppPlatform/ui/image_club/com_tbtn/Plist.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="txt_gameName" ActionTag="1282317159" Tag="96" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="40.5000" RightMargin="40.5000" TopMargin="19.0000" BottomMargin="19.0000" FontSize="30" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="txt_gameName" ActionTag="1282317159" Tag="96" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="40.5000" RightMargin="40.5000" TopMargin="10.0000" BottomMargin="28.0000" FontSize="30" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="137.0000" Y="34.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="109.0000" Y="36.0000" />
+                <Position X="109.0000" Y="45.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="250" B="174" />
-                <PrePosition X="0.5000" Y="0.5000" />
+                <PrePosition X="0.5000" Y="0.6250" />
                 <PreSize X="0.6284" Y="0.4722" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="txt_id" ActionTag="1083977932" Tag="7" IconVisible="False" LeftMargin="67.5000" RightMargin="67.5000" TopMargin="38.5000" BottomMargin="12.5000" FontSize="18" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="83.0000" Y="21.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="109.0000" Y="23.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5000" Y="0.3194" />
+                <PreSize X="0.3807" Y="0.2917" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

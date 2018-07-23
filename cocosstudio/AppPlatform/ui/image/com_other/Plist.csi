@@ -25,6 +25,6 @@
       <FilePathData Path="AppPlatform/ui/image/com_other/img_clubEmpty.png" />
       <FilePathData Path="AppPlatform/ui/image/com_other/loginUI_declaration.png" />
     </ImageFiles>
-    <MaxSize Width="1024" Height="1024" />
+    <MaxSize Width="2048" Height="1024" />
   </Content>
 </PlistInfoProjectFile>

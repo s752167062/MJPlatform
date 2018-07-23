@@ -12,7 +12,7 @@
               <AbstractNodeData Name="btn" ActionTag="-200047605" Tag="171" IconVisible="False" LeftMargin="1.6623" RightMargin="-15.6623" TopMargin="-10.5968" BottomMargin="0.8922" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="194" Scale9Height="62" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="224.0000" Y="84.0000" />
                 <Children>
-                  <AbstractNodeData Name="txt" ActionTag="-1920077644" Tag="787" IconVisible="False" LeftMargin="17.1523" RightMargin="24.8477" TopMargin="25.0100" BottomMargin="27.9900" FontSize="26" LabelText="绑定代理福利多" OutlineEnabled="True" ShadowOffsetX="0.1000" ShadowOffsetY="0.1000" ctype="TextObjectData">
+                  <AbstractNodeData Name="txt" ActionTag="-1920077644" Tag="787" IconVisible="False" LeftMargin="17.1523" RightMargin="24.8477" TopMargin="25.0100" BottomMargin="27.9900" FontSize="26" LabelText="绑定代理福利多" OutlineSize="0" OutlineEnabled="True" ShadowOffsetX="0.1000" ShadowOffsetY="0.1000" ctype="TextObjectData">
                     <Size X="182.0000" Y="31.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="108.1523" Y="43.4900" />
@@ -20,7 +20,7 @@
                     <CColor A="255" R="214" G="95" B="8" />
                     <PrePosition X="0.4828" Y="0.5177" />
                     <PreSize X="0.8125" Y="0.3690" />
-                    <OutlineColor A="255" R="127" G="152" B="126" />
+                    <OutlineColor A="255" R="255" G="255" B="255" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
                 </Children>

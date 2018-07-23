@@ -7,40 +7,40 @@
 			<key>AppPlatform/ui/image/com_other/bar_1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{345,1281},{374,26}}</string>
+				<string>{{1281,345},{374,26}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{376,29}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/bar1_bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{312,1281},{376,29}}</string>
+				<string>{{1281,312},{376,29}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{376,29}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/fenge.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{650,2},{63,512}}</string>
+				<string>{{2,650},{63,512}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{63,512}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/head.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{180,1281},{128,128}}</string>
+				<string>{{1281,180},{128,128}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -51,187 +51,187 @@
 			<key>AppPlatform/ui/image/com_other/img_headFrame.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{2,1362},{114,112}}</string>
+				<string>{{1362,2},{114,112}}</string>
 				<key>offset</key>
 				<string>{2,-3}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{124,123}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/line.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{607,382},{2,59}}</string>
+				<string>{{382,607},{2,59}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{2,59}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/loading_bar.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{375,1281},{202,24}}</string>
+				<string>{{1281,375},{202,24}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{202,24}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/loading_bar_bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{2,1478},{204,30}}</string>
+				<string>{{1478,2},{204,30}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{204,30}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/loadingbar2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{424,382},{812,32}}</string>
+				<string>{{382,424},{812,32}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{812,32}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/loadingbar2_bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{618,212},{806,26}}</string>
+				<string>{{212,618},{806,26}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{812,32}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/loadingbar2_light.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{120,1362},{114,56}}</string>
+				<string>{{1362,120},{114,56}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{114,56}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/logo.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{180,1198},{220,79}}</string>
+				<string>{{1198,180},{220,79}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{220,79}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/shopUI_card1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{2,1198},{160,174}}</string>
+				<string>{{1198,2},{160,174}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{160,174}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/shopUI_card2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{460,382},{188,143}}</string>
+				<string>{{382,460},{188,143}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{188,143}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/shopUI_gold1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{424,212},{190,166}}</string>
+				<string>{{212,424},{190,166}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{190,166}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/tips_xinxi.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{554,574},{548,38}}</string>
+				<string>{{574,554},{548,38}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{548,38}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/title_majiang.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{460,841},{270,87}}</string>
+				<string>{{841,460},{270,87}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{270,87}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/title_puke.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{460,1115},{265,79}}</string>
+				<string>{{1115,460},{265,79}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{265,79}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/title_zipai.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{460,574},{263,90}}</string>
+				<string>{{574,460},{263,90}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{263,90}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/bg_gonggao.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{404,1198},{390,38}}</string>
+				<string>{{1198,404},{390,38}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{390,38}</string>
 			</dict>
 			<key>AppPlatform/ui/image/com_other/img_clubEmpty.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{424,2},{222,206}}</string>
+				<string>{{2,424},{222,206}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{222,206}</string>
 			</dict>
@@ -242,7 +242,7 @@
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{418,399}</string>
 			</dict>
@@ -256,14 +256,14 @@
 			<key>realTextureFileName</key>
 			<string>Plist.png</string>
 			<key>size</key>
-			<string>{1024,2048}</string>
+			<string>{2048,1024}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>1024</integer>
-			<key>height</key>
 			<integer>2048</integer>
+			<key>height</key>
+			<integer>1024</integer>
 		</dict>
 	</dict>
 </plist>
