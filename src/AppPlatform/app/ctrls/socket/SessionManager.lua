@@ -82,6 +82,7 @@ function SessionManager:destorySession()
         self._session:netClose("Destory session")
     end
     self._session = nil
+    self._retryTask = nil
 end
 
 --创建一个网络会话

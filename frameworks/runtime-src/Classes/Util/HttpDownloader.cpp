@@ -22,7 +22,7 @@ HttpDownloader* HttpDownloader::getInstance()
 
 void HttpDownloader::httpGetRequest(const char * nameAcall, const char * url)
 {
-    CCLOG("Http Get : %s\n %s  \n\n" , nameAcall , url) ;
+    log("Http Get : %s\n %s  \n\n" , nameAcall , url) ;
     HttpRequest* request = new HttpRequest();
     request->setUrl(url);
     request->setRequestType(HttpRequest::Type::GET);
@@ -35,7 +35,7 @@ void HttpDownloader::httpGetRequest(const char * nameAcall, const char * url)
 
 void HttpDownloader::httpPostRequest(const char * nameAcall , const char * url , const char* params)
 {
-    CCLOG("Http Post : %s\n %s \n %s \n\n" , nameAcall , url , params) ;
+    log("Http Post : %s\n %s \n %s \n\n" , nameAcall , url , params) ;
     HttpRequest* request = new HttpRequest();
     request->setUrl(url);
     request->setRequestType(HttpRequest::Type::POST);
@@ -54,8 +54,8 @@ void HttpDownloader::onRequestCompleated(HttpClient* sender, HttpResponse* respo
 
     if (!response || !response->isSucceed())
     {
-        CCLOG("response failed");
-        CCLOG("error buffer: %s", response->getErrorBuffer());
+        log("response failed");
+        log("error buffer: %s", response->getErrorBuffer());
         return;
     }
     const char* nameAcall = response->getHttpRequest()->getTag();
@@ -64,8 +64,8 @@ void HttpDownloader::onRequestCompleated(HttpClient* sender, HttpResponse* respo
     const char * filename = str.substr(0 , index).c_str();
     const char * callfunc = str.substr(index + 1 , str.length() - (index + 1)).c_str();
     
-    CCLOG("%s completed", filename);
-    CCLOG("response code: %d", (int)response->getResponseCode());
+    log("%s completed", filename);
+    log("response code: %d", (int)response->getResponseCode());
 
     // dump data
     std::vector<char> *buffer = response->getResponseData();
@@ -74,7 +74,7 @@ void HttpDownloader::onRequestCompleated(HttpClient* sender, HttpResponse* respo
     std::string buff( buffer->begin(),buffer->end() );
     
     //保存到本地文件
-    CCLOG("****  Savepath: %s",path.c_str());
+    log("****  Savepath: %s",path.c_str());
     FILE *fp = fopen(path.c_str(), "wb+");
     fwrite(buff.c_str(), 1,buffer->size(),  fp);
     fclose(fp);
@@ -99,7 +99,7 @@ void HttpDownloader::onCompleatedCallToLua(int code ,const char* filename , cons
 
 void HttpDownloader::HttpDownloadFile(const char * callfunc , const char* name, const char * url)
 {
-    CCLOG("Download File %s , %s , %s ",name , url , callfunc);
+    log("Download File %s , %s , %s ",name , url , callfunc);
     auto path = FileUtils::getInstance()->getWritablePath() + name;
 
     network::Downloader* downloader = new network::Downloader(); ///xiong
@@ -110,7 +110,7 @@ void HttpDownloader::HttpDownloadFile(const char * callfunc , const char* name, 
     downloader->onTaskProgress = [this , name](const network::DownloadTask& task, int64_t bytesReceived, int64_t totalBytesReceived, int64_t totalBytesExpected)
     {
         float percent = float(totalBytesReceived * 100) / totalBytesExpected ;
-        CCLOG("%.1f% [total %d KB] %s" , percent ,int(totalBytesExpected/1024) ,name);
+        log("%.1f% [total %d KB] %s" , percent ,int(totalBytesExpected/1024) ,name);
     };
     
     downloader->onFileTaskSuccess = [this , name ,callfunc ,downloader](const cocos2d::network::DownloadTask& task)
@@ -124,7 +124,7 @@ void HttpDownloader::HttpDownloadFile(const char * callfunc , const char* name, 
     
     downloader->onTaskError = [this , name ,callfunc](const cocos2d::network::DownloadTask& task, int errorCode,  int errorCodeInternal, const std::string& errorStr)
     {
-        CCLOG("Failed to download : %s, identifier(%s) error code(%d), internal error code(%d) desc(%s)"
+        log("Failed to download : %s, identifier(%s) error code(%d), internal error code(%d) desc(%s)"
             , task.requestURL.c_str()
             , task.identifier.c_str()
             , errorCode

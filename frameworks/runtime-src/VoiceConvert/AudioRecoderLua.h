@@ -25,6 +25,7 @@ class AudioRecoderLua{
     static int StopPlayVideo(lua_State* ls);
     
     static int setAVAudioSessionCategory(lua_State* ls);
+    static int setGameBaseDirectory(lua_State* ls);
     
 };
 #endif /* AudioRecoderLua_hpp */

@@ -9,6 +9,7 @@ function ViewBase:ctor(app, name)
     -- check CSB resource file
     local res = rawget(self.class, "RESOURCE_FILENAME")
     if res then
+        release_print(" res >>> RESOURCE_FILENAME ", res)
         self:createResoueceNode(res)
     end
 

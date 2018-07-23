@@ -22,21 +22,22 @@ function GameState:_handle(s_data)
 	if s_data.state == GAMESTATE.STATE_LOGO then		--LOGO状态
 		self:_handleLogo(self._currState.state,s_data.state)
 	elseif s_data.state == GAMESTATE.STATE_LOGIN then 	--登录状态
-		externGameMgr:exitGameByName()
 		self:_handleLogin(self._currState.state,s_data.state)
 	elseif s_data.state == GAMESTATE.STATE_UPDATE then 	--更新状态
-		externGameMgr:exitGameByName()
 		self:_handleUpdate(self._currState.state,s_data.state)
 	elseif s_data.state == GAMESTATE.STATE_COMMHALL then --大厅状态(综合大厅)
 		self:_handleHall(self._currState.state,s_data.state)
 	elseif s_data.state == GAMESTATE.STATE_HALL then	--大厅状态(游戏大厅)
+
+	elseif s_data.state == GAMESTATE.STATE_LOADING then	--loading
+		self:_handleLoading(self._currState.state,s_data.state)
 		
-	elseif s_data.state == GAMESTATE.STATE_ROOM then	--房间状态
-		self:_handleRoom(self._currState.state,s_data.state)
-	elseif s_data.state == GAMESTATE.STATE_OVER then	--结算状态(总结算)
-		self:_handleOver(self._currState.state,s_data.state)
-	elseif s_data.state == GAMESTATE.STATE_CLUB then    --俱乐部状态
-		self:_handleClub(self._currState.state,s_data.state)
+	-- elseif s_data.state == GAMESTATE.STATE_ROOM then	--房间状态
+	-- 	self:_handleRoom(self._currState.state,s_data.state)
+	-- elseif s_data.state == GAMESTATE.STATE_OVER then	--结算状态(总结算)
+	-- 	self:_handleOver(self._currState.state,s_data.state)
+	-- elseif s_data.state == GAMESTATE.STATE_CLUB then    --俱乐部状态
+	-- 	self:_handleClub(self._currState.state,s_data.state)
 	else 												--无类型状态
 		dump(msgMgr:getMsg("MSG_NO_TYPE_STATE")..s_data.state)
 	end
@@ -58,6 +59,7 @@ end
 --处理进入登录状态
 function GameState:_handleLogin(c_state,n_state)
 	if self._gameApp then
+		gameNetMgr:setServerId(0)
 		self._gameApp:enterScene({sceneName = "loginScene_view"})
 		audioMgr:playMusic("loginMusic.mp3",true)
 	end
@@ -79,6 +81,18 @@ function GameState:_handleHall(c_state,n_state)
 		audioMgr:playMusic("hallMusic.mp3",true)
 		--增加跑马灯
     	marqueeMgr:changeScene()
+	end
+end
+
+--处理进入loading状态, 退出游戏不需要设置enterParams
+--params={gameName}
+function GameState:_handleLoading(c_state,n_state)
+	if self._gameApp then
+		local view = self._gameApp:enterScene({sceneName = "ChangeLoadingScene_view"})
+		if self._nextState and self._nextState.enterParams then
+			view:setEnterData(self._nextState.enterParams.params, self._nextState.enterParams.cb)
+		end
+
 	end
 end
 
@@ -123,6 +137,16 @@ function GameState:changeState(state,callback,params, isLock)
 	self._nextState = {state = state,callback = {fun = callback,params = params}, isLock = isLock}
 end
 
+--设置进入场景参数
+function GameState:setEnterParams(state, params, cb)
+	cclog("GameState:setEnterParams >>", self._nextState.state, state)
+	if self._nextState and self._nextState.state == state then
+		cclog("GameState:setEnterParams 222>>")
+		self._nextState.enterParams = {cb = cb, params = params}
+	end
+	
+end
+
 --获取状态
 function GameState:getState()
 	return self._currState.state
@@ -144,6 +168,12 @@ function GameState:unlockState(state)
 	if self._currState and self._currState.state == state then
 		self._currState.isLock = false
 	end
+end
+
+--游戏中返回登陆界面，场景切换，游戏内存移除，网络断开
+function GameState:gotoLoginScene()
+	gameState:changeState(GAMESTATE.STATE_LOGIN)
+	gameNetMgr:destorySession()
 end
 
 return GameState

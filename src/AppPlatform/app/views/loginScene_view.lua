@@ -13,6 +13,7 @@ function LoginScene:onCreate()
 end
 
 function LoginScene:onEnter()
+    externGameMgr:exitGameByName()
     --重置登陆锁
     singleMgr:resetLock("login")
     --注册计时器
@@ -22,6 +23,8 @@ function LoginScene:onEnter()
     --初始化App跳转参数监听
     comFunMgr:initJumperLisiener()
     -- gameConfMgr:setInfo("LoginView2HallView",true)
+    UrNetMgr:init()
+    UrNetMgr:changeGroupKey("hhhhhhhhhhhhhhhhh")
 end
 
 function LoginScene:_initUI()

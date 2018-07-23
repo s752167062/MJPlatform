@@ -587,7 +587,7 @@ bool GameSocket::receiveMsg(void *buff, long &size) {
 	return true;
 	}
 	*/
-
+    log("GameSocket::receiveMsg %d,%d,%d>>", _msg_size, m_buff_in_size, INBUFFSIZE);
 	if (_msg_size <= 0 || _msg_size > INBUFFSIZE) {
 		m_buff_in_size = 0;
 		m_buff_in_index = 0;

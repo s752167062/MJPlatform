@@ -123,7 +123,9 @@ require (__platformHomeDir .. "globalTimerManager")
 
 
 
-
+        -- tmp = release_print
+        -- release_print = function() end
+        -- release_print = tmp
 
 
 

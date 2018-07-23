@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		331867251F3B3E3B00125402 /* HttpUploadVoice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 331867231F3B3E3A00125402 /* HttpUploadVoice.cpp */; };
 		3318672B1F3B43F100125402 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3318672A1F3B43F100125402 /* libcurl.a */; };
 		335BBF491F1DECDC006AE038 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 335BBF481F1DECDC006AE038 /* SFHFKeychainUtils.m */; };
 		3365D0AC1F90B205005EC863 /* JumperController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3365D0AB1F90B205005EC863 /* JumperController.m */; };
@@ -79,7 +78,6 @@
 		B60A7D741FD7C9B800595F94 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B60A7D691FD7C9B700595F94 /* Default-Landscape~ipad.png */; };
 		B60A7D751FD7C9B800595F94 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B60A7D691FD7C9B700595F94 /* Default-Landscape~ipad.png */; };
 		B60A7D761FD7D49D00595F94 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D3D3031EEB87C30080E1FF /* libWeChatSDK.a */; };
-		B65EFC551F417E2A00D0E39F /* HttpUploadVoice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 331867231F3B3E3A00125402 /* HttpUploadVoice.cpp */; };
 		B68779DA202024BD00773678 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B68779DB202024BD00773678 /* libcocos2d Mac.a */; };
 		B68779DE2020254300773678 /* libluacocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B68779E32020254300773678 /* libluacocos2d Mac.a */; };
 		B68779E02020254300773678 /* libsimulator Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B68779E52020254300773678 /* libsimulator Mac.a */; };
@@ -146,7 +144,6 @@
 		B68F46241FCBEB3E009A056E /* DataBuff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BCE51EE53ACA00E9519C /* DataBuff.cpp */; };
 		B68F46251FCBEB3E009A056E /* AmrWavAudioRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F5519E1EF004B9004B7BBB /* AmrWavAudioRecoder.m */; };
 		B68F46261FCBEB3E009A056E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023811417EBBCAC00990C9B /* main.m */; };
-		B68F46271FCBEB3E009A056E /* HttpUploadVoice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 331867231F3B3E3A00125402 /* HttpUploadVoice.cpp */; };
 		B68F46281FCBEB3E009A056E /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */; };
 		B68F46291FCBEB3E009A056E /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5023810817EBBCAC00990C9B /* AppController.mm */; };
 		B68F462A1FCBEB3E009A056E /* GPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B830A11F26F36D00C5E530 /* GPSController.m */; };
@@ -201,6 +198,9 @@
 		C07828F818B4D72E00BD2287 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C07828F418B4D72E00BD2287 /* main.m */; };
 		C07828FA18B4D72E00BD2287 /* SimulatorApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = C07828F718B4D72E00BD2287 /* SimulatorApp.mm */; };
 		DA9E7D881AB1ABCC004B27C8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9E7D871AB1ABCC004B27C8 /* Security.framework */; };
+		E4800C8720E09316009B2DD9 /* HttpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4800C8520E09316009B2DD9 /* HttpUtils.cpp */; };
+		E4800C8820E09316009B2DD9 /* HttpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4800C8520E09316009B2DD9 /* HttpUtils.cpp */; };
+		E4800C8920E09316009B2DD9 /* HttpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4800C8520E09316009B2DD9 /* HttpUtils.cpp */; };
 		E48187AB20AEC7810039AE8B /* DDSDKController.m in Sources */ = {isa = PBXBuildFile; fileRef = E48187A720AEC7810039AE8B /* DDSDKController.m */; };
 		E48187AC20AEC7810039AE8B /* DDSDKController.m in Sources */ = {isa = PBXBuildFile; fileRef = E48187A720AEC7810039AE8B /* DDSDKController.m */; };
 		E48187AD20AEC7810039AE8B /* DDSDKLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E48187A820AEC7810039AE8B /* DDSDKLua.cpp */; };
@@ -240,8 +240,6 @@
 
 /* Begin PBXFileReference section */
 		15427CE2198F237300DC375D /* lua_module_register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lua_module_register.h; path = ../Classes/lua_module_register.h; sourceTree = "<group>"; };
-		331867231F3B3E3A00125402 /* HttpUploadVoice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpUploadVoice.cpp; sourceTree = "<group>"; };
-		331867241F3B3E3A00125402 /* HttpUploadVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpUploadVoice.h; sourceTree = "<group>"; };
 		3318672A1F3B43F100125402 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "../../cocos2d-x/external/curl/prebuilt/ios/libcurl.a"; sourceTree = "<group>"; };
 		335BBF471F1DECDC006AE038 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
 		335BBF481F1DECDC006AE038 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
@@ -381,6 +379,8 @@
 		C07828F618B4D72E00BD2287 /* SimulatorApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulatorApp.h; sourceTree = "<group>"; };
 		C07828F718B4D72E00BD2287 /* SimulatorApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SimulatorApp.mm; sourceTree = "<group>"; };
 		DA9E7D871AB1ABCC004B27C8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E4800C8520E09316009B2DD9 /* HttpUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpUtils.cpp; sourceTree = "<group>"; };
+		E4800C8620E09316009B2DD9 /* HttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpUtils.h; sourceTree = "<group>"; };
 		E48187A620AEC7810039AE8B /* DDSDKController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSDKController.h; sourceTree = "<group>"; };
 		E48187A720AEC7810039AE8B /* DDSDKController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSDKController.m; sourceTree = "<group>"; };
 		E48187A820AEC7810039AE8B /* DDSDKLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DDSDKLua.cpp; sourceTree = "<group>"; };
@@ -786,8 +786,8 @@
 		B6A9BCED1EE53ACA00E9519C /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				331867231F3B3E3A00125402 /* HttpUploadVoice.cpp */,
-				331867241F3B3E3A00125402 /* HttpUploadVoice.h */,
+				E4800C8520E09316009B2DD9 /* HttpUtils.cpp */,
+				E4800C8620E09316009B2DD9 /* HttpUtils.h */,
 				B6A9BCEE1EE53ACA00E9519C /* audioController.h */,
 				B6A9BCEF1EE53ACA00E9519C /* audioController.mm */,
 				B6A9BCF01EE53ACA00E9519C /* HttpDownloader.cpp */,
@@ -1157,6 +1157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B693BBAF1EE6549A0063CA14 /* GameGlobalFunMgr.cpp in Sources */,
+				E4800C8820E09316009B2DD9 /* HttpUtils.cpp in Sources */,
 				B693BBB31EE654A40063CA14 /* ToolBASE64.cpp in Sources */,
 				C07828FA18B4D72E00BD2287 /* SimulatorApp.mm in Sources */,
 				B693BBB01EE6549D0063CA14 /* DataBuff.cpp in Sources */,
@@ -1164,7 +1165,6 @@
 				5023813317EBBCE400990C9B /* AppDelegate.cpp in Sources */,
 				9FF504851A5E87B100AFDA55 /* ConsoleWindowController.m in Sources */,
 				B693BBB21EE654A20063CA14 /* GameSocket.cpp in Sources */,
-				B65EFC551F417E2A00D0E39F /* HttpUploadVoice.cpp in Sources */,
 				B693BBB51EE654AC0063CA14 /* HttpDownloader.cpp in Sources */,
 				C07828F818B4D72E00BD2287 /* main.m in Sources */,
 				9FFE00A21ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */,
@@ -1193,6 +1193,7 @@
 				B68F461E1FCBEB3E009A056E /* ToolBASE64.cpp in Sources */,
 				B68F461F1FCBEB3E009A056E /* VoiceConverter.mm in Sources */,
 				33B1EC1B1FFCDA0000BE02B6 /* LameAudioRecoderLua.cpp in Sources */,
+				E4800C8920E09316009B2DD9 /* HttpUtils.cpp in Sources */,
 				E48187AE20AEC7810039AE8B /* DDSDKLua.cpp in Sources */,
 				B68F46201FCBEB3E009A056E /* audioController.mm in Sources */,
 				B68F46211FCBEB3E009A056E /* AppDelegate.cpp in Sources */,
@@ -1201,7 +1202,6 @@
 				B68F46241FCBEB3E009A056E /* DataBuff.cpp in Sources */,
 				B68F46251FCBEB3E009A056E /* AmrWavAudioRecoder.m in Sources */,
 				B68F46261FCBEB3E009A056E /* main.m in Sources */,
-				B68F46271FCBEB3E009A056E /* HttpUploadVoice.cpp in Sources */,
 				B68F46281FCBEB3E009A056E /* RuntimeLuaImpl.cpp in Sources */,
 				B68F46291FCBEB3E009A056E /* AppController.mm in Sources */,
 				E481886220AEC9340039AE8B /* MyIGamingRtcEngineEventHandler.cpp in Sources */,
@@ -1240,6 +1240,7 @@
 				B6A9BCF81EE53ACA00E9519C /* ToolBASE64.cpp in Sources */,
 				33F551B31EF004B9004B7BBB /* VoiceConverter.mm in Sources */,
 				33B1EC1A1FFCDA0000BE02B6 /* LameAudioRecoderLua.cpp in Sources */,
+				E4800C8720E09316009B2DD9 /* HttpUtils.cpp in Sources */,
 				E48187AD20AEC7810039AE8B /* DDSDKLua.cpp in Sources */,
 				B693BBB61EE6554E0063CA14 /* audioController.mm in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
@@ -1248,7 +1249,6 @@
 				B6A9BCF51EE53ACA00E9519C /* DataBuff.cpp in Sources */,
 				33F551AE1EF004B9004B7BBB /* AmrWavAudioRecoder.m in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
-				331867251F3B3E3B00125402 /* HttpUploadVoice.cpp in Sources */,
 				9FFE00A11ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 				E481886120AEC9340039AE8B /* MyIGamingRtcEngineEventHandler.cpp in Sources */,

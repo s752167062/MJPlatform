@@ -22,8 +22,10 @@
 - (void)PlayAmr:(NSString *)filename Directory:(NSString *) directory CallBack:(void(^)(BOOL))callfunc;
 - (void)PlayAmr:(NSString *)filepath CallBack:(void(^)(BOOL))callfunc;
 
-- (void)PlayVideo:(NSString *) filepath CallBack:(void(^)(BOOL))callfunc;
+- (void)PlayVideo:(NSString *)filepath CallBack:(void(^)(BOOL))callfunc;
 - (void)StopVideo;
+- (void)setDirectory:(NSString *)directory;
+- (NSString *)getDirectory;
 @end
 
 #endif /* AmrWavAudioRecoder_h */

@@ -22,9 +22,8 @@ function GatewaySendMgr:changePlatformOrGame(params)
 
 end
 
+--给玩家发消息
 function GatewaySendMgr:sendMsgToPlayer(tab)
-
-
 	
 	if tab.game_enent_type == "respInviteJoinGroup" then  --邀请加入俱乐部消息发送
 	elseif tab.game_enent_type == "reqInvteJoinRoom" then --邀请加入房间
@@ -32,7 +31,7 @@ function GatewaySendMgr:sendMsgToPlayer(tab)
 
 
 	local json_str = jdk.encode(tab)
-	cclog("GatewaySendMgr:changePlatformOrGame >>>", json_str)
+	cclog("GatewaySendMgr:sendMsgToPlayer >>>", json_str)
 
 	local obj = Write.new(30005)
 	obj:writeString(json_str)
@@ -61,7 +60,7 @@ end
 
 --仅能在30006的返回调用
 function GatewaySendMgr:sendGotoGame(product, version, roomId)
-
+	cclog("GatewaySendMgr:sendGotoGame >>", product, version, roomId)
 
 	local obj = Write.new(30007)
 	obj:writeString(product)

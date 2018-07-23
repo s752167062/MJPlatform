@@ -6,7 +6,7 @@
 
 #include "GameGlobalFunMgr.h"
 #include "Util/HttpDownloader.h"
-#include "Util/HttpUploadVoice.h"
+//#include "Util/HttpUploadVoice.h"
 #include "cocos2d.h"
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
@@ -42,10 +42,10 @@ void GameGlobalFunMgr::bind(lua_State *ls)
 	lua_register(ls, "cpp_string_bit_xor", cpp_string_bit_xor);
 	lua_register(ls, "cpp_getFGroupName", cpp_getFGroupName);
 
-    lua_register(ls, "cpp_uploadVoice"        , cpp_uploadVoice);
-    lua_register(ls, "cpp_uploadVoice_getName", cpp_uploadVoice_getName);
-    lua_register(ls, "cpp_uploadVoice_getEndFlag"  , cpp_uploadVoice_getEndFlag);
-    lua_register(ls, "cpp_uploadVoice_resetEndFlag", cpp_uploadVoice_resetEndFlag);
+//    lua_register(ls, "cpp_uploadVoice"        , cpp_uploadVoice);
+//    lua_register(ls, "cpp_uploadVoice_getName", cpp_uploadVoice_getName);
+//    lua_register(ls, "cpp_uploadVoice_getEndFlag"  , cpp_uploadVoice_getEndFlag);
+//    lua_register(ls, "cpp_uploadVoice_resetEndFlag", cpp_uploadVoice_resetEndFlag);
     
 //#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 //	lua_register(ls, "cpp_createAudio", cpp_createAudio);
@@ -84,42 +84,42 @@ int GameGlobalFunMgr::cpp_getFGroupName(lua_State *ls)
 	lua_pushstring(ls, name.c_str());
 	return 1;
 }
+//
+//int GameGlobalFunMgr::cpp_uploadVoice(lua_State *ls){
+//    const char* url = lua_tostring(ls, 1);
+//    const char* fileName = lua_tostring(ls, 2);
+//    const char* filePath = lua_tostring(ls, 3);
+//#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
+////    HttpUploadVoice::getInstance()->httpPostRequest_UploadVoice(url, fileName, filePath);
+//#endif
+//    return 0;
+//}
+//
+//int GameGlobalFunMgr::cpp_uploadVoice_getName(lua_State *ls){
+//#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
+////    std::string name = HttpUploadVoice::getInstance()->getVoiceName();
+////    lua_settop(ls, 0);
+////    lua_pushstring(ls,name.c_str());
+//#endif
+//    return 1;
+//}
 
-int GameGlobalFunMgr::cpp_uploadVoice(lua_State *ls){
-    const char* url = lua_tostring(ls, 1);
-    const char* fileName = lua_tostring(ls, 2);
-    const char* filePath = lua_tostring(ls, 3);
-#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
-    HttpUploadVoice::getInstance()->httpPostRequest_UploadVoice(url, fileName, filePath);
-#endif
-    return 0;
-}
-
-int GameGlobalFunMgr::cpp_uploadVoice_getName(lua_State *ls){
-#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
-    std::string name = HttpUploadVoice::getInstance()->getVoiceName();
-    lua_settop(ls, 0);
-    lua_pushstring(ls,name.c_str());
-#endif
-    return 1;
-}
-
-int GameGlobalFunMgr::cpp_uploadVoice_getEndFlag(lua_State *ls){
-#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
-    int flag = HttpUploadVoice::getInstance()->getEndFlag();
-    lua_settop(ls, 0);
-    lua_pushinteger(ls, flag);
-#endif
-    return 1;
-}
-
-
-int GameGlobalFunMgr::cpp_uploadVoice_resetEndFlag(lua_State *ls){
-#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
-    HttpUploadVoice::getInstance()->resetEndFlag();
-#endif
-    return 0;
-}
+//int GameGlobalFunMgr::cpp_uploadVoice_getEndFlag(lua_State *ls){
+//#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
+//    int flag = HttpUploadVoice::getInstance()->getEndFlag();
+//    lua_settop(ls, 0);
+//    lua_pushinteger(ls, flag);
+//#endif
+//    return 1;
+//}
+//
+//
+//int GameGlobalFunMgr::cpp_uploadVoice_resetEndFlag(lua_State *ls){
+//#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
+//    HttpUploadVoice::getInstance()->resetEndFlag();
+//#endif
+//    return 0;
+//}
 
 
 int GameGlobalFunMgr::cpp_log(lua_State* ls)

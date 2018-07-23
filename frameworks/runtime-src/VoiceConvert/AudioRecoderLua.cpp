@@ -35,6 +35,7 @@ void AudioRecoderLua::bind(lua_State* ls){
     lua_register(ls, "cpp_PlayVideo"                , PlayVideo);
     lua_register(ls, "cpp_StopPlayVideo"            , StopPlayVideo);
     lua_register(ls, "cpp_setAVAudioSessionCategory", setAVAudioSessionCategory);
+    lua_register(ls, "cpp_setGameVideoDirectory"    , setGameBaseDirectory);
 }
 
 //开始录制
@@ -128,6 +129,14 @@ int AudioRecoderLua::PlayVideo(lua_State* ls){
 //结束播放
 int AudioRecoderLua::StopPlayVideo(lua_State* ls){
     [[AmrWavAudioRecoder getInstance] StopVideo];
+    return 0;
+}
+
+int AudioRecoderLua::setGameBaseDirectory(lua_State* ls){
+    string desctory      = lua_tostring(ls, 1);
+
+    NSString * directory_c  = [[NSString alloc] initWithCString:(const char*)desctory.c_str() encoding:NSUTF8StringEncoding];
+    [[AmrWavAudioRecoder getInstance] setDirectory:directory_c ];
     return 0;
 }
 

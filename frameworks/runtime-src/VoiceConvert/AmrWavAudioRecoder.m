@@ -23,6 +23,7 @@ typedef void(^PlayCallBack)(BOOL);
 @property (strong, nonatomic)   NSString         *recordFileName;
 @property (strong, nonatomic)   NSString         *recordFilePath;
 
+@property (strong, nonatomic)   NSString         *videoDisctory;
 @property (nonatomic ,strong) PlayCallBack playCallBack;
 
 @end
@@ -52,8 +53,6 @@ static AmrWavAudioRecoder * instance = nil;
 //初始化
 - (void)recorderinit{
     NSLog(@"录音的初始化");
-    //初始化播放器
-    self.player = [[AVAudioPlayer alloc]init];
     //
     [[AVAudioSession sharedInstance] setActive:YES error:nil];
 }
@@ -155,13 +154,13 @@ static AmrWavAudioRecoder * instance = nil;
      
 }
 
-#pragma mark - amr转码播放 wav   ; filepath 文件路径  , directory 文件存放文件目录 . 转码后存放在 NSDocumentDirectory 目录下
+#pragma mark - amr转码播放 wav   ; filepath 文件路径  , directory 文件存放文件目录 . 转码后存放在 NSDocumentDirectory 目录下/ 平台在自己目录下
 - (void)PlayAmr:(NSString *)filenamee Directory:(NSString *) directory CallBack:(void(^)(BOOL))callfunc{
      if(filenamee == nil || filenamee.length < 1 || directory == nil || directory.length < 1 ){
           NSLog(@"空的文件名 或 路径");
           return ;
      }
-     
+    
      NSString * filename ;
      NSRange range = [filenamee rangeOfString:@"."];
      if (range.location > 0 ) {
@@ -193,7 +192,11 @@ static AmrWavAudioRecoder * instance = nil;
           NSLog(@"播放 amr 转 wav 后的文件 ");
 //          [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
           [[AVAudioSession sharedInstance] setActive:YES error:nil];
-          
+         
+         if(self.player ==nil){
+             //初始化播放器
+             self.player = [[AVAudioPlayer alloc]init];
+         }
           self.player = [self.player initWithContentsOfURL:[NSURL URLWithString:convertedPath] error:nil];
           [self.player play];
           
@@ -216,7 +219,7 @@ static AmrWavAudioRecoder * instance = nil;
      
      NSLog(@" 目录 %@" , directory);
      NSLog(@" 文件名 %@" , filename);
-     
+    [FileHelper setBaseDirectory:directory];//设置默认的读取目录
     [self PlayAmr:filename Directory:directory CallBack:callfunc];
 }
 
@@ -232,7 +235,11 @@ static AmrWavAudioRecoder * instance = nil;
     
 //     [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
      [[AVAudioSession sharedInstance] setActive:YES error:nil];
-     
+    
+    if(self.player == nil){
+        //初始化播放器
+        self.player = [[AVAudioPlayer alloc]init];
+    }
      self.player = [self.player initWithContentsOfURL:[NSURL URLWithString:filepath] error:nil];
      self.player.delegate = self;
      [self.player play];
@@ -242,7 +249,7 @@ static AmrWavAudioRecoder * instance = nil;
 #pragma mark - 停止播放
 - (void)StopVideo{
     @try {
-        if(self.player != nil){
+        if(self.player != nil && self.player.isPlaying){
             [self.player stop];
         }
     } @catch (NSException *exception) {
@@ -282,8 +289,13 @@ static AmrWavAudioRecoder * instance = nil;
 //    [self.player play];
 //}
 
+- (void)setDirectory:(NSString *)directory{
+    self.videoDisctory = directory;
+}
 
-
+- (NSString *)getDirectory{
+    return self.videoDisctory;
+}
 /**/
 - (void)alertMsg:(NSString *)msg
 {

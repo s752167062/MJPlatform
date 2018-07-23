@@ -52,8 +52,6 @@ static LameAudioRecoder * instance = nil;
 //初始化
 - (void)recorderinit{
     NSLog(@"录音的初始化");
-    //初始化播放器
-    self.player = [[AVAudioPlayer alloc]init];
     //
     [[AVAudioSession sharedInstance] setActive:YES error:nil];
 }
@@ -70,7 +68,10 @@ static LameAudioRecoder * instance = nil;
          [self alertMsg:@"录音空的文件名"];
          return ;
      }
-     
+    
+    NSLog(@" 目录 %@", directory);
+    [FileHelper setBaseDirectory:directory];//设置默认的读取目录
+    
      NSString * filename ;
      NSRange range = [filenamee rangeOfString:@"."];
      if (range.location > 0 ) {
@@ -190,7 +191,8 @@ static LameAudioRecoder * instance = nil;
           NSLog(@"播放 amr 转 wav 后的文件 ");
 //          [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
           [[AVAudioSession sharedInstance] setActive:YES error:nil];
-          
+         
+          self.player = [[AVAudioPlayer alloc]init];
           self.player = [self.player initWithContentsOfURL:[NSURL URLWithString:convertedPath] error:nil];
           [self.player play];
           
@@ -229,7 +231,8 @@ static LameAudioRecoder * instance = nil;
     
 //     [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
      [[AVAudioSession sharedInstance] setActive:YES error:nil];
-     
+    
+     self.player = [[AVAudioPlayer alloc]init];
      self.player = [self.player initWithContentsOfURL:[NSURL URLWithString:filepath] error:nil];
      self.player.delegate = self;
      [self.player play];

@@ -223,6 +223,13 @@
             </intent-filter>
         </receiver>
       <!-- 阿里推送功能 end-->
+      <receiver android:name="com.pro.game.tools.PhoneReceiver">   
+            <intent-filter android:priority="1000">   
+                <action android:name="android.intent.action.PHONE_STATE"/>    
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>    
+            </intent-filter>   
+        </receiver>  
 
     </application>
 

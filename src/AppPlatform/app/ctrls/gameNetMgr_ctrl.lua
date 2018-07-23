@@ -339,7 +339,7 @@ function GameNetMgr:handleNetError(type,msg,errmsg)
         --检测当前游戏状态机处于什么状态
         local m_state = gameState:getState()
         --若在大厅或者房间,跳回登陆界面
-        if m_state == GAMESTATE.STATE_HALL or m_state == GAMESTATE.STATE_ROOM or m_state == GAMESTATE.STATE_CLUB or m_state == GAMESTATE.STATE_COMMHALL then
+        if m_state >= GAMESTATE.STATE_UPDATE then
             --处理连接失败
             self:_handleNetFail(msgMgr:getMsg("SELECT_LINE_FAIL").."(code:"..self._loginProgress..")")
         else
@@ -352,7 +352,7 @@ function GameNetMgr:handleNetError(type,msg,errmsg)
         --检测当前游戏状态机处于什么状态
         local m_state = gameState:getState()
         --若在大厅或者房间,跳回登陆界面
-        if m_state == GAMESTATE.STATE_HALL or m_state == GAMESTATE.STATE_ROOM or m_state == GAMESTATE.STATE_CLUB or m_state == GAMESTATE.STATE_COMMHALL then
+        if m_state >= GAMESTATE.STATE_UPDATE then
             --处理连接失败
             self:_handleNetFail(msgMgr:getMsg("RE_EMPOWER").."(code:"..self._loginProgress..")")
         else
@@ -366,7 +366,7 @@ function GameNetMgr:handleNetError(type,msg,errmsg)
         --检测当前游戏状态机处于什么状态
         local m_state = gameState:getState()
         --若在大厅或者房间,跳回登陆界面
-        if m_state == GAMESTATE.STATE_HALL or m_state == GAMESTATE.STATE_ROOM or m_state == GAMESTATE.STATE_CLUB or m_state == GAMESTATE.STATE_COMMHALL then
+        if m_state >= GAMESTATE.STATE_UPDATE then
             --处理连接失败
             self:_handleNetFail(msgMgr:getMsg("RE_CONNECT_FAIL").."(code:"..self._loginProgress..")")
         else
@@ -384,7 +384,7 @@ function GameNetMgr:handleNetError(type,msg,errmsg)
         --检测当前游戏状态机处于什么状态
         local m_state = gameState:getState()
         --若在大厅或者房间,跳回登陆界面
-        if m_state == GAMESTATE.STATE_HALL or m_state == GAMESTATE.STATE_ROOM or m_state == GAMESTATE.STATE_CLUB or m_state == GAMESTATE.STATE_COMMHALL then
+        if m_state >= GAMESTATE.STATE_UPDATE then
             --处理连接失败
             self:_handleNetFail(msgMgr:getMsg("SERVER_MSG_ERROR").."(code:"..self._loginProgress..")")
         else
@@ -398,7 +398,7 @@ function GameNetMgr:handleNetError(type,msg,errmsg)
         --检测当前游戏状态机处于什么状态
         local m_state = gameState:getState()
         --若在大厅或者房间,跳回登陆界面
-        if m_state == GAMESTATE.STATE_HALL or m_state == GAMESTATE.STATE_ROOM or m_state == GAMESTATE.STATE_CLUB or m_state == GAMESTATE.STATE_COMMHALL then
+        if m_state >= GAMESTATE.STATE_UPDATE then
             --处理连接失败
             self:_handleNetFail(msgMgr:getMsg("SERVER_ERROR").."(code:"..self._loginProgress..")")
         else

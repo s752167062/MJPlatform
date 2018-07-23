@@ -44,11 +44,11 @@ local sever_index = 1
 local sever_conf = {
     -- {name = "内部测试服",url = "http://120.76.220.130:18888/Login_youruiTest", wx = false},
     -- {name = "微信测试服",url =  "http://120.76.220.130:18888/Login", wx = true},
-    -- {name = "吴达任",url     = "http://192.168.1.99:8888/Login_youruiTest", wx = false},
+    {name = "吴达任",url     = "http://192.168.1.99:28888/Login_youruiTest", wx = false},
     {name = "测试服",url     = "http://120.78.255.24:8888/Login_youruiTest", wx = false},
     {name = "争强",url     = "http://192.168.1.251:8888/Login_youruiTest", wx = false},
     -- {name = "付谦",url       =  "http://192.168.1.68:8888/Login_youruiTest", wx = false},
-    -- {name = "陈志望",url     =  "http://192.168.1.177:8888/Login_youruiTest", wx = false},
+    {name = "陈志望",url     =  "http://192.168.1.177:8889/Login_youruiTest", wx = false},
     -- {name = "李庆东",url     =  "http://192.168.1.230:8888/Login_youruiTest", wx = false},
     -- {name = "林培基",url     =  "http://192.168.1.66:8888/Login_youruiTest", wx = false},
     -- {name = "吴达任微信服",url =  "http://192.168.1.99:8888/Login", wx = true},
@@ -689,13 +689,14 @@ function testMgr:ddshareButton(ui_root)
 	ui_root:addChild(btn,100)
 	btn:setPosition(cc.p(display.left+800,display.bottom+570))
 	btn:addClickEventListener(function()
-			if SDKMgr:ddClientExits() == true and SDKMgr:ddApiSupport() == true then 
-                SDKMgr:ddsdkUrlShare("2222" , "qqqqqqqqq" , "www.jianshu.com", function( ... )
-                    release_print("---- call dd sdkurl share" , ...)
-                end)
-            else
-                platformMgr:open_APP_WebView("https://tms.dingtalk.com/markets/dingtalk/download?spm=a3140.8736650.2231602.9.75185c8ciA9Mkk&source=2202&lwfrom=2017120202092064209309201")
-            end  
+			-- if SDKMgr:ddClientExits() == true and SDKMgr:ddApiSupport() == true then 
+   --              SDKMgr:ddsdkUrlShare("2222" , "qqqqqqqqq" , "www.jianshu.com", function( ... )
+   --                  release_print("---- call dd sdkurl share" , ...)
+   --              end)
+   --          else
+   --              platformMgr:open_APP_WebView("https://tms.dingtalk.com/markets/dingtalk/download?spm=a3140.8736650.2231602.9.75185c8ciA9Mkk&source=2202&lwfrom=2017120202092064209309201")
+   --          end 
+   				platformMgr:stop_audio() 
 		end)
 	testMgr:showSeverName(ui_root)
 

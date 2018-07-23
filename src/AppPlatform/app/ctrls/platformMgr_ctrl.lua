@@ -126,6 +126,17 @@ function PlatformMgr:stop_audio()
 	end
 end
 
+--@平台用，IOS用于玩法中设置读写目录，录音优先查找这个目录
+function PlatformMgr:setGameDirectory(directory)
+	if type(directory) == "string" and directory ~= "" then 
+		if gameConfMgr:getInfo("platform") == 2 then --(1、安卓，2、IOS)
+			if cpp_setGameVideoDirectory then
+				cpp_setGameVideoDirectory(directory)
+			end 
+		end	
+	end 
+end
+
 ------------------------------------------------------------------
 --	  下载	
 --
@@ -937,6 +948,22 @@ function PlatformMgr:JNI_CheckMethod(package,method,args_parme)
 		return false 
 	end	
 end
+
+--（仅限Android用）上传文件
+function PlatformMgr:JNI_UploadFile(url ,name,filedirectory , callback)
+	if gameConfMgr:getInfo("platform") == 1 then
+		local call = function( ... )
+			dump("JNI_UploadFile default_callback " , ...)
+		end
+		local args = { url ,name,filedirectory , callback or call}
+        local packName = "com/pro/game/tools/GameToolsLua"
+        local status = LuaJavaBridge.callStaticMethod(packName,"JNI_UploadFile",args,"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V")-- Ljava/lang/String;
+		if not status then 
+			dump(" //// PlatformMgr --JNI JNI_UploadFile  调用失败 ")
+		end
+	end	
+end
+
 ------------------------------------------------------------------
 --按钮KEY 
 function Key_Event_Listener(event_keycode)
@@ -1011,6 +1038,14 @@ function applicationWillEnterForeground()
     platformExportMgr:dispathEvent(platformExportMgr.Events_WillEnterForeground)
 end	
 
+--手机来电时的状态
+function phoneRingOn()
+	onGame_Paruse()
+end
+
+function phoneRingOff()
+	onGame_Resume()
+end
 return PlatformMgr
 
 

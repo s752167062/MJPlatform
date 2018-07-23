@@ -13,10 +13,12 @@ end
 
 
 function LauncherScene:onEnter()
+    externGameMgr:exitGameByName()
     self:init()
 end
 
 function LauncherScene:onExit()
+    
     gameState:unlockState(GAMESTATE.STATE_UPDATE)
     self.HotUpdateManager:destroy()
 end

@@ -18,6 +18,10 @@
 #include "ide-support/RuntimeLuaImpl.h"
 #endif
 
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
+#include "Util/HttpUtils.h"
+#endif
+
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 #include "WeChatSDKLua.h"
 #include "DDSDKLua.h"
@@ -83,6 +87,10 @@ bool AppDelegate::applicationDidFinishLaunching()
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     agoraGameMgr::getInstance()->bind(L);
+#endif
+    
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
+    HttpUtils::getInstance()->bind(L);
 #endif
     
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)

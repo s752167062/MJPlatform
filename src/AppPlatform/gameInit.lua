@@ -124,21 +124,26 @@ local function registerSingle(app)
 
     --跑马灯管理类
     singleMgr:register("app.ctrls.marqueeMgr_ctrl","marqueeMgr",nil)
+    -- singleMgr:register("app.ctrls.UrNetMgr" , "UrNetMgr",nil)
+
 end
 
 --@游戏全局变量注册(禁止注册任何业务全局变量)
 local function registerGlobValue()
-    --游戏状态机状态类型
+    --游戏状态机状态类型  有>= GAMESTATE.STATE_COMMHALL判断
     GAMESTATE = {
     STATE_NO                = 0,--无状态
     STATE_LOGO              = 1,--LOGO状态
     STATE_LOGIN             = 2,--登录状态
     STATE_UPDATE            = 3,--更新状态
+
     STATE_COMMHALL          = 4,--大厅状态(综合大厅)
     STATE_HALL              = 5,--大厅(游戏大厅)
     STATE_ROOM              = 6,--房间状态
     STATE_OVER              = 7,--结算状态(总结算)
-    STATE_CLUB              = 8}--俱乐部状态
+    STATE_CLUB              = 8,--俱乐部状态
+    STATE_LOADING           = 9,--loading
+    }
     
     --游戏网络线路
     GAME_NET_LINE = {
@@ -202,7 +207,7 @@ local function registerGlobValue()
 
     --全局单例管理对象
     singleMgr = require("app.ctrls.singleMgr_ctrl"):new()
-
+    require "app.ctrls.UrNetMgr"
     LOG = function(...)
         local str = ""
         local data = {...}

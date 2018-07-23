@@ -87,7 +87,7 @@ function ActivityNoticeView:showNotice(index)
         if i == index then
             self.btnTab[i].btn:setEnabled(false)
             self.btnTab[i].txt:setTextColor(cc.c3b(239,253,226))
-            self.btnTab[i].txt:enableOutline(cc.c3b(127,152,126), 2)
+            -- self.btnTab[i].txt:enableOutline(cc.c3b(127,152,126), 2)
         else
             self.btnTab[i].btn:setEnabled(true)
             self.btnTab[i].txt:setTextColor(cc.c3b(116,90,54))

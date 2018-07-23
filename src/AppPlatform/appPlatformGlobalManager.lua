@@ -97,12 +97,12 @@ function appPlatformGlobalManager:externGlobalAble()
 	local __g = _G
  	setmetatable(__g, {
         __newindex = function(_, name, value)
-        	release_print("externGlobalAble >>>111", name)
+        	-- release_print("externGlobalAble >>>111", name)
         	if rawget(__appPlatformGV, name) ~= nil then
         		error(string.format("Error: value of __appPlatformGV do not edit >> %s", name), 0)
         		return
         	end
-        	release_print("externGlobalAble >>>222", name)
+        	-- release_print("externGlobalAble >>>222", name)
         	rawset(__appPlatformExternGV, name, value)
 
 

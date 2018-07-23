@@ -1374,4 +1374,36 @@ function ComFunMgr:checkEnterRoom()
     end, __G__TRACKBACK__)
 end
 
+function ComFunMgr:uploadVoice(url , filename , filedir , callback)
+    local default_callback = function(code , err) 
+        cclog("uploadVoice defalt fallbck : ", code ,err)     
+    end
+    if callback ~= nil then 
+        default_callback = callback
+    end    
+
+    if url == nil or url == "" then 
+        cclog("==== upload service url nil ====")
+        return 
+    end    
+
+    if filename == nil or filename == "" then 
+        cclog("==== upload filename nil ====")
+        return 
+    end
+
+    if filedir == nil or filedir == "" then 
+        cclog("==== upload filedir nil ====")
+        return 
+    end
+
+    if gameConfMgr:getInfo("platform") == 1 then 
+        platformMgr:JNI_UploadFile(url, filename , filedir ,default_callback)
+    elseif cpp_httpUploadVoice then 
+        cpp_httpUploadVoice(url, filename , filedir ,default_callback)
+    else
+        cclog("==== do not found the function : cpp_httpUploadVoice please check your platform (IOS /MAC /ANDROID)")
+    end    
+end
+
 return ComFunMgr

@@ -131,11 +131,11 @@ function GameConfigMgr:_init()
 	-- 军海(外网)
 	-- self._config["loginURL"][0] = "http://ngrok.aikola.cn:18888/Login_youruiTest"
 	--联通
-	self._config["loginURL"][GAME_NET_LINE.LINE_LIANTONG] = "http://192.168.1.251:8888/Login"--"http://hnmj-login-l1.hongzhongmajiang.com:20001/Login"
+	self._config["loginURL"][GAME_NET_LINE.LINE_LIANTONG] = "http://120.78.255.24:8888/Login"--"http://hnmj-login-l1.hongzhongmajiang.com:20001/Login"
 	--电信
-	self._config["loginURL"][GAME_NET_LINE.LINE_DIANXIN]  = "http://192.168.1.251:8888/Login"--"http://hnmj-login-l2.hongzhongmajiang.com:20001/Login"
+	self._config["loginURL"][GAME_NET_LINE.LINE_DIANXIN]  = "http://120.78.255.24:8888/Login"--"http://hnmj-login-l2.hongzhongmajiang.com:20001/Login"
 	--移动
-	self._config["loginURL"][GAME_NET_LINE.LINE_YIDONG]   = "http://192.168.1.251:8888/Login"--"http://hnmj-login-l3.hongzhongmajiang.com:20001/Login"
+	self._config["loginURL"][GAME_NET_LINE.LINE_YIDONG]   = "http://120.78.255.24:8888/Login"--"http://hnmj-login-l3.hongzhongmajiang.com:20001/Login"
 	--游戏当前平台(1、安卓，2、IOS)
 	self._config["platform"] = cc.Application:getInstance():getTargetPlatform()
 	--音效

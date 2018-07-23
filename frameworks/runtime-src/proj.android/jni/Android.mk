@@ -28,6 +28,7 @@ LOCAL_SRC_FILES := \
 ../../Classes/GameNetMgr/ToolBASE64.cpp \
 ../../Classes/Util/HttpDownloader.cpp \
 ../../Classes/Util/HttpUploadVoice.cpp \
+../../Classes/Util/HttpUtils.cpp \
 ../../AgoraGamingSDK/agoraGameMgr.cpp \
 ../../AgoraGamingSDK/MyIGamingRtcEngineEventHandler.cpp \
 hellolua/main.cpp

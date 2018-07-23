@@ -6,6 +6,6 @@
 local TestConfig = class("TestConfig")
 
 --是否测试模式
-TestConfig.TestMode = 0--0 不开测试模式 1 开测试模式 2 连微信登录服
+TestConfig.TestMode = 1--0 不开测试模式 1 开测试模式 2 连微信登录服
 
 return TestConfig

@@ -478,7 +478,7 @@ function HotUpdateManager:start()
                 -- self:delay_callback(0.2, function () self:md5_check() end )
 
                 
-                 self:notify({desc = "更新完成，请重新进入游戏", event = HU_EVENT.SURE_OVER_GAME})
+                 self:notify({desc = "更新完成", event = HU_EVENT.SURE_OVER_GAME})
 
             elseif eventCode == 11 then --DOWNLOAD_FINISHED
 
@@ -713,6 +713,16 @@ end
 function HotUpdateManager:removeTempProjectManifest()
     local path = self.storage_path
     path = path .. "project.manifest.temp"
+    if cc.FileUtils:getInstance():isFileExist(path) then
+        if cc.FileUtils:getInstance():removeFile(path) then
+            release_print("removeTempProjectManifest! success!")
+        else
+            release_print("removeTempProjectManifest  fail!")
+        end
+    end
+
+    local path = self.storage_path
+    path = path .. "version.manifest.tmp"
     if cc.FileUtils:getInstance():isFileExist(path) then
         if cc.FileUtils:getInstance():removeFile(path) then
             release_print("removeTempProjectManifest! success!")

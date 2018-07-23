@@ -94,7 +94,7 @@ function UI_JoinClub:searchClub()
     if content and content ~="" and tonumber(content) then
         hallSendMgr:sendSearchClub(tonumber(content))
     else
-
+        msgMgr:showToast("您输入俱乐部id格式不是数字,请输入数字", 3) 
     end
 end    
 

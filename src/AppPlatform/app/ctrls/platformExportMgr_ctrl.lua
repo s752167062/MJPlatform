@@ -47,49 +47,84 @@ function PlatformExportMgr:getGameWriteDirPath(gameName)
 	return externGameMgr:getGameEvnDirPath(gameName)
 end
 
-function PlatformExportMgr:reqGotoOtherGame(callback, game, product, clubId, clubSecndId)
-	local version = externGameMgr:getGameVersionByName(game)
-    callback()
-    platformExportMgr:setEnterParams(platformExportMgr.epType_gotoGameClub, {clubId = clubId, clubSecndId = clubSecndId})
-end
 
 function PlatformExportMgr:getGameIconDir()
 	return externGameMgr:getGameIconDir()
 end
 
---注册该扩展游戏的协议监听
--- function PlatformExportMgr:exitGameByName(params, callback)
-	
-	-- gameState:changeState(GAMESTATE.STATE_LOGIN)
-	
-	
+--扩展游戏告诉平台现在已经进入扩展游戏状态
+function PlatformExportMgr:markExternGameState()
+	gameState:changeState(GAMESTATE.STATE_HALL)
+end
 
-	-- cc.Director:getInstance():getRunningScene():pause()
-	--resume()
-	-- externGameMgr:exitGameByName(callback)
 
-	-- gameConfMgr:getInfo("hostKey", params.key)
-	-- gameState:changeState(GAMESTATE.STATE_COMMHALL)
-	-- hallSendMgr:changeScene(params)
 
-	
--- end
+--返回登录界面
+function PlatformExportMgr:returnAppPlatformLogin()
+	-- local schedulerID = false
+ --    local scheduler = cc.Director:getInstance():getScheduler()
+ --    local function cb(dt)
+ --        scheduler:unscheduleScriptEntry(schedulerID)
+       
+	-- 	gameState:gotoLoginScene()
+ --    end
+ --    schedulerID = scheduler:scheduleScriptFunc(cb, 0.00001,false) 
+ 
+	gameState:changeState(GAMESTATE.STATE_LOADING)
+ 	gameState:gotoLoginScene()
+end
 
 --游戏返回平台
 function PlatformExportMgr:returnAppPlatform()
+	-- cclog("PlatformExportMgr:returnAppPlatform >>>")
+	-- cclog(debug.traceback())
+	-- externGameMgr:reqGotoPlatform()
+	-- externGameMgr:exitGameByName(nil)
 
-	externGameMgr:reqGotoPlatform()
-	externGameMgr:exitGameByName(nil)
+	-- local schedulerID = false
+ --    local scheduler = cc.Director:getInstance():getScheduler()
+ --    local function cb(dt)
+ --        scheduler:unscheduleScriptEntry(schedulerID)
+        
+ --        externGameMgr:reqGotoPlatform()
+	-- 	externGameMgr:exitGameByName(nil)
+ --    end
+ --    schedulerID = scheduler:scheduleScriptFunc(cb, 0.00001,false) 
+
+
+ 	gameState:changeState(GAMESTATE.STATE_LOADING)
+ 	externGameMgr:reqGotoPlatform()
 
 end
 
 --游戏进入其他游戏
 -- 0-product   1-roomId
-function PlatformExportMgr:reqGotoGame(gtype, value)
+function PlatformExportMgr:reqGotoGame(gtype, value, eType, params)
 
-	externGameMgr:reqGotoGame(gtype, value)
-	externGameMgr:exitGameByName(nil)
+	
+	-- local schedulerID = false
+ --    local scheduler = cc.Director:getInstance():getScheduler()
+ --    local function cb(dt)
+ --        scheduler:unscheduleScriptEntry(schedulerID)
+        
+ --        externGameMgr:reqGotoGame(gtype, value)
+	-- 	-- externGameMgr:exitGameByName(nil) --从一个游戏去另一个游戏不应该使用这个函数来立即卸载环境，以为他有可能取消下载
 
+	-- 	print_r(params)
+	-- 	if eType ==  platformExportMgr.epType_gotoGameClub then
+	-- 		platformExportMgr:setEnterParams(eType, {clubId = params.clubId, clubSecndId = params.clubSecndId})
+	-- 	end
+ --    end
+ --    schedulerID = scheduler:scheduleScriptFunc(cb, 0.00001,false) 
+
+
+     externGameMgr:reqGotoGame(gtype, value)
+	-- externGameMgr:exitGameByName(nil) --从一个游戏去另一个游戏不应该使用这个函数来立即卸载环境，以为他有可能取消下载
+
+	print_r(params)
+	if eType ==  platformExportMgr.epType_gotoGameClub then
+		platformExportMgr:setEnterParams(eType, {clubId = params.clubId, clubSecndId = params.clubSecndId})
+	end
 end
 
 --获取当前服务器类型
@@ -264,6 +299,9 @@ function PlatformExportMgr:doExternGameMgrgetGameVersionByName(game)
 	return externGameMgr:getGameVersionByName(game)
 end
 
+function PlatformExportMgr:getGameEvnDirPath(gameName)
+	return externGameMgr:getGameEvnDirPath(gameName)
+end
 --===================  数据 end ============================
 
 
@@ -280,6 +318,10 @@ end
 function PlatformExportMgr:stop_audio()
 	platformMgr:stop_audio()
 end
+
+function PlatformExportMgr:setGameDirectory(directory)
+	platformMgr:setGameDirectory(directory)
+end
 function PlatformExportMgr:copy_To_Clipboard(msg)
 	platformMgr:copy_To_Clipboard(msg)
 end
@@ -287,7 +329,7 @@ function PlatformExportMgr:parse_From_Clipboard()
 	platformMgr:parse_From_Clipboard()
 end
 function PlatformExportMgr:get_Device_Power()
-	platformMgr:get_Device_Power()
+	return platformMgr:get_Device_Power()
 end
 function PlatformExportMgr:setAVAudioSessionCategoryAndMode(category,mode)
 	platformMgr:setAVAudioSessionCategoryAndMode(category,mode)
@@ -348,9 +390,12 @@ function PlatformExportMgr:ddApiSupport()
 	SDKMgr:ddApiSupport()
 end
 
-
-
 --=================== 系统接口end ==========================
+
+--一些通用的函数。
+function PlatformExportMgr:uploadVoice(url_, firename_ , filedirectory_ , callback)
+	comFunMgr:uploadVoice(url_, firename_ , filedirectory_ , callback)
+end
 
 return PlatformExportMgr
 

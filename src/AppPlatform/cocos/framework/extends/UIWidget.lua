@@ -70,3 +70,16 @@ function Widget:isLockedBtn()
     end 
     return false
 end
+
+-- 添加widget类的点击声音方法
+function Widget:onClickBySound(callback,soundPath)
+    self:addClickEventListener(function(sender)
+        if soundPath and soundPath ~= "" then
+            audio.playSound(soundPath,false)
+        else
+            audio.playSound("audio/hit.mp3",false)
+        end
+        callback(sender) 
+    end)
+    return self
+end

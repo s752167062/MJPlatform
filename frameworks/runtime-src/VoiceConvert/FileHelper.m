@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FileHelper.h"
-
+#import "AmrWavAudioRecoder.h"
 @interface FileHelper()
 
 @end
@@ -27,9 +27,9 @@ static NSString *baseDirectory;
 
 #pragma mark - 生成文件路径
 + (NSString*)GetPathByFileName:(NSString *)_fileName ofType:(NSString *)_type{
-    NSString *directory = baseDirectory;
-    if([baseDirectory isKindOfClass:[NSNull class]]  ){
-        directory= [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+    NSString *directory = [[AmrWavAudioRecoder getInstance] getDirectory]; //baseDirectory;
+    if([directory isKindOfClass:[NSNull class]]  ){
+        directory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
     }
      NSString* fileDirectory = [[[directory stringByAppendingPathComponent:_fileName]
                                             stringByAppendingPathExtension:_type]

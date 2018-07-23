@@ -66,6 +66,8 @@ size_t HttpUploadVoice::httpPostRequest_UploadVoice(const char* url, const char 
 
 void HttpUploadVoice::listener(){
     while (1) {
+ 
+        this_thread::sleep_for(chrono::milliseconds(100));
         m_nFrame++;
         if(m_nFrame > 10){
             //printf("HttpUploadVoice5:m_nFrame update\n");
@@ -88,6 +90,8 @@ void HttpUploadVoice::listener(){
 
 void HttpUploadVoice::httpPostRequest(){
     while(1){
+
+        this_thread::sleep_for(chrono::milliseconds(100)); //空转会导致cpu占用狂飙，所以sleep一下
         if(!m_bFlag)
             continue;
         //获取本地声音文件

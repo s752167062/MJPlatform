@@ -18,7 +18,7 @@ lua_load = function(str)
                 path = utils:fullPathForFilename(tmp .. ".luac")
             end
 
-			cclog("lua_load path>>", path)
+			-- cclog("lua_load path>>", path)
 			-- 禁止load ExternGameEnvMgr.dir目录以外的脚本
 			if string.match(path, "/" .. ExternGameEnvMgr.dir) then
 				ExternGameEnvMgr.lua_loaded[str] = true

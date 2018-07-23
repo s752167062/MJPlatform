@@ -180,5 +180,41 @@ public class AppActivity extends Cocos2dxActivity{
         GameToolsController.getInstance().onActivityResult(requestCode, resultCode, data);
     }
     
+
+
+    //用于C++ 中转回调
+    public static void  JniLuaHandler(String handler_str){
+        if(handler_str!= null && !handler_str.equals("")){
+            System.out.println(">>> JniLuaHandler " + handler_str );
+            try {
+                int handler = 0;
+                int code = 0;
+
+                String[] datas = handler_str.split(",");
+                if(datas.length > 1){
+                    handler = Integer.parseInt(datas[0]);
+                    code = Integer.parseInt(datas[1]);
+                }
+
+                if(handler > 0){
+                    final int handler_final = handler;
+                    final int code_final = code;
+                    Cocos2dxHelper.runOnGLThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            System.out.println(">>> Jni 回调给LUA" + handler_final + "  " + code_final );
+                            Cocos2dxLuaJavaBridge.callLuaFunctionWithString(handler_final,String.format("%d", code_final));// 调用
+                            Cocos2dxLuaJavaBridge.releaseLuaFunction(handler_final);
+                        }
+                    });
+                }
+            } catch (Exception e) {
+                System.out.println(" UR JniLuaHandler Call Faile xxxxx");
+                e.printStackTrace();
+            }
+        }else{
+            System.out.println(">>> JniLuaHandler null" );
+        }
+    }
     
 }

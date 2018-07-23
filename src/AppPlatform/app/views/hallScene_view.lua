@@ -25,7 +25,7 @@ function HallScene_view:onCreate()
 end
 
 function HallScene_view:onEnter()
-
+    externGameMgr:exitGameByName()
 
 
 
