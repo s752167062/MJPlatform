@@ -73,7 +73,7 @@ public class NowPayController implements ReceivePayResult {
 	private void initAPPID_SERCRET() {
 		AssetManager am = this.mContext.getAssets();
 		try {
-			InputStream in = am.open("src/cocos/properties.txt");
+			InputStream in = am.open("src/AppPlatform/cocos/properties.txt");
 
 			byte[] buffer = new byte[in.available()];
 			in.read(buffer);

@@ -32,12 +32,12 @@ void YUNControl::init(){
     NSFileManager * fm = [NSFileManager defaultManager];
     NSString * appkey = @"";
     //1 优先update 文件夹下的 游戏遁key文件
-//    NSString *file_update_dir = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"update/src/cocos/IOS_APPKEY_V3.xxxf"];
-//    NSLog(@"XIONG OC IOS_APPKEY PATH : %@",file_update_dir);
-//    if([fm fileExistsAtPath:file_update_dir]){
-//        NSData* data = [fm contentsAtPath:file_update_dir];
-//        appkey = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-//    }else{
+    NSString *file_update_dir = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"update/src/AppPlatform/cocos/IOS_APPKEY_V3.xxxf"];
+    NSLog(@"XIONG OC IOS_APPKEY PATH : %@",file_update_dir);
+    if([fm fileExistsAtPath:file_update_dir]){
+        NSData* data = [fm contentsAtPath:file_update_dir];
+        appkey = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    }else{
         //2
         NSString * url = [[NSBundle mainBundle] pathForResource:@"IOS_APPKEY_V3" ofType:@"xxxf"];
         NSLog(@" IOS_APPKEY path : %@" , url);
@@ -51,12 +51,12 @@ void YUNControl::init(){
             [mAlert show];
             return ;
         }
-//    }
+    }
     
     //初始化
     @try {
         const char* key =[appkey cStringUsingEncoding:NSASCIIStringEncoding];
-        int ret = [YunCeng initEx:key:"token":0];
+        int ret = [YunCeng initEx:key:"token"];
         if(0!= ret){
             NSLog(@"YUN INIT ERR %d" ,ret);
             UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示"
@@ -83,22 +83,25 @@ void YUNControl::init(){
     }
 }
 
-std::string YUNControl::getYUNByGroupName(const char* name , const char* uuid, const char* game_port){
-    NSLog(@" ------- getYUNByGroupName");
+std::string YUNControl::getYUNByGroupNameIP(const char* name , const char* uuid, const char* game_ip , const char* game_port ){
+    NSLog(@" ------- getYUNByGroupNameIP");
     if(name == NULL){
         return "0,NIL_GroupName";
     }
     if(uuid == NULL){
-        return "0,NIL_UUID";
+        return "0,NIL_UUID";//token
+    }
+    if(game_ip == NULL){
+        return "0,NIL_GameIP";
     }
     if(game_port == NULL){
         return "0,NIL_port";
     }
-
+    
     char ip[128]  = {0};
     char port[32] = {0};
     @try {
-        int ret = [YunCeng getNextIPByGroupNameEx:name:uuid:game_port:ip:128:port:32];
+        int ret = [YunCeng getProxyTcpByIp :uuid:name:game_ip:game_port:ip:128:port:32];
         if(0!= ret){
             return [[[NSString alloc] initWithFormat:@"0,YUNException_RET_CODE:%d" ,ret] cStringUsingEncoding:NSASCIIStringEncoding] ;
         }
@@ -133,6 +136,68 @@ std::string YUNControl::getYUNByGroupName(const char* name , const char* uuid, c
     NSLog(@" --- IP RESULT : %@" ,result);
     return [result cStringUsingEncoding:NSASCIIStringEncoding];
 }
+
+
+std::string YUNControl::getYUNByGroupNameDomain(const char* name , const char* uuid, const char* game_host , const char* game_port ){
+    NSLog(@" ------- getYUNByGroupNameDomain");
+    if(name == NULL){
+        return "0,NIL_GroupName";
+    }
+    if(uuid == NULL){
+        return "0,NIL_UUID";//token
+    }
+    if(game_host == NULL){
+        return "0,NIL_GameIP";
+    }
+    if(game_port == NULL){
+        return "0,NIL_port";
+    }
+    
+    char ip[128]  = {0};
+    char port[32] = {0};
+    @try {
+        int ret = [YunCeng getProxyTcpByDomain  :uuid:name:game_host:game_port:ip:128:port:32];
+        if(0!= ret){
+            return [[[NSString alloc] initWithFormat:@"0,YUNException_RET_CODE:%d" ,ret] cStringUsingEncoding:NSASCIIStringEncoding] ;
+        }
+    }
+    @catch (NSException *exception) {
+        if(exception != NULL){
+            NSString * reson = ((YunCengException*)exception).reason;
+            int code = ((YunCengException*)exception).code;
+            
+            NSString * tempresult = @"0,";
+            NSString * result = [[tempresult stringByAppendingFormat:@"%@" , reson] stringByAppendingFormat:@" %d" , code];
+            
+            return [result cStringUsingEncoding:NSASCIIStringEncoding] ;
+        }else{
+            return "0,YUNException_NULL";
+        }
+    }
+    
+    //判断空
+    if(strlen(ip) == 0){
+        return "0,NILValue_Ip" ;
+    }
+    if(strlen(port) == 0){
+        return "0,NILValue_Port" ;
+    }
+    
+    NSString * tempresult = @"1,";
+    NSString * result = [tempresult stringByAppendingFormat:@"%@:%@"
+                         , [[NSString alloc] initWithCString:(const char*)ip  encoding:NSUTF8StringEncoding]
+                         , [[NSString alloc] initWithCString:(const char*)port  encoding:NSUTF8StringEncoding]];
+    
+    NSLog(@" --- IP RESULT : %@" ,result);
+    return [result cStringUsingEncoding:NSASCIIStringEncoding];
+}
+
+
+
+
+
+
+
 
 void YUNControl::networkDiagnosis(const char* ip , int port , int handler){
     

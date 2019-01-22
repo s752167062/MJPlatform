@@ -18,7 +18,6 @@
 		33B1EC1D1FFCDA0000BE02B6 /* LameVoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33B1EC141FFCDA0000BE02B6 /* LameVoiceConverter.mm */; };
 		33B1EC1E1FFCDA0000BE02B6 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B1EC171FFCDA0000BE02B6 /* libmp3lame.a */; };
 		33B1EC1F1FFCDA0000BE02B6 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B1EC171FFCDA0000BE02B6 /* libmp3lame.a */; };
-		33B830A21F26F36D00C5E530 /* GPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B830A11F26F36D00C5E530 /* GPSController.m */; };
 		33B830A71F272F0900C5E530 /* IAPController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B830A61F272F0900C5E530 /* IAPController.m */; };
 		33D106811FBE80F4004787AC /* AlicloudUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D106791FBE80F4004787AC /* AlicloudUtils.framework */; };
 		33D106821FBE80F4004787AC /* AliPushManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D1067B1FBE80F4004787AC /* AliPushManage.m */; };
@@ -40,6 +39,24 @@
 		33F551B21EF004B9004B7BBB /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33F551AA1EF004B9004B7BBB /* readme.txt */; };
 		33F551B31EF004B9004B7BBB /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33F551AC1EF004B9004B7BBB /* VoiceConverter.mm */; };
 		33F551B61EF00550004B7BBB /* AudioRecoderLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33F551B41EF00550004B7BBB /* AudioRecoderLua.cpp */; };
+		37A990CA2111B05E00DADF79 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990BD2111B05E00DADF79 /* BaiduMapAPI_Base.framework */; };
+		37A990CB2111B05E00DADF79 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990BD2111B05E00DADF79 /* BaiduMapAPI_Base.framework */; };
+		37A990CC2111B05E00DADF79 /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990BE2111B05E00DADF79 /* BaiduMapAPI_Cloud.framework */; };
+		37A990CD2111B05E00DADF79 /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990BE2111B05E00DADF79 /* BaiduMapAPI_Cloud.framework */; };
+		37A990CE2111B05E00DADF79 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990BF2111B05E00DADF79 /* BaiduMapAPI_Location.framework */; };
+		37A990CF2111B05E00DADF79 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990BF2111B05E00DADF79 /* BaiduMapAPI_Location.framework */; };
+		37A990D02111B05E00DADF79 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990C02111B05E00DADF79 /* BaiduMapAPI_Map.framework */; };
+		37A990D12111B05E00DADF79 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990C02111B05E00DADF79 /* BaiduMapAPI_Map.framework */; };
+		37A990D22111B05E00DADF79 /* BaiduMapAPI_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990C12111B05E00DADF79 /* BaiduMapAPI_Radar.framework */; };
+		37A990D32111B05E00DADF79 /* BaiduMapAPI_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990C12111B05E00DADF79 /* BaiduMapAPI_Radar.framework */; };
+		37A990D42111B05E00DADF79 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990C22111B05E00DADF79 /* BaiduMapAPI_Search.framework */; };
+		37A990D52111B05E00DADF79 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990C22111B05E00DADF79 /* BaiduMapAPI_Search.framework */; };
+		37A990D62111B05E00DADF79 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990C32111B05E00DADF79 /* BaiduMapAPI_Utils.framework */; };
+		37A990D72111B05E00DADF79 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990C32111B05E00DADF79 /* BaiduMapAPI_Utils.framework */; };
+		37A990D82111B05E00DADF79 /* BMKLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990C42111B05E00DADF79 /* BMKLocationKit.framework */; };
+		37A990D92111B05E00DADF79 /* BMKLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A990C42111B05E00DADF79 /* BMKLocationKit.framework */; };
+		37A990DA2111B05E00DADF79 /* LocationManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A990C62111B05E00DADF79 /* LocationManage.m */; };
+		37A990DB2111B05E00DADF79 /* LocationManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A990C62111B05E00DADF79 /* LocationManage.m */; };
 		5023811817EBBCAC00990C9B /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5023810817EBBCAC00990C9B /* AppController.mm */; };
 		5023812417EBBCAC00990C9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023811417EBBCAC00990C9B /* main.m */; };
 		5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5023811717EBBCAC00990C9B /* RootViewController.mm */; };
@@ -146,7 +163,6 @@
 		B68F46261FCBEB3E009A056E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023811417EBBCAC00990C9B /* main.m */; };
 		B68F46281FCBEB3E009A056E /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */; };
 		B68F46291FCBEB3E009A056E /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5023810817EBBCAC00990C9B /* AppController.mm */; };
-		B68F462A1FCBEB3E009A056E /* GPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B830A11F26F36D00C5E530 /* GPSController.m */; };
 		B68F462B1FCBEB3E009A056E /* IAPController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B830A61F272F0900C5E530 /* IAPController.m */; };
 		B68F462C1FCBEB3E009A056E /* FileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F551A01EF004B9004B7BBB /* FileHelper.m */; };
 		B68F462D1FCBEB3E009A056E /* GameNetGlobalFun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BCE71EE53ACA00E9519C /* GameNetGlobalFun.cpp */; };
@@ -198,6 +214,28 @@
 		C07828F818B4D72E00BD2287 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C07828F418B4D72E00BD2287 /* main.m */; };
 		C07828FA18B4D72E00BD2287 /* SimulatorApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = C07828F718B4D72E00BD2287 /* SimulatorApp.mm */; };
 		DA9E7D881AB1ABCC004B27C8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9E7D871AB1ABCC004B27C8 /* Security.framework */; };
+		E426C87A214F8E3F00C13BFA /* LBApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E426C872214F8E3F00C13BFA /* LBApiManager.m */; };
+		E426C87B214F8E3F00C13BFA /* LBApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E426C872214F8E3F00C13BFA /* LBApiManager.m */; };
+		E426C87C214F8E3F00C13BFA /* LBSDKController.m in Sources */ = {isa = PBXBuildFile; fileRef = E426C874214F8E3F00C13BFA /* LBSDKController.m */; };
+		E426C87D214F8E3F00C13BFA /* LBSDKController.m in Sources */ = {isa = PBXBuildFile; fileRef = E426C874214F8E3F00C13BFA /* LBSDKController.m */; };
+		E426C87E214F8E3F00C13BFA /* LBSDKLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E426C875214F8E3F00C13BFA /* LBSDKLua.cpp */; };
+		E426C87F214F8E3F00C13BFA /* LBSDKLua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E426C875214F8E3F00C13BFA /* LBSDKLua.cpp */; };
+		E426C880214F8E3F00C13BFA /* libMYMessageSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E426C877214F8E3F00C13BFA /* libMYMessageSDK.a */; };
+		E426C881214F8E3F00C13BFA /* libMYMessageSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E426C877214F8E3F00C13BFA /* libMYMessageSDK.a */; };
+		E42EAC772133E238002ED7C0 /* AESUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42EAC1E2133E237002ED7C0 /* AESUtil.cpp */; };
+		E42EAC782133E238002ED7C0 /* AESUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42EAC1E2133E237002ED7C0 /* AESUtil.cpp */; };
+		E42EAC792133E238002ED7C0 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC222133E237002ED7C0 /* libcrypto.a */; };
+		E42EAC7A2133E238002ED7C0 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC222133E237002ED7C0 /* libcrypto.a */; };
+		E42EAC7B2133E238002ED7C0 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC232133E237002ED7C0 /* libssl.a */; };
+		E42EAC7C2133E238002ED7C0 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC232133E237002ED7C0 /* libssl.a */; };
+		E42EAC7D2133E238002ED7C0 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC252133E237002ED7C0 /* libcrypto.a */; };
+		E42EAC7E2133E238002ED7C0 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC252133E237002ED7C0 /* libcrypto.a */; };
+		E42EAC7F2133E238002ED7C0 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC262133E237002ED7C0 /* libssl.a */; };
+		E42EAC802133E238002ED7C0 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC262133E237002ED7C0 /* libssl.a */; };
+		E42EAC812133E238002ED7C0 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC752133E237002ED7C0 /* libcrypto.a */; };
+		E42EAC822133E238002ED7C0 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC752133E237002ED7C0 /* libcrypto.a */; };
+		E42EAC832133E238002ED7C0 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC762133E237002ED7C0 /* libssl.a */; };
+		E42EAC842133E238002ED7C0 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC762133E237002ED7C0 /* libssl.a */; };
 		E4800C8720E09316009B2DD9 /* HttpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4800C8520E09316009B2DD9 /* HttpUtils.cpp */; };
 		E4800C8820E09316009B2DD9 /* HttpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4800C8520E09316009B2DD9 /* HttpUtils.cpp */; };
 		E4800C8920E09316009B2DD9 /* HttpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4800C8520E09316009B2DD9 /* HttpUtils.cpp */; };
@@ -225,10 +263,17 @@
 		E481886620AECB5E0039AE8B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481886520AECB5D0039AE8B /* CoreMedia.framework */; };
 		E481886820AECB740039AE8B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481886720AECB740039AE8B /* CoreVideo.framework */; };
 		E481886A20AECB830039AE8B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481886920AECB820039AE8B /* CFNetwork.framework */; };
+		E4E46F5C21A2B83C009D8EBF /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC752133E237002ED7C0 /* libcrypto.a */; };
+		E4E46F5D21A2B83E009D8EBF /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E42EAC762133E237002ED7C0 /* libssl.a */; };
+		E4E46F5E21A2B8AE009D8EBF /* AESUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42EAC1E2133E237002ED7C0 /* AESUtil.cpp */; };
 		E4E9747720D0BA5E00228C1B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481886920AECB820039AE8B /* CFNetwork.framework */; };
 		E4E9747820D0BA6D00228C1B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481886720AECB740039AE8B /* CoreVideo.framework */; };
 		E4E9747920D0BA7700228C1B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481886520AECB5D0039AE8B /* CoreMedia.framework */; };
 		E4E9747A20D0BA8200228C1B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481886320AECB530039AE8B /* CoreText.framework */; };
+		E4FDAEC421F5B40100519C2D /* H5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FDAEC021F5B40000519C2D /* H5ViewController.m */; };
+		E4FDAEC521F5B40100519C2D /* H5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FDAEC021F5B40000519C2D /* H5ViewController.m */; };
+		E4FDAEC621F5B40100519C2D /* H5Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4FDAEC321F5B40000519C2D /* H5Controller.mm */; };
+		E4FDAEC721F5B40100519C2D /* H5Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4FDAEC321F5B40000519C2D /* H5Controller.mm */; };
 		F293B3CD15EB7BE500256477 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F293B3CC15EB7BE500256477 /* QuartzCore.framework */; };
 		F293B3D115EB7BE500256477 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F293B3D015EB7BE500256477 /* OpenAL.framework */; };
 		F293B3D315EB7BE500256477 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F293B3D215EB7BE500256477 /* AudioToolbox.framework */; };
@@ -253,8 +298,6 @@
 		33B1EC141FFCDA0000BE02B6 /* LameVoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LameVoiceConverter.mm; sourceTree = "<group>"; };
 		33B1EC161FFCDA0000BE02B6 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
 		33B1EC171FFCDA0000BE02B6 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
-		33B830A01F26F36D00C5E530 /* GPSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSController.h; sourceTree = "<group>"; };
-		33B830A11F26F36D00C5E530 /* GPSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSController.m; sourceTree = "<group>"; };
 		33B830A51F272F0900C5E530 /* IAPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPController.h; sourceTree = "<group>"; };
 		33B830A61F272F0900C5E530 /* IAPController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPController.m; sourceTree = "<group>"; };
 		33D106791FBE80F4004787AC /* AlicloudUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlicloudUtils.framework; sourceTree = "<group>"; };
@@ -302,6 +345,16 @@
 		33F551AC1EF004B9004B7BBB /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
 		33F551B41EF00550004B7BBB /* AudioRecoderLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioRecoderLua.cpp; sourceTree = "<group>"; };
 		33F551B51EF00550004B7BBB /* AudioRecoderLua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecoderLua.h; sourceTree = "<group>"; };
+		37A990BD2111B05E00DADF79 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		37A990BE2111B05E00DADF79 /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
+		37A990BF2111B05E00DADF79 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		37A990C02111B05E00DADF79 /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		37A990C12111B05E00DADF79 /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
+		37A990C22111B05E00DADF79 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+		37A990C32111B05E00DADF79 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		37A990C42111B05E00DADF79 /* BMKLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMKLocationKit.framework; sourceTree = "<group>"; };
+		37A990C52111B05E00DADF79 /* LocationManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManage.h; sourceTree = "<group>"; };
+		37A990C62111B05E00DADF79 /* LocationManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManage.m; sourceTree = "<group>"; };
 		5023810717EBBCAC00990C9B /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		5023810817EBBCAC00990C9B /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
 		5023811317EBBCAC00990C9B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -379,6 +432,98 @@
 		C07828F618B4D72E00BD2287 /* SimulatorApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulatorApp.h; sourceTree = "<group>"; };
 		C07828F718B4D72E00BD2287 /* SimulatorApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SimulatorApp.mm; sourceTree = "<group>"; };
 		DA9E7D871AB1ABCC004B27C8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E426C871214F8E3F00C13BFA /* LBApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBApiManager.h; sourceTree = "<group>"; };
+		E426C872214F8E3F00C13BFA /* LBApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBApiManager.m; sourceTree = "<group>"; };
+		E426C873214F8E3F00C13BFA /* LBSDKController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSDKController.h; sourceTree = "<group>"; };
+		E426C874214F8E3F00C13BFA /* LBSDKController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSDKController.m; sourceTree = "<group>"; };
+		E426C875214F8E3F00C13BFA /* LBSDKLua.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LBSDKLua.cpp; sourceTree = "<group>"; };
+		E426C876214F8E3F00C13BFA /* LBSDKLua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSDKLua.h; sourceTree = "<group>"; };
+		E426C877214F8E3F00C13BFA /* libMYMessageSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMYMessageSDK.a; sourceTree = "<group>"; };
+		E426C878214F8E3F00C13BFA /* MYMessageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMessageObject.h; sourceTree = "<group>"; };
+		E426C879214F8E3F00C13BFA /* MYMessageSendReq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMessageSendReq.h; sourceTree = "<group>"; };
+		E42EAC1E2133E237002ED7C0 /* AESUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AESUtil.cpp; sourceTree = "<group>"; };
+		E42EAC1F2133E237002ED7C0 /* AESUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESUtil.h; sourceTree = "<group>"; };
+		E42EAC222133E237002ED7C0 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		E42EAC232133E237002ED7C0 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		E42EAC252133E237002ED7C0 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		E42EAC262133E237002ED7C0 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		E42EAC292133E237002ED7C0 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		E42EAC2A2133E237002ED7C0 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		E42EAC2B2133E237002ED7C0 /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		E42EAC2C2133E237002ED7C0 /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		E42EAC2D2133E237002ED7C0 /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		E42EAC2E2133E237002ED7C0 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		E42EAC2F2133E237002ED7C0 /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		E42EAC302133E237002ED7C0 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		E42EAC312133E237002ED7C0 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		E42EAC322133E237002ED7C0 /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		E42EAC332133E237002ED7C0 /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		E42EAC342133E237002ED7C0 /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		E42EAC352133E237002ED7C0 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		E42EAC362133E237002ED7C0 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		E42EAC372133E237002ED7C0 /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		E42EAC382133E237002ED7C0 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		E42EAC392133E237002ED7C0 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		E42EAC3A2133E237002ED7C0 /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		E42EAC3B2133E237002ED7C0 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		E42EAC3C2133E237002ED7C0 /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		E42EAC3D2133E237002ED7C0 /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		E42EAC3E2133E237002ED7C0 /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		E42EAC3F2133E237002ED7C0 /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		E42EAC402133E237002ED7C0 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		E42EAC412133E237002ED7C0 /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		E42EAC422133E237002ED7C0 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		E42EAC432133E237002ED7C0 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		E42EAC442133E237002ED7C0 /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		E42EAC452133E237002ED7C0 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		E42EAC462133E237002ED7C0 /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		E42EAC472133E237002ED7C0 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		E42EAC482133E237002ED7C0 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		E42EAC492133E237002ED7C0 /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		E42EAC4A2133E237002ED7C0 /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		E42EAC4B2133E237002ED7C0 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		E42EAC4C2133E237002ED7C0 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		E42EAC4D2133E237002ED7C0 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		E42EAC4E2133E237002ED7C0 /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		E42EAC4F2133E237002ED7C0 /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		E42EAC502133E237002ED7C0 /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		E42EAC512133E237002ED7C0 /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		E42EAC522133E237002ED7C0 /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		E42EAC532133E237002ED7C0 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		E42EAC542133E237002ED7C0 /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		E42EAC552133E237002ED7C0 /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		E42EAC562133E237002ED7C0 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		E42EAC572133E237002ED7C0 /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		E42EAC582133E237002ED7C0 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		E42EAC592133E237002ED7C0 /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		E42EAC5A2133E237002ED7C0 /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		E42EAC5B2133E237002ED7C0 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		E42EAC5C2133E237002ED7C0 /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		E42EAC5D2133E237002ED7C0 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		E42EAC5E2133E237002ED7C0 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		E42EAC5F2133E237002ED7C0 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		E42EAC602133E237002ED7C0 /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		E42EAC612133E237002ED7C0 /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		E42EAC622133E237002ED7C0 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		E42EAC632133E237002ED7C0 /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		E42EAC642133E237002ED7C0 /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		E42EAC652133E237002ED7C0 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		E42EAC662133E237002ED7C0 /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		E42EAC672133E237002ED7C0 /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		E42EAC682133E237002ED7C0 /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		E42EAC692133E237002ED7C0 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		E42EAC6A2133E237002ED7C0 /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		E42EAC6B2133E237002ED7C0 /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		E42EAC6C2133E237002ED7C0 /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		E42EAC6D2133E237002ED7C0 /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		E42EAC6E2133E237002ED7C0 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		E42EAC6F2133E237002ED7C0 /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		E42EAC702133E237002ED7C0 /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		E42EAC712133E237002ED7C0 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		E42EAC722133E237002ED7C0 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		E42EAC732133E237002ED7C0 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		E42EAC752133E237002ED7C0 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		E42EAC762133E237002ED7C0 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
 		E4800C8520E09316009B2DD9 /* HttpUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpUtils.cpp; sourceTree = "<group>"; };
 		E4800C8620E09316009B2DD9 /* HttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpUtils.h; sourceTree = "<group>"; };
 		E48187A620AEC7810039AE8B /* DDSDKController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSDKController.h; sourceTree = "<group>"; };
@@ -402,6 +547,10 @@
 		E481886520AECB5D0039AE8B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		E481886720AECB740039AE8B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
 		E481886920AECB820039AE8B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		E4FDAEC021F5B40000519C2D /* H5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5ViewController.m; sourceTree = "<group>"; };
+		E4FDAEC121F5B40000519C2D /* H5Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5Controller.h; sourceTree = "<group>"; };
+		E4FDAEC221F5B40000519C2D /* H5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5ViewController.h; sourceTree = "<group>"; };
+		E4FDAEC321F5B40000519C2D /* H5Controller.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = H5Controller.mm; sourceTree = "<group>"; };
 		F293B3C815EB7BE500256477 /* GameChess-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GameChess-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F293B3CC15EB7BE500256477 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F293B3D015EB7BE500256477 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -419,6 +568,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B68779DE2020254300773678 /* libluacocos2d Mac.a in Frameworks */,
+				E4E46F5C21A2B83C009D8EBF /* libcrypto.a in Frameworks */,
+				E4E46F5D21A2B83E009D8EBF /* libssl.a in Frameworks */,
 				B68779E02020254300773678 /* libsimulator Mac.a in Frameworks */,
 				B6877A1C20207B3800773678 /* GameController.framework in Frameworks */,
 				B6877A1F20207B4300773678 /* libresolv.tbd in Frameworks */,
@@ -452,27 +603,41 @@
 				E4E9747820D0BA6D00228C1B /* CoreVideo.framework in Frameworks */,
 				E4E9747720D0BA5E00228C1B /* CFNetwork.framework in Frameworks */,
 				B6877A0F20207B0500773678 /* UserNotifications.framework in Frameworks */,
+				37A990D32111B05E00DADF79 /* BaiduMapAPI_Radar.framework in Frameworks */,
+				37A990CB2111B05E00DADF79 /* BaiduMapAPI_Base.framework in Frameworks */,
+				E42EAC822133E238002ED7C0 /* libcrypto.a in Frameworks */,
 				B68F463A1FCBEB3E009A056E /* UTMini.framework in Frameworks */,
+				E42EAC7E2133E238002ED7C0 /* libcrypto.a in Frameworks */,
 				B68F463D1FCBEB3E009A056E /* AlicloudUtils.framework in Frameworks */,
+				E42EAC7C2133E238002ED7C0 /* libssl.a in Frameworks */,
 				E481885C20AEC9340039AE8B /* AgoraAudioKit.framework in Frameworks */,
+				37A990D72111B05E00DADF79 /* BaiduMapAPI_Utils.framework in Frameworks */,
+				37A990D12111B05E00DADF79 /* BaiduMapAPI_Map.framework in Frameworks */,
 				B68F463E1FCBEB3E009A056E /* libcurl.a in Frameworks */,
 				B60A7D761FD7D49D00595F94 /* libWeChatSDK.a in Frameworks */,
 				B68F46411FCBEB3E009A056E /* YunCeng.framework in Frameworks */,
 				B68F46431FCBEB3E009A056E /* libopencore-amrnb.a in Frameworks */,
 				B6877A0C20207AFB00773678 /* libcocos2d iOS.a in Frameworks */,
 				B68F46451FCBEB3E009A056E /* CloudPushSDK.framework in Frameworks */,
+				37A990CD2111B05E00DADF79 /* BaiduMapAPI_Cloud.framework in Frameworks */,
 				33B1EC1F1FFCDA0000BE02B6 /* libmp3lame.a in Frameworks */,
 				B6877A1620207B1900773678 /* SystemConfiguration.framework in Frameworks */,
 				B6877A2920207B5F00773678 /* IOKit.framework in Frameworks */,
+				37A990CF2111B05E00DADF79 /* BaiduMapAPI_Location.framework in Frameworks */,
 				B6877A1020207B0700773678 /* MediaPlayer.framework in Frameworks */,
 				B68F464D1FCBEB3E009A056E /* libopencore-amrwb.a in Frameworks */,
 				B6877A1120207B0A00773678 /* CoreLocation.framework in Frameworks */,
 				B6877A1820207B1D00773678 /* CoreMotion.framework in Frameworks */,
+				37A990D52111B05E00DADF79 /* BaiduMapAPI_Search.framework in Frameworks */,
 				B68F46531FCBEB3E009A056E /* QuartzCore.framework in Frameworks */,
 				E481885E20AEC9340039AE8B /* libagoraSdkCWrapper.a in Frameworks */,
+				E42EAC842133E238002ED7C0 /* libssl.a in Frameworks */,
 				B68F46541FCBEB3E009A056E /* OpenAL.framework in Frameworks */,
+				E42EAC802133E238002ED7C0 /* libssl.a in Frameworks */,
 				B68F46551FCBEB3E009A056E /* AudioToolbox.framework in Frameworks */,
 				B68F46561FCBEB3E009A056E /* AVFoundation.framework in Frameworks */,
+				37A990D92111B05E00DADF79 /* BMKLocationKit.framework in Frameworks */,
+				E42EAC7A2133E238002ED7C0 /* libcrypto.a in Frameworks */,
 				B68F46571FCBEB3E009A056E /* Foundation.framework in Frameworks */,
 				B6877A2720207B5B00773678 /* Security.framework in Frameworks */,
 				B6877A1320207B0E00773678 /* libsqlite3.tbd in Frameworks */,
@@ -485,6 +650,7 @@
 				B68F46591FCBEB3E009A056E /* CoreGraphics.framework in Frameworks */,
 				B6877A2420207B5000773678 /* StoreKit.framework in Frameworks */,
 				B6877A0D20207AFD00773678 /* libluacocos2d iOS.a in Frameworks */,
+				E426C881214F8E3F00C13BFA /* libMYMessageSDK.a in Frameworks */,
 				B6877A1420207B1300773678 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,27 +664,41 @@
 				E481886620AECB5E0039AE8B /* CoreMedia.framework in Frameworks */,
 				E481886420AECB530039AE8B /* CoreText.framework in Frameworks */,
 				B6877A0120203B3E00773678 /* CoreMotion.framework in Frameworks */,
+				37A990D22111B05E00DADF79 /* BaiduMapAPI_Radar.framework in Frameworks */,
+				37A990CA2111B05E00DADF79 /* BaiduMapAPI_Base.framework in Frameworks */,
+				E42EAC812133E238002ED7C0 /* libcrypto.a in Frameworks */,
 				B68779FF20203B1E00773678 /* GameController.framework in Frameworks */,
+				E42EAC7D2133E238002ED7C0 /* libcrypto.a in Frameworks */,
 				B68779FD20203B0600773678 /* SystemConfiguration.framework in Frameworks */,
+				E42EAC7B2133E238002ED7C0 /* libssl.a in Frameworks */,
 				E481885B20AEC9340039AE8B /* AgoraAudioKit.framework in Frameworks */,
+				37A990D62111B05E00DADF79 /* BaiduMapAPI_Utils.framework in Frameworks */,
+				37A990D02111B05E00DADF79 /* BaiduMapAPI_Map.framework in Frameworks */,
 				B68779FB20203AF400773678 /* libz.tbd in Frameworks */,
 				B68779F920203A3300773678 /* libiconv.tbd in Frameworks */,
 				B68779F72020396E00773678 /* CoreLocation.framework in Frameworks */,
 				B68779ED202035DF00773678 /* StoreKit.framework in Frameworks */,
 				B68779F52020390C00773678 /* libresolv.tbd in Frameworks */,
 				B68779F32020368100773678 /* libsqlite3.tbd in Frameworks */,
+				37A990CC2111B05E00DADF79 /* BaiduMapAPI_Cloud.framework in Frameworks */,
 				B68779F12020367200773678 /* MediaPlayer.framework in Frameworks */,
 				B68779EF2020364D00773678 /* UserNotifications.framework in Frameworks */,
 				B6877A2820207B5E00773678 /* IOKit.framework in Frameworks */,
+				37A990CE2111B05E00DADF79 /* BaiduMapAPI_Location.framework in Frameworks */,
 				B68779E6202027F500773678 /* libcocos2d iOS.a in Frameworks */,
 				B68779E7202027F500773678 /* libluacocos2d iOS.a in Frameworks */,
 				B68779E8202027F500773678 /* libsimulator iOS.a in Frameworks */,
 				33D106871FBE80F4004787AC /* UTMini.framework in Frameworks */,
+				37A990D42111B05E00DADF79 /* BaiduMapAPI_Search.framework in Frameworks */,
 				B60A7D611FD7C34F00595F94 /* libWeChatSDK.a in Frameworks */,
 				E481885D20AEC9340039AE8B /* libagoraSdkCWrapper.a in Frameworks */,
+				E42EAC832133E238002ED7C0 /* libssl.a in Frameworks */,
 				33D106811FBE80F4004787AC /* AlicloudUtils.framework in Frameworks */,
+				E42EAC7F2133E238002ED7C0 /* libssl.a in Frameworks */,
 				3318672B1F3B43F100125402 /* libcurl.a in Frameworks */,
 				B60A7D621FD7C35700595F94 /* libopencore-amrnb.a in Frameworks */,
+				37A990D82111B05E00DADF79 /* BMKLocationKit.framework in Frameworks */,
+				E42EAC792133E238002ED7C0 /* libcrypto.a in Frameworks */,
 				B60A7D631FD7C35800595F94 /* libopencore-amrwb.a in Frameworks */,
 				B6877A2620207B5A00773678 /* Security.framework in Frameworks */,
 				33E56DBC1EF26CEC0064F346 /* YunCeng.framework in Frameworks */,
@@ -531,6 +711,7 @@
 				F293B3D515EB7BE500256477 /* AVFoundation.framework in Frameworks */,
 				F293B3D915EB7BE500256477 /* Foundation.framework in Frameworks */,
 				33D106861FBE80F4004787AC /* UTDID.framework in Frameworks */,
+				E426C880214F8E3F00C13BFA /* libMYMessageSDK.a in Frameworks */,
 				F293B3DB15EB7BE500256477 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,11 +807,13 @@
 				33E56DB91EF26CEC0064F346 /* YunCeng.framework */,
 				33E56DBA1EF26CEC0064F346 /* YUNControl.cpp */,
 				E48187B120AEC7AD0039AE8B /* IOS_APPKEY_V3.xxxf */,
+				E4FDAEC121F5B40000519C2D /* H5Controller.h */,
+				E4FDAEC321F5B40000519C2D /* H5Controller.mm */,
+				E4FDAEC221F5B40000519C2D /* H5ViewController.h */,
+				E4FDAEC021F5B40000519C2D /* H5ViewController.m */,
 				33E56DBB1EF26CEC0064F346 /* YUNControl.h */,
 				33B830A51F272F0900C5E530 /* IAPController.h */,
 				33B830A61F272F0900C5E530 /* IAPController.m */,
-				33B830A01F26F36D00C5E530 /* GPSController.h */,
-				33B830A11F26F36D00C5E530 /* GPSController.m */,
 				3365D0AA1F90B205005EC863 /* JumperController.h */,
 				3365D0AB1F90B205005EC863 /* JumperController.m */,
 			);
@@ -693,6 +876,24 @@
 				33F551A91EF004B9004B7BBB /* if_rom.h */,
 			);
 			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		37A990BC2111B05E00DADF79 /* BaiduLoc */ = {
+			isa = PBXGroup;
+			children = (
+				37A990BD2111B05E00DADF79 /* BaiduMapAPI_Base.framework */,
+				37A990BE2111B05E00DADF79 /* BaiduMapAPI_Cloud.framework */,
+				37A990BF2111B05E00DADF79 /* BaiduMapAPI_Location.framework */,
+				37A990C02111B05E00DADF79 /* BaiduMapAPI_Map.framework */,
+				37A990C12111B05E00DADF79 /* BaiduMapAPI_Radar.framework */,
+				37A990C22111B05E00DADF79 /* BaiduMapAPI_Search.framework */,
+				37A990C32111B05E00DADF79 /* BaiduMapAPI_Utils.framework */,
+				37A990C42111B05E00DADF79 /* BMKLocationKit.framework */,
+				37A990C52111B05E00DADF79 /* LocationManage.h */,
+				37A990C62111B05E00DADF79 /* LocationManage.m */,
+			);
+			name = BaiduLoc;
+			path = ../BaiduLoc;
 			sourceTree = "<group>";
 		};
 		5023810617EBBCAC00990C9B /* ios */ = {
@@ -806,6 +1007,162 @@
 			path = "GameChess-inhouse";
 			sourceTree = "<group>";
 		};
+		E426C870214F8E3F00C13BFA /* LBSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E426C871214F8E3F00C13BFA /* LBApiManager.h */,
+				E426C872214F8E3F00C13BFA /* LBApiManager.m */,
+				E426C873214F8E3F00C13BFA /* LBSDKController.h */,
+				E426C874214F8E3F00C13BFA /* LBSDKController.m */,
+				E426C875214F8E3F00C13BFA /* LBSDKLua.cpp */,
+				E426C876214F8E3F00C13BFA /* LBSDKLua.h */,
+				E426C877214F8E3F00C13BFA /* libMYMessageSDK.a */,
+				E426C878214F8E3F00C13BFA /* MYMessageObject.h */,
+				E426C879214F8E3F00C13BFA /* MYMessageSendReq.h */,
+			);
+			name = LBSDK;
+			path = ../LBSDK;
+			sourceTree = "<group>";
+		};
+		E42EAC1D2133E237002ED7C0 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				E42EAC1E2133E237002ED7C0 /* AESUtil.cpp */,
+				E42EAC1F2133E237002ED7C0 /* AESUtil.h */,
+				E42EAC202133E237002ED7C0 /* Android */,
+				E42EAC272133E237002ED7C0 /* include */,
+				E42EAC742133E237002ED7C0 /* lib */,
+			);
+			name = AES;
+			path = ../AES;
+			sourceTree = "<group>";
+		};
+		E42EAC202133E237002ED7C0 /* Android */ = {
+			isa = PBXGroup;
+			children = (
+				E42EAC212133E237002ED7C0 /* armeabi */,
+				E42EAC242133E237002ED7C0 /* armeabi-v7a */,
+			);
+			path = Android;
+			sourceTree = "<group>";
+		};
+		E42EAC212133E237002ED7C0 /* armeabi */ = {
+			isa = PBXGroup;
+			children = (
+				E42EAC222133E237002ED7C0 /* libcrypto.a */,
+				E42EAC232133E237002ED7C0 /* libssl.a */,
+			);
+			path = armeabi;
+			sourceTree = "<group>";
+		};
+		E42EAC242133E237002ED7C0 /* armeabi-v7a */ = {
+			isa = PBXGroup;
+			children = (
+				E42EAC252133E237002ED7C0 /* libcrypto.a */,
+				E42EAC262133E237002ED7C0 /* libssl.a */,
+			);
+			path = "armeabi-v7a";
+			sourceTree = "<group>";
+		};
+		E42EAC272133E237002ED7C0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E42EAC282133E237002ED7C0 /* openssl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E42EAC282133E237002ED7C0 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				E42EAC292133E237002ED7C0 /* aes.h */,
+				E42EAC2A2133E237002ED7C0 /* asn1.h */,
+				E42EAC2B2133E237002ED7C0 /* asn1_mac.h */,
+				E42EAC2C2133E237002ED7C0 /* asn1t.h */,
+				E42EAC2D2133E237002ED7C0 /* bio.h */,
+				E42EAC2E2133E237002ED7C0 /* blowfish.h */,
+				E42EAC2F2133E237002ED7C0 /* bn.h */,
+				E42EAC302133E237002ED7C0 /* buffer.h */,
+				E42EAC312133E237002ED7C0 /* camellia.h */,
+				E42EAC322133E237002ED7C0 /* cast.h */,
+				E42EAC332133E237002ED7C0 /* cmac.h */,
+				E42EAC342133E237002ED7C0 /* cms.h */,
+				E42EAC352133E237002ED7C0 /* comp.h */,
+				E42EAC362133E237002ED7C0 /* conf.h */,
+				E42EAC372133E237002ED7C0 /* conf_api.h */,
+				E42EAC382133E237002ED7C0 /* crypto.h */,
+				E42EAC392133E237002ED7C0 /* des.h */,
+				E42EAC3A2133E237002ED7C0 /* des_old.h */,
+				E42EAC3B2133E237002ED7C0 /* dh.h */,
+				E42EAC3C2133E237002ED7C0 /* dsa.h */,
+				E42EAC3D2133E237002ED7C0 /* dso.h */,
+				E42EAC3E2133E237002ED7C0 /* dtls1.h */,
+				E42EAC3F2133E237002ED7C0 /* e_os2.h */,
+				E42EAC402133E237002ED7C0 /* ebcdic.h */,
+				E42EAC412133E237002ED7C0 /* ec.h */,
+				E42EAC422133E237002ED7C0 /* ecdh.h */,
+				E42EAC432133E237002ED7C0 /* ecdsa.h */,
+				E42EAC442133E237002ED7C0 /* engine.h */,
+				E42EAC452133E237002ED7C0 /* err.h */,
+				E42EAC462133E237002ED7C0 /* evp.h */,
+				E42EAC472133E237002ED7C0 /* hmac.h */,
+				E42EAC482133E237002ED7C0 /* idea.h */,
+				E42EAC492133E237002ED7C0 /* krb5_asn.h */,
+				E42EAC4A2133E237002ED7C0 /* kssl.h */,
+				E42EAC4B2133E237002ED7C0 /* lhash.h */,
+				E42EAC4C2133E237002ED7C0 /* md4.h */,
+				E42EAC4D2133E237002ED7C0 /* md5.h */,
+				E42EAC4E2133E237002ED7C0 /* mdc2.h */,
+				E42EAC4F2133E237002ED7C0 /* modes.h */,
+				E42EAC502133E237002ED7C0 /* obj_mac.h */,
+				E42EAC512133E237002ED7C0 /* objects.h */,
+				E42EAC522133E237002ED7C0 /* ocsp.h */,
+				E42EAC532133E237002ED7C0 /* opensslconf.h */,
+				E42EAC542133E237002ED7C0 /* opensslv.h */,
+				E42EAC552133E237002ED7C0 /* ossl_typ.h */,
+				E42EAC562133E237002ED7C0 /* pem.h */,
+				E42EAC572133E237002ED7C0 /* pem2.h */,
+				E42EAC582133E237002ED7C0 /* pkcs12.h */,
+				E42EAC592133E237002ED7C0 /* pkcs7.h */,
+				E42EAC5A2133E237002ED7C0 /* pqueue.h */,
+				E42EAC5B2133E237002ED7C0 /* rand.h */,
+				E42EAC5C2133E237002ED7C0 /* rc2.h */,
+				E42EAC5D2133E237002ED7C0 /* rc4.h */,
+				E42EAC5E2133E237002ED7C0 /* ripemd.h */,
+				E42EAC5F2133E237002ED7C0 /* rsa.h */,
+				E42EAC602133E237002ED7C0 /* safestack.h */,
+				E42EAC612133E237002ED7C0 /* seed.h */,
+				E42EAC622133E237002ED7C0 /* sha.h */,
+				E42EAC632133E237002ED7C0 /* srp.h */,
+				E42EAC642133E237002ED7C0 /* srtp.h */,
+				E42EAC652133E237002ED7C0 /* ssl.h */,
+				E42EAC662133E237002ED7C0 /* ssl2.h */,
+				E42EAC672133E237002ED7C0 /* ssl23.h */,
+				E42EAC682133E237002ED7C0 /* ssl3.h */,
+				E42EAC692133E237002ED7C0 /* stack.h */,
+				E42EAC6A2133E237002ED7C0 /* symhacks.h */,
+				E42EAC6B2133E237002ED7C0 /* tls1.h */,
+				E42EAC6C2133E237002ED7C0 /* ts.h */,
+				E42EAC6D2133E237002ED7C0 /* txt_db.h */,
+				E42EAC6E2133E237002ED7C0 /* ui.h */,
+				E42EAC6F2133E237002ED7C0 /* ui_compat.h */,
+				E42EAC702133E237002ED7C0 /* whrlpool.h */,
+				E42EAC712133E237002ED7C0 /* x509.h */,
+				E42EAC722133E237002ED7C0 /* x509_vfy.h */,
+				E42EAC732133E237002ED7C0 /* x509v3.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		E42EAC742133E237002ED7C0 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E42EAC752133E237002ED7C0 /* libcrypto.a */,
+				E42EAC762133E237002ED7C0 /* libssl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		E48187A520AEC7810039AE8B /* DDSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -865,6 +1222,9 @@
 		F293B3BD15EB7BE500256477 = {
 			isa = PBXGroup;
 			children = (
+				E426C870214F8E3F00C13BFA /* LBSDK */,
+				E42EAC1D2133E237002ED7C0 /* AES */,
+				37A990BC2111B05E00DADF79 /* BaiduLoc */,
 				B6DC03E41FF237C3005405AF /* GameChess-inhouse */,
 				B6F605A71FC8FD160019AB74 /* GameChess-inhouse.entitlements */,
 				E481881620AEC9330039AE8B /* AgoraGamingSDK */,
@@ -1156,6 +1516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E46F5E21A2B8AE009D8EBF /* AESUtil.cpp in Sources */,
 				B693BBAF1EE6549A0063CA14 /* GameGlobalFunMgr.cpp in Sources */,
 				E4800C8820E09316009B2DD9 /* HttpUtils.cpp in Sources */,
 				B693BBB31EE654A40063CA14 /* ToolBASE64.cpp in Sources */,
@@ -1177,19 +1538,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B68F46121FCBEB3E009A056E /* GAME_TOOLSLua.cpp in Sources */,
+				E4FDAEC521F5B40100519C2D /* H5ViewController.m in Sources */,
 				B68F46131FCBEB3E009A056E /* NETWorker.m in Sources */,
 				33B1EC191FFCDA0000BE02B6 /* LameAudioRecoder.m in Sources */,
+				37A990DB2111B05E00DADF79 /* LocationManage.m in Sources */,
 				B68F46141FCBEB3E009A056E /* SimpleConfigParser.cpp in Sources */,
 				B68F46151FCBEB3E009A056E /* WeChatSDKLua.cpp in Sources */,
 				B68F46161FCBEB3E009A056E /* RootViewController.mm in Sources */,
 				B68F46171FCBEB3E009A056E /* Reachability.m in Sources */,
+				E426C87B214F8E3F00C13BFA /* LBApiManager.m in Sources */,
 				B68F46181FCBEB3E009A056E /* YUNControl.cpp in Sources */,
 				B68F46191FCBEB3E009A056E /* WXApiManager.m in Sources */,
+				E426C87F214F8E3F00C13BFA /* LBSDKLua.cpp in Sources */,
 				E481883A20AEC9340039AE8B /* agoraGameMgr.cpp in Sources */,
 				B68F461A1FCBEB3E009A056E /* AudioRecoderLua.cpp in Sources */,
 				B68F461B1FCBEB3E009A056E /* JumperController.m in Sources */,
 				B68F461C1FCBEB3E009A056E /* HttpDownloader.cpp in Sources */,
 				B68F461D1FCBEB3E009A056E /* SFHFKeychainUtils.m in Sources */,
+				E4FDAEC721F5B40100519C2D /* H5Controller.mm in Sources */,
 				B68F461E1FCBEB3E009A056E /* ToolBASE64.cpp in Sources */,
 				B68F461F1FCBEB3E009A056E /* VoiceConverter.mm in Sources */,
 				33B1EC1B1FFCDA0000BE02B6 /* LameAudioRecoderLua.cpp in Sources */,
@@ -1199,14 +1565,15 @@
 				B68F46211FCBEB3E009A056E /* AppDelegate.cpp in Sources */,
 				B68F46221FCBEB3E009A056E /* lua_debugger.c in Sources */,
 				B68F46231FCBEB3E009A056E /* GameSocket.cpp in Sources */,
+				E42EAC782133E238002ED7C0 /* AESUtil.cpp in Sources */,
 				B68F46241FCBEB3E009A056E /* DataBuff.cpp in Sources */,
 				B68F46251FCBEB3E009A056E /* AmrWavAudioRecoder.m in Sources */,
 				B68F46261FCBEB3E009A056E /* main.m in Sources */,
 				B68F46281FCBEB3E009A056E /* RuntimeLuaImpl.cpp in Sources */,
 				B68F46291FCBEB3E009A056E /* AppController.mm in Sources */,
 				E481886220AEC9340039AE8B /* MyIGamingRtcEngineEventHandler.cpp in Sources */,
+				E426C87D214F8E3F00C13BFA /* LBSDKController.m in Sources */,
 				33B1EC1D1FFCDA0000BE02B6 /* LameVoiceConverter.mm in Sources */,
-				B68F462A1FCBEB3E009A056E /* GPSController.m in Sources */,
 				B68F462B1FCBEB3E009A056E /* IAPController.m in Sources */,
 				B68F462C1FCBEB3E009A056E /* FileHelper.m in Sources */,
 				B68F462D1FCBEB3E009A056E /* GameNetGlobalFun.cpp in Sources */,
@@ -1224,19 +1591,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E56D161EF0D5F40064F346 /* GAME_TOOLSLua.cpp in Sources */,
+				E4FDAEC421F5B40100519C2D /* H5ViewController.m in Sources */,
 				33E547E81F0F674200559FD1 /* NETWorker.m in Sources */,
 				33B1EC181FFCDA0000BE02B6 /* LameAudioRecoder.m in Sources */,
+				37A990DA2111B05E00DADF79 /* LocationManage.m in Sources */,
 				9FC760451A677A4A00D1E6E7 /* SimpleConfigParser.cpp in Sources */,
 				33D3D30F1EEB87C30080E1FF /* WeChatSDKLua.cpp in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				33E547E51F0F667C00559FD1 /* Reachability.m in Sources */,
+				E426C87A214F8E3F00C13BFA /* LBApiManager.m in Sources */,
 				33E56DBD1EF26CEC0064F346 /* YUNControl.cpp in Sources */,
 				33D3D3101EEB87C30080E1FF /* WXApiManager.m in Sources */,
+				E426C87E214F8E3F00C13BFA /* LBSDKLua.cpp in Sources */,
 				E481883920AEC9340039AE8B /* agoraGameMgr.cpp in Sources */,
 				33F551B61EF00550004B7BBB /* AudioRecoderLua.cpp in Sources */,
 				3365D0AC1F90B205005EC863 /* JumperController.m in Sources */,
 				B6A9BCFA1EE53ACA00E9519C /* HttpDownloader.cpp in Sources */,
 				335BBF491F1DECDC006AE038 /* SFHFKeychainUtils.m in Sources */,
+				E4FDAEC621F5B40100519C2D /* H5Controller.mm in Sources */,
 				B6A9BCF81EE53ACA00E9519C /* ToolBASE64.cpp in Sources */,
 				33F551B31EF004B9004B7BBB /* VoiceConverter.mm in Sources */,
 				33B1EC1A1FFCDA0000BE02B6 /* LameAudioRecoderLua.cpp in Sources */,
@@ -1246,14 +1618,15 @@
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				9FFE009F1ACCF59E00D6E35A /* lua_debugger.c in Sources */,
 				B6A9BCF71EE53ACA00E9519C /* GameSocket.cpp in Sources */,
+				E42EAC772133E238002ED7C0 /* AESUtil.cpp in Sources */,
 				B6A9BCF51EE53ACA00E9519C /* DataBuff.cpp in Sources */,
 				33F551AE1EF004B9004B7BBB /* AmrWavAudioRecoder.m in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
 				9FFE00A11ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 				E481886120AEC9340039AE8B /* MyIGamingRtcEngineEventHandler.cpp in Sources */,
+				E426C87C214F8E3F00C13BFA /* LBSDKController.m in Sources */,
 				33B1EC1C1FFCDA0000BE02B6 /* LameVoiceConverter.mm in Sources */,
-				33B830A21F26F36D00C5E530 /* GPSController.m in Sources */,
 				33B830A71F272F0900C5E530 /* IAPController.m in Sources */,
 				33F551AF1EF004B9004B7BBB /* FileHelper.m in Sources */,
 				B6A9BCF61EE53ACA00E9519C /* GameNetGlobalFun.cpp in Sources */,
@@ -1328,6 +1701,7 @@
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../DDSDK",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../BaiduLoc",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1345,6 +1719,10 @@
 					"$(SRCROOT)/../../cocos2d-x/external/curl/include/ios",
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../AgoraGamingSDK",
+					"$(SRCROOT)/../BaiduLoc",
+					"$(SRCROOT)/../AES",
+					"$(SRCROOT)/../AES/include",
+					"$(SRCROOT)/../LBSDK",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1355,6 +1733,9 @@
 					"\"$(SRCROOT)/../../../libs/cocos2dx/ios/Release-iphoneos\"",
 					"$(SRCROOT)/../Lamemp3/lib",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../BaiduLoc",
+					"$(SRCROOT)/../AES/lib",
+					"$(SRCROOT)/../LBSDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1372,7 +1753,7 @@
 					"-image_base",
 					100000000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zzgame.zzhzmj;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuzhi.zzqipai;
 				PROVISIONING_PROFILE = "9b79ea67-310e-46a7-8816-be6b521c1882";
 				PROVISIONING_PROFILE_SPECIFIER = hnmj_dis;
 				SDKROOT = iphoneos;
@@ -1400,9 +1781,14 @@
 					"$(SRCROOT)/../Classes/protobuf-lite",
 					"$(SRCROOT)/../Classes",
 					"$(SRCROOT)/../../cocos2d-x/tools/simulator/libsimulator/lib",
+					"$(SRCROOT)/../AES",
+					"$(SRCROOT)/../AES/include",
 				);
 				INFOPLIST_FILE = mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../libs/cocos2dx/mac/Release\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../libs/cocos2dx/mac/Release\"",
+					"\"$(SRCROOT)/../AES/lib\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"-image_base",
@@ -1437,9 +1823,14 @@
 					"$(SRCROOT)/../Classes/protobuf-lite",
 					"$(SRCROOT)/../Classes",
 					"$(SRCROOT)/../../cocos2d-x/tools/simulator/libsimulator/lib",
+					"$(SRCROOT)/../AES",
+					"$(SRCROOT)/../AES/include",
 				);
 				INFOPLIST_FILE = mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../libs/cocos2dx/mac/Debug\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../libs/cocos2dx/mac/Debug\"",
+					"\"$(SRCROOT)/../AES/lib\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"-image_base",
@@ -1472,9 +1863,14 @@
 					"$(SRCROOT)/../Classes/protobuf-lite",
 					"$(SRCROOT)/../Classes",
 					"$(SRCROOT)/../../cocos2d-x/tools/simulator/libsimulator/lib",
+					"$(SRCROOT)/../AES",
+					"$(SRCROOT)/../AES/include",
 				);
 				INFOPLIST_FILE = mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../libs/cocos2dx/mac/Release\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../libs/cocos2dx/mac/Release\"",
+					"\"$(SRCROOT)/../AES/lib\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"-image_base",
@@ -1496,7 +1892,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "GameChess-mobile/GameChess-mobile.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: JYall Technology Co.Ltd.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: liang xian (P828GLUYZ5)";
 				COMPRESS_PNG_FILES = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
@@ -1506,6 +1902,7 @@
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../DDSDK",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../BaiduLoc",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
@@ -1525,6 +1922,10 @@
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../DDSDK",
 					"$(SRCROOT)/../AgoraGamingSDK",
+					"$(SRCROOT)/../AES",
+					"$(SRCROOT)/../AES/include",
+					"$(SRCROOT)/../BaiduLoc",
+					"$(SRCROOT)/../LBSDK",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/GameChess-inhouse/GameChess-inhouse.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1535,6 +1936,8 @@
 					"\"$(SRCROOT)/../../../libs/cocos2dx/ios/Debug-iphoneos\"",
 					"$(SRCROOT)/../Lamemp3/lib",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../AES/lib",
+					"$(SRCROOT)/../LBSDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1552,10 +1955,10 @@
 					"-image_base",
 					100000000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qupai.hnmj1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuzhi.zzqipai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bb2a08e0-4e19-4d1f-a28f-c027dfaefea0";
-				PROVISIONING_PROFILE_SPECIFIER = qp_hnmj_inhous;
+				PROVISIONING_PROFILE = "96f78c9f-7e4c-4563-977e-54a919c9390f";
+				PROVISIONING_PROFILE_SPECIFIER = zzqipai_dev;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
@@ -1579,6 +1982,7 @@
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../DDSDK",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../BaiduLoc",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1597,6 +2001,10 @@
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../DDSDK",
 					"$(SRCROOT)/../AgoraGamingSDK",
+					"$(SRCROOT)/../AES",
+					"$(SRCROOT)/../AES/include",
+					"$(SRCROOT)/../BaiduLoc",
+					"$(SRCROOT)/../LBSDK",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/GameChess-inhouse/GameChess-inhouse.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1607,6 +2015,8 @@
 					"\"$(SRCROOT)/../../../libs/cocos2dx/ios/Release-iphoneos\"",
 					"$(SRCROOT)/../Lamemp3/lib",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../AES/lib",
+					"$(SRCROOT)/../LBSDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1624,10 +2034,10 @@
 					"-image_base",
 					100000000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qupai.hnmj1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuzhi.zzqipai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bb2a08e0-4e19-4d1f-a28f-c027dfaefea0";
-				PROVISIONING_PROFILE_SPECIFIER = qp_hnmj_inhous;
+				PROVISIONING_PROFILE = "d749d58b-3017-48bb-9457-7e278d56fdf7";
+				PROVISIONING_PROFILE_SPECIFIER = zzqipai;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
@@ -1652,6 +2062,7 @@
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../DDSDK",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../BaiduLoc",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1670,6 +2081,10 @@
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../DDSDK",
 					"$(SRCROOT)/../AgoraGamingSDK",
+					"$(SRCROOT)/../AES",
+					"$(SRCROOT)/../AES/include",
+					"$(SRCROOT)/../BaiduLoc",
+					"$(SRCROOT)/../LBSDK",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/GameChess-inhouse/GameChess-inhouse.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1680,6 +2095,8 @@
 					"\"$(SRCROOT)/../../../libs/cocos2dx/ios/Release-iphoneos\"",
 					"$(SRCROOT)/../Lamemp3/lib",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../AES/lib",
+					"$(SRCROOT)/../LBSDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1697,10 +2114,10 @@
 					"-image_base",
 					100000000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qupai.hnmj1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuzhi.zzqipai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bb2a08e0-4e19-4d1f-a28f-c027dfaefea0";
-				PROVISIONING_PROFILE_SPECIFIER = qp_hnmj_inhous;
+				PROVISIONING_PROFILE = "d749d58b-3017-48bb-9457-7e278d56fdf7";
+				PROVISIONING_PROFILE_SPECIFIER = zzqipai;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
@@ -1765,7 +2182,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "GameChess-mobile/GameChess-mobile.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Chen (DW3UYS8N6F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: liang xian (P828GLUYZ5)";
 				COMPRESS_PNG_FILES = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
@@ -1775,6 +2192,7 @@
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../DDSDK",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../BaiduLoc",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
@@ -1793,6 +2211,10 @@
 					"$(SRCROOT)/../../cocos2d-x/external/curl/include/ios",
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../AgoraGamingSDK",
+					"$(SRCROOT)/../BaiduLoc",
+					"$(SRCROOT)/../AES",
+					"$(SRCROOT)/../AES/include",
+					"$(SRCROOT)/../LBSDK",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1803,6 +2225,9 @@
 					"$(SRCROOT)/../Lamemp3/lib",
 					"\"$(SRCROOT)/../../../libs/cocos2dx/ios/Debug-iphoneos\"",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../BaiduLoc",
+					"$(SRCROOT)/../AES/lib",
+					"$(SRCROOT)/../LBSDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1820,9 +2245,9 @@
 					"-image_base",
 					100000000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zzgame.zzhzmj;
-				PROVISIONING_PROFILE = "78a7adc5-5085-4c4d-a4f0-1a29a8f50c52";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuzhi.zzqipai;
+				PROVISIONING_PROFILE = "96f78c9f-7e4c-4563-977e-54a919c9390f";
+				PROVISIONING_PROFILE_SPECIFIER = zzqipai_dev;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
@@ -1847,6 +2272,7 @@
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../DDSDK",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../BaiduLoc",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1864,6 +2290,10 @@
 					"$(SRCROOT)/../../cocos2d-x/external/curl/include/ios",
 					"$(SRCROOT)/../AliPush",
 					"$(SRCROOT)/../AgoraGamingSDK",
+					"$(SRCROOT)/../BaiduLoc",
+					"$(SRCROOT)/../AES",
+					"$(SRCROOT)/../AES/include",
+					"$(SRCROOT)/../LBSDK",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1874,6 +2304,9 @@
 					"\"$(SRCROOT)/../../../libs/cocos2dx/ios/Release-iphoneos\"",
 					"$(SRCROOT)/../Lamemp3/lib",
 					"$(SRCROOT)/../AgoraGamingSDK/libs/iOS",
+					"$(SRCROOT)/../BaiduLoc",
+					"$(SRCROOT)/../AES/lib",
+					"$(SRCROOT)/../LBSDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1891,7 +2324,7 @@
 					"-image_base",
 					100000000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zzgame.zzhzmj;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuzhi.zzqipai;
 				PROVISIONING_PROFILE = "9b79ea67-310e-46a7-8816-be6b521c1882";
 				PROVISIONING_PROFILE_SPECIFIER = hnmj_dis;
 				SDKROOT = iphoneos;

@@ -44,7 +44,7 @@ import android.graphics.PorterDuffXfermode;
 import android.net.Uri;
 import android.content.Intent;
 
-import com.qupai.hnmajiang.R;
+import com.zhuzhi.zzqipai.R;
 
 public class YXSDKController {
 	private static YXSDKController instance = null;
@@ -97,7 +97,7 @@ public class YXSDKController {
 	private void initAPPID_SERCRET() {
 		AssetManager am = this.mContext.getAssets();
 		try {
-			InputStream in = am.open("src/cocos/properties.txt");
+			InputStream in = am.open("src/AppPlatform/cocos/properties.txt");
 
 			byte[] buffer = new byte[in.available()];
 			in.read(buffer);
@@ -133,7 +133,7 @@ public class YXSDKController {
 				
 				//检查包名：
 				if(!this.checkPackName(AppPackName)){
-					this.showAlert(" UR : 请检查微信key值先关内容 ，否则无法正常登陆", false);
+					this.showAlert(" UR : 请检查易信key值先关内容 ，否则无法正常登陆", false);
 				}
 
 			} else {

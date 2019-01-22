@@ -4,8 +4,8 @@ filepath=$(cd "$(dirname "$0")"; pwd)
 DATE=$(date +%H%M)
 echo ${DATE}
 
-CODE_SIGN_NAME="iPhone Distribution: Guangzhou Yingzheng Information Technology Co.,Ltd"
-#CODE_SIGN_NAME="iPhone Distribution: JYall Technology Co.Ltd."
+#CODE_SIGN_NAME="iPhone Distribution: Guangzhou Yingzheng Information Technology Co.,Ltd"
+CODE_SIGN_NAME="iPhone Distribution: JYall Technology Co.Ltd."
 
 PROJECT_PATH=$filepath
 

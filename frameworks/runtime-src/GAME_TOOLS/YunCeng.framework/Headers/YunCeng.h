@@ -46,31 +46,43 @@ typedef NS_ENUM(NSInteger, YC_CODE) {
  *@brief 初始化云层SDK
  *@param appKey 控制台对应的appkey
  *@param token 玩家唯一标识，类似与手机号
- *@param token_rank 玩家等级标识 (0 - 100)
  *@return 函数成功返回0，否则返回错误码
  */
-+(int) initEx:(const char *)appKey : (const char *) token : (int) token_rank;
++(int) initEx:(const char *)appKey : (const char *) token;
 
 /*!
  *@brief 获取动态IP地址
+ *@param token 玩家账号信息
  *@param group_name 控制台上配置的用户分组ID
- *@param token 玩家唯一标识，类似与手机号
- *@param dport 控制台配置的转发端口
+ *@param dip 目标ip
+ *@param dport 目标端口
  *@param ip_buf 未开启隧道模式时，返回group_name对应的分组IP，开启隧道模式，则返回隧道IP
  *@param port_buf 未开启隧道模式时，返回传入的端口，开启隧道模式时，返回隧道端口
  *@return 当该函数调用成功时返回0，否则返回错误号码
  */
-+(int) getNextIPByGroupNameEx : (const char *)group_name : (const char *)token : (const char *)dport : (char *)ip_buf : (int)ip_buf_len : (char *)port_buf : (int)port_buf_len; 
++(int) getProxyTcpByIp:(const char *)token : (const char *)group_name  :(const char *)dip: (const char *)dport : (char *)ip_buf : (int)ip_buf_len : (char *)port_buf : (int)port_buf_len;
 
 /*!
- *@brief 生成路由包
- *@param ip_map 控制台配置的IP映射
- *@param port 源站端口
- *@param route_pkg_buf 出参，路由包信息，请确保route_pkg指向的buf大小至少28字节
- *@param pkg_buf_len 表示 route_pkg的内存大小指针，函数返回时，该值会被修改为route_pkg的大小
- *@return 成功返回0，失败返回-1
+ *@brief 获取动态IP地址
+ *@param token 玩家账号信息
+ *@param group_name 控制台上配置的用户分组ID
+ *@param ddomain 目标domain
+ *@param dport 目标端口
+ *@param ip_buf 未开启隧道模式时，返回group_name对应的分组IP，开启隧道模式，则返回隧道IP
+ *@param port_buf 未开启隧道模式时，返回传入的端口，开启隧道模式时，返回隧道端口
+ *@return 当该函数调用成功时返回0，否则返回错误号码
  */
-+(int) buildRoutePkg:(int) ip_map :(int) port : (unsigned char *) route_pkg_buf : (int *)pkg_buf_len;
++(int) getProxyTcpByDomain:(const char *)token : (const char *)group_name  :(const char *)ddomain: (const char *)dport : (char *)ip_buf : (int)ip_buf_len : (char *)port_buf : (int)port_buf_len;
+
+/*!
+ *@brief 获取动态IP地址
+ *@param ip_buf 存放返回本地ip的buf
+ *@param ip_buf_len ip_buf长度
+ *@param ip_info_buf 存放ip info内容
+ *@param ip_info_buf_len ip_info_buf的长度
+ */
++(int) getLocalIpInfo : (char *)ip_buf : (int)ip_buf_len : (char *)ip_info_buf : (int)ip_info_buf_len; 
+
 
 /*! @brief 网络诊断
  * 注意：1、仅支持单线程调用；2、需要在getNextIPByGroupNameEx之后调用，否则会出现未知错误！！！
@@ -86,35 +98,15 @@ typedef NS_ENUM(NSInteger, YC_CODE) {
  */
 + (NSString*) getSecToken;
 
-/*! @brief UMID异步获取接口
- * 成功返回0，失败返回其它
- * @param listener 异步回调接口
- * @return YC_CODE
+/**
+ *@param data_type 自定义数据类型，请与开发人员联系，分配相关的Type
+ *@param data_type = -1时，表示上报jaq的签名
+ *@param report_msg 上报数据内容
+ *@return 0表示成功，-1表示失败
  */
-//+ (int) getUMIDAsync: (void (^) (NSString* securityToken, NSError* error)) listener;
+ + (int) reportUserData:(int) data_type : (const char *) report_msg : (int) sync;
 
-/*! @brief 初始化云层SDK
- * appKey 控制台对应的appkey
- * 函数成功返回0，否则返回错误码
- */
-//+(int) init:(const char *)appKey;
-
-/*! @brief 获取动态IP地址
- * group_name 控制台配置的分组ID
- * ip_buf 如果成获取IP，则返回控制台配置的IP节点
- * ip_buf_len ip_buf对应的大小
- * 如果成功则返回0，否则返回错误码
- */
-//+(int) getNextIPByGroupName:(const char *)group_name : (char *) ip_buf : (int) ip_buf_len;
-
-/** 获取动态IP地址及运营商信息
- * group_name 控制台上配置的用户分组ID
- * ip_buf 返回控制台配置的IP节点
- * ip_len 表示ip_buf的大小
- * ip_info_buf 返回出口IP的运营商信息buf
- * ip_info_len ip_inf_buf的大小
- */
-//+(int) getNextIPInfoByGroupName:(const char *)group_name : (char *) ip_buf : (int) ip_len : (char *)ip_info_buf : (int) ip_info_len;
+ + (int) AsyncNetworkDiagnosiTask;
 @end
 
 
@@ -137,53 +129,51 @@ FOUNDATION_EXPORT NSString *const YUNCENG_EXCEPTION_NAME;
 /*! @brief 初始化云层SDK
  * appKey:控制台对应的appkey
  * token: 玩家唯一标识，类似与手机号
- * token_rank: 玩家等级标识 (0 - 100)
  * 函数成功返回0，否则返回错误码
  */
-int YunCeng_InitEx(const char *app_key, const char *token, int token_rank);
+int YunCeng_InitEx(const char *app_key, const char *token);
 
-/*! @brief 获取动态IP地址
- * group_name 分组ID
- * token 用户唯一标识
- * dport 服务器端口(通过后台配置的转发端口)
- * ip_buf 出参，存放动态获取的IP
+/*!
+ *@brief 获取动态IP地址
+ *@param token 玩家账号信息
+ *@param group_name 控制台上配置的用户分组ID
+ *@param dip 目标ip
+ *@param dport 目标端口
+ *@param ip_buf 未开启隧道模式时，返回group_name对应的分组IP，开启隧道模式，则返回隧道IP
+ *@param ip_buf_len 入参，ip_buf缓存的大小
+ *@param port_buf 未开启隧道模式时，返回传入的端口，开启隧道模式时，返回隧道端口
+ *@param port_buf_len, 入参， port_buf缓存的大小
+ *@return 当该函数调用成功时返回0，否则返回错误号码
+ */
+int YunCeng_GetProxyTcpByIp(const char *token, const char *group_name, const char * dip,const char *dport,char *ip_buf,int ip_buf_len, char *port_buf, int port_buf_len);
+
+/*!
+ *@brief 获取动态IP地址
+ *@param token 玩家账号信息
+ *@param group_name 控制台上配置的用户分组ID
+ *@param ddomain 目标domain
+ *@param dport 目标端口
+ *@param ip_buf 未开启隧道模式时，返回group_name对应的分组IP，开启隧道模式，则返回隧道IP
+ *@param ip_buf_len 入参，ip_buf缓存的大小
+ *@param port_buf 未开启隧道模式时，返回传入的端口，开启隧道模式时，返回隧道端口
+ *@param port_buf_len, 入参， port_buf缓存的大小
+ *@return 当该函数调用成功时返回0，否则返回错误号码
+ */
+int YunCeng_GetProxyTcpByDomain(const char *token, const char *group_name, const char * ddomain,const char *dport,char *ip_buf,int ip_buf_len, char *port_buf, int port_buf_len);
+
+/*! @brief 获取当前出口IP
+ * ip_buf 出参，存放
  * ip_buf_len 入参，ip_buf缓存的大小
- * port_buf 出参，存在动态分配的端口
- * port_buf_len, 入参， port_buf缓存的大小
+ * ip_info_buf 出参，存在动态分配的端口
+ * ip_info_buf_len, 入参， ip_info_buf
  * @return YC_CODE
  */
-int YunCeng_GetNextIPByGroupNameEx(const char *group_name, const char * token, const char *dport, char *ip_buf, int ip_buf_len, char *port_buf, int port_buf_len);
+int YunCeng_GetLocalIPInfo(char *ip_buf, int ip_buf_len, char *ip_info_buf, int ip_info_buf_len);
 
-/*! @brief 获取动态IP地址及运营商信息 
- * 成功返回0，失败返回-1
- * ip_map，控制台配置的IP映射
- * port 目标端口
- * route_pkg_buf 出参，路由包信息，请确保route_pkg指向的buf大小至少28字节
- * pkg_buf_len 表示 route_pkg的内存大小指针，函数返回时，该值会被修改为route_pkg的大小
- * @return YC_CODE
+/*!
+ * data_type 表示用户数据类型，请联系开发人员分配相关的type
+ * data_type = -1时，表示上报jaq的签名
+ * report_msg 用户上报数据
+ * @return 0表示成功，-1表示失败
  */
-int YunCeng_BuildRoutePkg(int ip_map, int port, unsigned char *route_pkg_buf, int *pkg_buf_len);
-
-/*! @brief 初始化
- * app_key 控制台生成的appKey
- * @return YC_CODE
- */
-//int YunCeng_Init(const char *app_key);
-
-/*! @brief 获取动态IP地址
- * group_name
- * ip_buf 出参，存放获取的动态IP地址
- * ip_buf_len 入参，ip_buf的缓存的大小
- * @return YC_CODE
- */
-//int YunCeng_GetNextIPByGroupName(const char *group_name, char *ip_buf, int ip_buf_len);
-
-/*! @brief 获取动态IP地址及运营商信息 
- * group_name
- * ip_buf 出参，存放获取的动态IP地址
- * ip_buf_len, 入参, ip_buf缓存的大小
- * ip_buf_info 出参，端IP运营商信息
- * ip_info_buf_len, 入参，ip_buf_info缓存大小
- * @return YC_CODE
- */
-//int YunCeng_GetNextIPInfoByGroupName(const char *group_name, char *ip_buf, int ip_buf_len, char *ip_info_buf, int ip_info_buf_len);
+ int YunCeng_ReportUserData(int data_type, const char *report_msg, int sync);

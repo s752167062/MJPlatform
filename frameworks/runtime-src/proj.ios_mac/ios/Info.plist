@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>趣牌湖南麻将</string>
+	<string>筑志游戏</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -29,7 +29,7 @@
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wx6d99c6188fb56c9c</string>
+				<string>wxc48e5f44f20bbc51</string>
 			</array>
 		</dict>
 		<dict>
@@ -39,7 +39,7 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.qupai.hnmajiang1</string>
+				<string>com.zhuzhi.zzqipai</string>
 			</array>
 		</dict>
 		<dict>
@@ -50,6 +50,16 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>dingoaz1vrosc23jod3hy3</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.zhuzhi.zzqipai</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>zhuzhiheji</string>
 			</array>
 		</dict>
 	</array>
@@ -80,6 +90,7 @@
 		<string>com.zhuzhi.zzssz</string>
 		<string>dingtalk</string>
 		<string>dingtalk-open</string>
+		<string>liaobei</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

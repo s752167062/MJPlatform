@@ -34,11 +34,14 @@
 #import "DDSDKController.h"
 #import "NETWorker.h"
 //#import "NowPayController.h"
+#import "H5Controller.h"
 #import "IAPController.h"
 #include "GAME_TOOLSLua.h"
 #import "JumperController.h"
+#import "LBSDKController.h"
 //#import "YXSDKController.h"
 #import "AliPushManage.h"
+#import "LocationManage.h"
 
 @implementation AppController
 
@@ -87,7 +90,7 @@ static AppDelegate s_sharedApplication;
     }
     
     [window makeKeyAndVisible];
-
+    
     [[UIApplication sharedApplication] setStatusBarHidden: YES];
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];//keep screen on
     
@@ -123,14 +126,18 @@ static AppDelegate s_sharedApplication;
     [[NETWorker getInstance]application:application didFinishLaunchingWithOptions:launchOptions];
 //    [[NowPayController getInstance] initOnViewLoaded:viewController];
     [[IAPController getInstance] didInFinshLaunching];
+    [[H5Controller getInstance] setViewController:viewController];
     
     //DD
     [[DDSDKController getInstance]application:application didFinishLaunchingWithOptions:launchOptions];
+    //LIAOBA
+    [[LBSDKController getInstance]application:application didFinishLaunchingWithOptions:launchOptions];
     
     //yx
 //    [[YXSDKController getInstance]application:application didFinishLaunchingWithOptions:launchOptions];
     
     [[AliPushManage  getInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    [[LocationManage getInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
@@ -139,6 +146,7 @@ static AppDelegate s_sharedApplication;
         return [[WeChatSDKController getInstance] application:application handleOpenURL:url];
     }else{
         //    [[YXSDKController getInstance] application:application handleOpenURL:url];
+        [[LBSDKController getInstance] application:application handleOpenURL:url];
         [[JumperController getInstance] check_OpenUrlData:url.absoluteString];
         return [[DDSDKController getInstance] application:application handleOpenURL:url];
     }
@@ -149,9 +157,20 @@ static AppDelegate s_sharedApplication;
         return [[WeChatSDKController getInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
     }else{
         [[JumperController getInstance] check_OpenUrlData:url.absoluteString];
+        [[LBSDKController getInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+        
         //    [[NowPayController getInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
         //    [[YXSDKController getInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
         return[[DDSDKController getInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    }
+}
+
+//
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    if([[H5Controller getInstance] isH5ViewShowPortrait] == true){
+        return UIInterfaceOrientationMaskPortrait;
+    }else{
+        return UIInterfaceOrientationMaskLandscape;
     }
 }
 

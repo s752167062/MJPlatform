@@ -40,7 +40,7 @@ import com.android.dingtalk.share.ddsharemodule.message.DDMediaMessage;
 import com.android.dingtalk.share.ddsharemodule.message.DDTextMessage;
 import com.android.dingtalk.share.ddsharemodule.message.DDWebpageMessage;
 import com.android.dingtalk.share.ddsharemodule.message.SendMessageToDD;
-import com.qupai.hnmajiang.R;
+import com.zhuzhi.zzqipai.R;
 
 public class DDSDKController {
 	private static DDSDKController instance = null;
@@ -88,7 +88,7 @@ public class DDSDKController {
 	private void initAPPID() {
 		AssetManager am = this.mContext.getAssets();
 		try {
-			InputStream in = am.open("src/cocos/properties.txt");
+			InputStream in = am.open("src/AppPlatform/cocos/properties.txt");
 
 			byte[] buffer = new byte[in.available()];
 			in.read(buffer);
@@ -118,9 +118,9 @@ public class DDSDKController {
 				}
 				
 				//检查包名：
-				if(!this.checkPackName(AppPackName)){
-					this.showAlert(" UR : 请检查DD key值先关内容 ，否则无法正常登陆", false);
-				}
+				// if(!this.checkPackName(AppPackName)){
+					// this.showAlert(" UR : 请检查DD key值先关内容 ，否则无法正常登陆", false);
+				// }
 
 			} else {
 				this.showAlert(" UR : properties 文件不存在 ", false);

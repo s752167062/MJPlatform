@@ -75,11 +75,11 @@
 }
 
 - (BOOL) shouldAutorotate {
-    if (SimpleConfigParser::getInstance()->isLanscape()) {
-        return YES;
-    }else{
+//    if (SimpleConfigParser::getInstance()->isLanscape()) {
+//        return YES;
+//    }else{
         return NO;
-    }
+//    }
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {

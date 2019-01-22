@@ -26,10 +26,7 @@ THE SOFTWARE.
 ****************************************************************************/
 package org.cocos2dx.lua;
 
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.net.SocketException;
-import java.util.Enumeration;
+
 import java.util.ArrayList;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
@@ -40,33 +37,37 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.text.format.Formatter;
-import android.util.Log;
+import android.view.View;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 import com.pro.nowpay.NowPayController;
 import com.pro.sdk.wechat.WeCharSDKController;
+import com.pro.sdk.baiduMap.LocationService;
+import com.pro.sdk.baiduMap.locationManage;
 import com.pro.sdk.dd.DDSDKController;
-import com.pro.sdk.yixin.YXSDKController;
 import com.pro.game.tools.GameToolsController;
+import com.pro.sdk.liaobei.LBSDKController;
 
 public class AppActivity extends Cocos2dxActivity{
     static {
         System.loadLibrary("agoraSdkCWrapper");
     }
     
+    
+    private boolean reChange = false; 
     static String hostIPAdress = "0.0.0.0";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // this.hideBottomUIMenu();
         super.onCreate(savedInstanceState);
         
         if(nativeIsLandScape()) {
@@ -75,9 +76,14 @@ public class AppActivity extends Cocos2dxActivity{
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
         }
         
+
         //2.Set the format of window : keep screen on
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+        //fix
+    	ScreenFixMgr.getInstance().setActivityFramelayout(getFrameLayout());
+        ScreenFixMgr.getInstance().init(this);
+        
         // Check the wifi is opened when the native is debug.
         if(nativeIsDebug())
         {
@@ -102,7 +108,7 @@ public class AppActivity extends Cocos2dxActivity{
             }
             hostIPAdress = getHostIpAddress();
         }
-
+        
         //wx
         WeCharSDKController.getInstance().initWeChar(this,true);
         //dd
@@ -112,8 +118,19 @@ public class AppActivity extends Cocos2dxActivity{
         //支付
         NowPayController.getInstance().init(this);
         //易信
-        YXSDKController.getInstance().initYX(this,true);
+        // YXSDKController.getInstance().initYX(this,true);
+        LBSDKController.getInstance().initLB(this, false);
+        
+        LocationService lcs = ((mApplication) getApplication()).locationService;
+        locationManage.getInstance().initOnCreate(this,lcs);
+        
+        //h5
+        H5WebViewController.getInstance().init(this);
     }
+    
+    
+    
+    
     private boolean isNetworkConnected() {
             ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);  
             if (cm != null) {  
@@ -154,11 +171,19 @@ public class AppActivity extends Cocos2dxActivity{
         super.onDestroy();
         GameToolsController.getInstance().destoryGameTools(this);
     }
+    @Override
+    protected void onResume() {
+    	// TODO Auto-generated method stub
+    	super.onResume();
+    	ScreenFixMgr.getInstance().onResume();
+    }
     
     @Override
     protected void onPause() {
     	// TODO Auto-generated method stub
     	super.onPause();
+    	ScreenFixMgr.getInstance().onPause();
+    	
     	//通知 暂停
     	try {
 			Cocos2dxHelper.runOnGLThread(new Runnable() {
@@ -180,41 +205,17 @@ public class AppActivity extends Cocos2dxActivity{
         GameToolsController.getInstance().onActivityResult(requestCode, resultCode, data);
     }
     
-
-
-    //用于C++ 中转回调
-    public static void  JniLuaHandler(String handler_str){
-        if(handler_str!= null && !handler_str.equals("")){
-            System.out.println(">>> JniLuaHandler " + handler_str );
-            try {
-                int handler = 0;
-                int code = 0;
-
-                String[] datas = handler_str.split(",");
-                if(datas.length > 1){
-                    handler = Integer.parseInt(datas[0]);
-                    code = Integer.parseInt(datas[1]);
-                }
-
-                if(handler > 0){
-                    final int handler_final = handler;
-                    final int code_final = code;
-                    Cocos2dxHelper.runOnGLThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            System.out.println(">>> Jni 回调给LUA" + handler_final + "  " + code_final );
-                            Cocos2dxLuaJavaBridge.callLuaFunctionWithString(handler_final,String.format("%d", code_final));// 调用
-                            Cocos2dxLuaJavaBridge.releaseLuaFunction(handler_final);
-                        }
-                    });
-                }
-            } catch (Exception e) {
-                System.out.println(" UR JniLuaHandler Call Faile xxxxx");
-                e.printStackTrace();
-            }
-        }else{
-            System.out.println(">>> JniLuaHandler null" );
-        }
+    @Override  
+    public void onConfigurationChanged(Configuration newConfig) {  
+        super.onConfigurationChanged(newConfig);  
+      
+        // Checks the orientation of the screen  
+        System.out.println(">>>>> orientation " + newConfig.orientation);
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {  
+        	
+        }  
     }
     
 }
+
+

@@ -19,8 +19,9 @@ class YUNControl {
     static YUNControl* getInstance();
     
     void init();
-    std::string getYUNByGroupName(const char* name , const char* uuid, const char* game_port);
-//    std::string  getYUNIPInfo_byGroup_name(const char* name); //V5版已去除相关接口
+    std::string getYUNByGroupNameIP(const char* name , const char* uuid, const char* game_ip , const char* game_port );
+    std::string getYUNByGroupNameDomain(const char* name , const char* uuid, const char* game_host , const char* game_port );
+    
     void networkDiagnosis(const char* ip , int port , int hanlder);
     static void* runNetworkDiagnosis(void* obj);
     

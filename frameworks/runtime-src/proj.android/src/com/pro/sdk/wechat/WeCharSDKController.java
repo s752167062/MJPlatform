@@ -43,7 +43,7 @@ import com.tencent.mm.opensdk.modelmsg.WXTextObject;
 import com.tencent.mm.opensdk.modelmsg.WXWebpageObject;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
-import com.qupai.hnmajiang.R;
+import com.zhuzhi.zzqipai.R;
 
 public class WeCharSDKController {
 	private static WeCharSDKController instance = null;
@@ -103,7 +103,7 @@ public class WeCharSDKController {
 	private void initAPPID_SERCRET() {
 		AssetManager am = this.mContext.getAssets();
 		try {
-			InputStream in = am.open("src/cocos/properties.txt");
+			InputStream in = am.open("src/AppPlatform/cocos/properties.txt");
 
 			byte[] buffer = new byte[in.available()];
 			in.read(buffer);

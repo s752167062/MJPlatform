@@ -14,13 +14,13 @@
 #include "CCLuaValue.h"
 #include "CCLuaEngine.h"
 #include "YUNControl.h"
-#include "GPSController.h"
+#include "LocationManage.h"
 
 #import "AmrWavAudioRecoder.h"
 #import "SFHFKeychainUtils.h"
 #import "IAPController.h"
 #import "JumperController.h"
-
+#import "H5Controller.h"
 //阿里云推送部分
 #import "AliPushManage.h"
 
@@ -44,15 +44,17 @@ void GAME_TOOLSLua::bind(lua_State* ls){
     lua_register(ls, "cpp_getTextFromSyetm_Pasteboard"  , paste_txt );
     lua_register(ls, "cpp_getDevicePower"               , getDevicePower );    
     lua_register(ls, "cpp_getYunIP"                     , getYunIp );
-//    lua_register(ls, "cpp_getYunIP_INFO"                , getYunIp_INFO );
+    lua_register(ls, "cpp_getYunIpWithDomain"           , getYunIpWithDomain );
+    
     lua_register(ls, "cpp_yunCheckNetStatus"            , yunCheckNetStatus);
     lua_register(ls, "cpp_getDevice_IMEI"               , getDevice_IMEI );
     
-    lua_register(ls, "cpp_getGPS_Location"              , getGPS_Location );
-    lua_register(ls, "cpp_setGPS_Location_callfun"      , setGPS_Location_callfun );
-    lua_register(ls, "cpp_getGPS_Server_Status"         , getGPS_Server_Status );
-    lua_register(ls, "cpp_stop_GPS"                     , stop_GPS );
-    lua_register(ls, "cpp_show_App_GPS_Setting"         , show_App_GPS_Setting );
+    lua_register(ls, "cpp_getGPS_Location" , cpp_getGPS_Location );
+    lua_register(ls, "cpp_setGPS_Location_callfun", cpp_setGPS_Location_callfun);
+    lua_register(ls, "cpp_Stop_GPS" , cpp_Stop_GPS);
+    lua_register(ls, "cpp_getGPS_Server_Status",cpp_getGPS_Server_Status);
+    lua_register(ls, "cpp_get_GPS_Distance",cpp_get_GPS_Distance);
+    lua_register(ls, "cpp_show_App_GPS_Setting",cpp_show_App_GPS_Setting);
     
     lua_register(ls, "cpp_register_IAP_Callback"        , register_IAP_Callback );
     lua_register(ls, "cpp_unRegister_IAP_Callback"      , unRegister_IAP_Callback );
@@ -66,6 +68,8 @@ void GAME_TOOLSLua::bind(lua_State* ls){
     //阿里云推送部分
     lua_register(ls, "cpp_GET_DEVICE_ID" , cpp_GET_DEVICE_ID);
     lua_register(ls, "cpp_getXcode_Preprocessor_Macros" , cpp_getXcode_Preprocessor_Macros);
+    
+    lua_register(ls, "cpp_startH5Game", cpp_startH5Game);
 }
 
 void GAME_TOOLSLua::init(){
@@ -134,7 +138,8 @@ int GAME_TOOLSLua::getDevicePower(lua_State* ls){
 int GAME_TOOLSLua::getYunIp(lua_State* ls){
     string group_name = lua_tostring(ls ,1);
     string uuid       = lua_tostring(ls, 2);
-    string game_port  = lua_tostring(ls, 3);
+    string game_ip    = lua_tostring(ls, 3);
+    string game_port  = lua_tostring(ls, 4);
 //    if (uuid.length() > 0 ) {
 //        char * c = const_cast<char*>(uuid.c_str());
 //        int hashcode = YUNControl::getInstance()->SDBMHash(c);
@@ -146,7 +151,7 @@ int GAME_TOOLSLua::getYunIp(lua_State* ls){
 //        }
 //    }
     
-    std::string cip = YUNControl::getInstance()->getYUNByGroupName(group_name.c_str() , uuid.c_str() , game_port.c_str());
+    std::string cip = YUNControl::getInstance()->getYUNByGroupNameIP(group_name.c_str(), uuid.c_str(), game_ip.c_str(), game_port.c_str());
     char * ip = new char[cip.length() + 1];
     strcpy(ip, cip.c_str());
     
@@ -155,6 +160,31 @@ int GAME_TOOLSLua::getYunIp(lua_State* ls){
     return 1;
 }
 
+
+int GAME_TOOLSLua::getYunIpWithDomain(lua_State* ls){
+    string group_name = lua_tostring(ls ,1);
+    string uuid       = lua_tostring(ls, 2);
+    string game_host  = lua_tostring(ls, 3);
+    string game_port  = lua_tostring(ls, 4);
+    //    if (uuid.length() > 0 ) {
+    //        char * c = const_cast<char*>(uuid.c_str());
+    //        int hashcode = YUNControl::getInstance()->SDBMHash(c);
+    //        if (hashcode != 0) {
+    //            std::ostringstream oss;
+    //            group_name = group_name + "," ;
+    //            oss << group_name << hashcode;
+    //            group_name = oss.str();
+    //        }
+    //    }
+    
+    std::string cip = YUNControl::getInstance()->getYUNByGroupNameDomain(group_name.c_str(), uuid.c_str(), game_host.c_str(), game_port.c_str());
+    char * ip = new char[cip.length() + 1];
+    strcpy(ip, cip.c_str());
+    
+    lua_settop(ls, 0);
+    lua_pushstring(ls, ip);
+    return 1;
+}
 
 //int GAME_TOOLSLua::getYunIp_INFO(lua_State* ls){
 //    string group_name = lua_tostring(ls, 1);
@@ -207,18 +237,18 @@ int GAME_TOOLSLua::getDevice_IMEI(lua_State* ls){
     return 1;
 }
 
-// GPS
-int GAME_TOOLSLua::getGPS_Location(lua_State* ls){
-    if(![[GPSController getInstance] isLocation_Opened]){
-        [[GPSController getInstance] START_GPS];//还未开启GPS 主动注册
+// GPS start
+int GAME_TOOLSLua::cpp_getGPS_Location(lua_State* ls){
+    if(![[LocationManage getInstance] isLocation_Opened]){
+        [[LocationManage getInstance] START_GPS];//还未开启GPS 主动注册
     }
     
     lua_settop(ls, 0);
-    lua_pushstring(ls, [[[GPSController getInstance] getLoncation] cStringUsingEncoding:NSASCIIStringEncoding]);
+    lua_pushstring(ls, [[[LocationManage getInstance] getLocation] cStringUsingEncoding:NSASCIIStringEncoding]);
     return 1;
 }
 
-int GAME_TOOLSLua::setGPS_Location_callfun(lua_State* ls){
+int GAME_TOOLSLua::cpp_setGPS_Location_callfun(lua_State* ls){
     tolua_Error toerror;
     int hanlder = 0;
     if(!toluafix_isfunction(ls, 1, "LUA_FUNCTION", 0, &toerror)){
@@ -226,37 +256,52 @@ int GAME_TOOLSLua::setGPS_Location_callfun(lua_State* ls){
         
     }else{
         hanlder = (toluafix_ref_function(ls, 1, 0));
-        if(![[GPSController getInstance] isLocation_Opened]){
-            [[GPSController getInstance] START_GPS];//还未开启GPS 主动注册
+        NSLog(@"gps call back to lua 111 %d" ,hanlder);
+        if(![[LocationManage getInstance] isLocation_Opened]){
+            [[LocationManage getInstance] START_GPS];//还未开启GPS 主动注册
         }
         
-        [[GPSController getInstance] setGPSPosStateCallback:^(NSString* result){
-            string result_s = [result UTF8String]; // 转string
-            lua_settop(ls, 0);
-            lua_pushstring(ls, result_s.c_str());
-            cocos2d::LuaEngine::getInstance()->getLuaStack()->executeFunctionByHandler(hanlder, 1);
+        [[LocationManage getInstance] setGPSPosStateCallback:^(NSString* result){
+         string result_s = [result UTF8String]; // 转string
+         lua_settop(ls, 0);
+         lua_pushstring(ls, result_s.c_str());
+         NSLog(@"gps call back to lua %d" ,hanlder);
+                                                     cocos2d::LuaEngine::getInstance()->getLuaStack()->executeFunctionByHandler(hanlder, 1);
          }];
     }
     
     return 0;
 }
 
-int GAME_TOOLSLua::getGPS_Server_Status(lua_State* ls){
+int GAME_TOOLSLua::cpp_getGPS_Server_Status(lua_State* ls){
     bool istips = lua_toboolean(ls ,1);
     
     lua_settop(ls, 0);
-    lua_pushboolean(ls, [[GPSController getInstance] checkGPS:istips]);
+    lua_pushboolean(ls, [[LocationManage getInstance] checkGPS:istips]);
     return 1;
 }
 
-int GAME_TOOLSLua::stop_GPS(lua_State* ls){
-    [[GPSController getInstance] STOP_GPS];
-    return 0;
+int GAME_TOOLSLua::cpp_Stop_GPS(lua_State* ls){
+    [[LocationManage getInstance] STOP_GPS];
+    return 1;
 }
 
-int GAME_TOOLSLua::show_App_GPS_Setting(lua_State* ls){
-    [[GPSController getInstance] show_App_GPS_Setting];
-    return 0;
+int GAME_TOOLSLua::cpp_get_GPS_Distance(lua_State* ls){
+    std::string lng1 = lua_tostring(ls, 1);
+    std::string lat1 = lua_tostring(ls, 2);
+    std::string lng2 = lua_tostring(ls, 3);
+    std::string lat2 = lua_tostring(ls, 4);
+    std::string ret = [[LocationManage getInstance] getDistance:lng1 lat1:lat1 lng2:lng2 lat2:lat2];
+    
+    lua_settop(ls, 0);
+    lua_pushstring(ls, ret.c_str());
+    return 1;
+}
+
+int GAME_TOOLSLua::cpp_show_App_GPS_Setting(lua_State* ls){
+    std::string tipsStr = lua_tostring(ls, 1);
+    [[LocationManage getInstance] App_show_Setting:tipsStr];
+    return 1;
 }
 
 /***IAP IOS 应用内支付相关接口**/
@@ -376,3 +421,14 @@ void GAME_TOOLSLua::onGameParuse(){
     lua_call(L, 0, 0);
 }
 
+
+int GAME_TOOLSLua::cpp_startH5Game(lua_State* ls){
+    string url = lua_tostring(ls ,1);
+    int ori   = lua_tointeger(ls, 2);
+    
+    NSString * url_c  = [[NSString alloc] initWithCString:(const char*)url.c_str()
+                                                  encoding:NSUTF8StringEncoding];
+    
+    [[H5Controller getInstance] startH5ViewController:url_c orientation:ori];
+    return 0;
+}
